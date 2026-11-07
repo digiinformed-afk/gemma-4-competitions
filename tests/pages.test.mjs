@@ -10,7 +10,7 @@ test('published local links resolve under a GitHub project path',()=>{
   for(const [,link]of html.matchAll(/(?:href|src)="([^"#][^"]*)"/g)){
    if(/^(https?:|data:)/.test(link))continue;
    assert(!link.startsWith('/'),'Must be project relative: '+link);
-   const target=path.resolve(path.dirname(file),link.split('#')[0]);assert(fs.existsSync(target),file+': '+link);
+   const target=path.resolve(path.dirname(file),link.split(/[?#]/)[0]);assert(fs.existsSync(target),file+': '+link);
   }
  }
  const data=JSON.parse(fs.readFileSync('site/paper/seed.json'));
@@ -18,6 +18,7 @@ test('published local links resolve under a GitHub project path',()=>{
  assert.equal(data.gates.submitted,false);
  assert.equal(data.tasks.find(t=>t.id==='replicate').status,'done');
  assert(!/(?:href|src)=["']\//.test(fs.readFileSync('site/paper/app.js','utf8')),'Dynamic links must be project relative');
+ assert(!/["']\/project\//.test(fs.readFileSync('site/paper/app.js','utf8')),'Helper resource links must be project relative');
 });
 test('Pages paper adapter persists edits and rejects stale revisions and server features',async()=>{
  const values=new Map();let requested=[];
