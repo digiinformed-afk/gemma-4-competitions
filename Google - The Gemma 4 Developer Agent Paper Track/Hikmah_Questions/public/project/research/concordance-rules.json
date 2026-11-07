@@ -1,0 +1,233 @@
+[
+  {
+    "group": "reason",
+    "label": "ʿAql · عقل",
+    "root": "Eql",
+    "lemmas": [
+      "Eaqalu"
+    ],
+    "scope": "Using reason. Every occurrence of this root is verbal."
+  },
+  {
+    "group": "knowledge",
+    "label": "ʿIlm · علم",
+    "root": "Elm",
+    "lemmas": [
+      "Eilom"
+    ],
+    "scope": "The noun for knowledge. A verse can concern divine knowledge, human knowledge or a limit on it."
+  },
+  {
+    "group": "knowing",
+    "label": "Knowing and teaching · علم",
+    "root": "Elm",
+    "lemmas": [
+      "Ealima",
+      "Eal~ama",
+      "yataEal~amu",
+      "Ea`lim",
+      "Ealiym",
+      ">aEolam",
+      "Eal~a`m",
+      "muEal~am"
+    ],
+    "scope": "Knowing, teaching, learning, more or most knowing, learned and all-knowing forms. The speaker or subject matters. ‘Worlds,’ markers and mountains are excluded."
+  },
+  {
+    "group": "wisdom",
+    "label": "Ḥikmah · حكمة",
+    "root": "Hkm",
+    "lemmas": [
+      "Hikomap"
+    ],
+    "scope": "The wisdom noun. Repeated words within a verse are counted separately."
+  },
+  {
+    "group": "judgment",
+    "label": "Ḥukm · حكم",
+    "root": "Hkm",
+    "lemmas": [
+      "Hukom"
+    ],
+    "scope": "Judgment, authority or ruling according to context."
+  },
+  {
+    "group": "wise",
+    "label": "Ḥakīm · حكيم",
+    "root": "Hkm",
+    "lemmas": [
+      "Hakiym"
+    ],
+    "scope": "The wise or firmly ordered epithet, including descriptions of God or of revelation. Inspect the referent."
+  },
+  {
+    "group": "understanding",
+    "label": "Fahm · فهم",
+    "root": "fhm",
+    "lemmas": [
+      "fah~amo"
+    ],
+    "scope": "Being made to understand a particular matter."
+  },
+  {
+    "group": "comprehension",
+    "label": "Fiqh / tafaqquh · فقه",
+    "root": "fqh",
+    "lemmas": [
+      "yafoqahu",
+      "yatafaq~ahu"
+    ],
+    "scope": "To understand, including acquiring understanding of religion."
+  },
+  {
+    "group": "reflection",
+    "label": "Tafakkur and thinking · فكر",
+    "root": "fkr",
+    "lemmas": [
+      "yatafak~aru",
+      "fak~ara"
+    ],
+    "scope": "Reflection or thought. The surrounding passage can criticize thinking directed to a harmful end."
+  },
+  {
+    "group": "ponder",
+    "label": "Tadabbur · تدبر",
+    "root": "dbr",
+    "lemmas": [
+      "yatadab~aru"
+    ],
+    "scope": "Pondering or considering carefully. Other senses of the root are excluded."
+  },
+  {
+    "group": "discernment",
+    "label": "Albāb · ألباب",
+    "root": "lbb",
+    "lemmas": [
+      ">aloba`b"
+    ],
+    "scope": "Understanding in expressions for people endowed with understanding."
+  },
+  {
+    "group": "intellect",
+    "label": "Nuhā · نهى",
+    "root": "nhy",
+    "lemmas": [
+      "n~uhaY`"
+    ],
+    "scope": "Discernment in the expression for people of intellect. Prohibiting and ceasing are other forms."
+  },
+  {
+    "group": "insight",
+    "label": "Baṣīrah / baṣāʾir · بصيرة / بصائر",
+    "root": "bSr",
+    "lemmas": [
+      "baSiyrap"
+    ],
+    "scope": "Insight, clear evidence or perception, depending on context."
+  },
+  {
+    "group": "proof",
+    "label": "Burhān · برهان",
+    "root": "brhn",
+    "lemmas": [
+      "buroha`n"
+    ],
+    "scope": "Proof or demonstration."
+  },
+  {
+    "group": "verify",
+    "label": "Tabayyun · تبين",
+    "root": "byn",
+    "lemmas": [
+      "tabay~ana"
+    ],
+    "scope": "Ascertain or become clear. Only some occurrences direct an investigation."
+  },
+  {
+    "group": "clear_sign",
+    "label": "Bayyinah · بينة",
+    "root": "byn",
+    "lemmas": [
+      "bay~inap"
+    ],
+    "scope": "A clear sign or proof. Many occurrences concern revelation."
+  },
+  {
+    "group": "consult",
+    "label": "Shūrā / consultation · شورى",
+    "root": "$wr",
+    "lemmas": [
+      "ta$aAwur",
+      "$aAwiro",
+      "$uwraY`"
+    ],
+    "scope": "Mutual consultation or seeking counsel."
+  },
+  {
+    "group": "lesson",
+    "label": "ʿIbrah / iʿtibār · عبرة / اعتبار",
+    "root": "Ebr",
+    "lemmas": [
+      "Eiborap",
+      "{Eotabiru"
+    ],
+    "scope": "A lesson or an invitation to draw one."
+  },
+  {
+    "group": "inference",
+    "label": "Istinbāṭ · استنباط",
+    "root": "nbT",
+    "lemmas": [
+      "yasotan[biTu"
+    ],
+    "scope": "Drawing out the meaning or implications of a report."
+  },
+  {
+    "group": "certainty",
+    "label": "Yaqīn · يقين",
+    "root": "yqn",
+    "lemmas": [
+      "yuwqinu",
+      "yaqiyn",
+      "m~uwqiniyn",
+      "{sotayoqanato",
+      "musotayoqiniyn"
+    ],
+    "scope": "Certainty and related forms. Includes religious conviction."
+  },
+  {
+    "group": "supposition",
+    "label": "Ẓann · ظن",
+    "root": "Znn",
+    "lemmas": [
+      "Zan~a",
+      "Zan~",
+      "Z~aA^n~iyn"
+    ],
+    "scope": "Supposition, expectation or conviction. The meaning and moral evaluation vary with context."
+  },
+  {
+    "group": "right_judgment",
+    "label": "Rushd · رشد",
+    "root": "r$d",
+    "lemmas": [
+      "yaro$udu",
+      "ru$od",
+      "r~a$iyd",
+      "ra$ad",
+      "m~uro$id",
+      "r~a$aAd",
+      "r~a`$iduwn"
+    ],
+    "scope": "Right guidance, maturity or sound judgment in context."
+  },
+  {
+    "group": "forbearance",
+    "label": "Ḥalīm · حليم",
+    "root": "Hlm",
+    "lemmas": [
+      "Haliym"
+    ],
+    "scope": "Forbearing. Includes divine attributes and human dispositions."
+  }
+]
