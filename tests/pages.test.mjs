@@ -16,6 +16,8 @@ test('published local links resolve under a GitHub project path',()=>{
  const data=JSON.parse(fs.readFileSync('site/paper/seed.json'));
  assert.equal(data.manuscript,fs.readFileSync('Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions_Writeup.md','utf8'));
  assert.equal(data.gates.submitted,false);
+ assert.equal(data.tasks.find(t=>t.id==='replicate').status,'done');
+ assert(!/(?:href|src)=["']\//.test(fs.readFileSync('site/paper/app.js','utf8')),'Dynamic links must be project relative');
 });
 test('Pages paper adapter persists edits and rejects stale revisions and server features',async()=>{
  const values=new Map();let requested=[];
