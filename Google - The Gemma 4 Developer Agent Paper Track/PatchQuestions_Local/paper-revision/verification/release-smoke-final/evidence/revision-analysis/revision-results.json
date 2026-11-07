@@ -1,0 +1,2691 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Descriptive analysis of existing benchmark and exploratory intervention. No new family or model experiment.",
+  "score_rows": 18000,
+  "score_sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e",
+  "baseline": {
+    "random": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.3071941912615741,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.46353822544642853,
+        "queries_used": 2.0
+      },
+      "3": {
+        "heldout_exact": 0.5683128759984228,
+        "queries_used": 3.0
+      }
+    },
+    "random_split": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.34244809737908694,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.5920951422795265,
+        "queries_used": 1.8274360564204315
+      },
+      "3": {
+        "heldout_exact": 0.7631887749141841,
+        "queries_used": 2.299579540287204
+      }
+    },
+    "diversity": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.5208854166666667,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.7279166666666667,
+        "queries_used": 1.590625
+      },
+      "3": {
+        "heldout_exact": 0.848125,
+        "queries_used": 1.8777083333333333
+      }
+    },
+    "entropy": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.5163541666666667,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.7288541666666667,
+        "queries_used": 1.5984375
+      },
+      "3": {
+        "heldout_exact": 0.8527083333333333,
+        "queries_used": 1.8819791666666668
+      }
+    },
+    "lookahead": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.5208854166666667,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.7442708333333333,
+        "queries_used": 1.8072916666666667
+      },
+      "3": {
+        "heldout_exact": 0.8547916666666666,
+        "queries_used": 2.265625
+      }
+    },
+    "frugal": {
+      "0": {
+        "heldout_exact": 0.07051504629629629,
+        "queries_used": 0.0
+      },
+      "1": {
+        "heldout_exact": 0.5208854166666667,
+        "queries_used": 1.0
+      },
+      "2": {
+        "heldout_exact": 0.7442708333333333,
+        "queries_used": 1.6171875
+      },
+      "3": {
+        "heldout_exact": 0.8547916666666666,
+        "queries_used": 1.8644791666666667
+      }
+    }
+  },
+  "per_family_budget3": {
+    "random": {
+      "url_quote": 0.39605357142857145,
+      "query_pairs": 0.5765848214285715,
+      "csv_fields": 0.40799107142857144,
+      "wrap": 0.599515625,
+      "json_wire": 0.9549450549450549,
+      "regex_search": 0.11283482142857142,
+      "base64_read": 0.5651785714285714,
+      "hex_format": 0.9333994708994708
+    },
+    "random_split": {
+      "url_quote": 0.627604891850874,
+      "query_pairs": 0.8669440481806554,
+      "csv_fields": 0.6222528664842653,
+      "wrap": 0.861856174028793,
+      "json_wire": 0.9990592740592741,
+      "regex_search": 0.3,
+      "base64_read": 0.8328304411637746,
+      "hex_format": 0.9949625035458369
+    },
+    "diversity": {
+      "url_quote": 0.96,
+      "query_pairs": 0.95,
+      "csv_fields": 0.8166666666666667,
+      "wrap": 0.925,
+      "json_wire": 1.0,
+      "regex_search": 0.3,
+      "base64_read": 0.8333333333333334,
+      "hex_format": 1.0
+    },
+    "entropy": {
+      "url_quote": 0.98,
+      "query_pairs": 0.95,
+      "csv_fields": 0.8333333333333334,
+      "wrap": 0.925,
+      "json_wire": 1.0,
+      "regex_search": 0.3,
+      "base64_read": 0.8333333333333334,
+      "hex_format": 1.0
+    },
+    "lookahead": {
+      "url_quote": 0.98,
+      "query_pairs": 0.95,
+      "csv_fields": 0.85,
+      "wrap": 0.925,
+      "json_wire": 1.0,
+      "regex_search": 0.3,
+      "base64_read": 0.8333333333333334,
+      "hex_format": 1.0
+    },
+    "frugal": {
+      "url_quote": 0.98,
+      "query_pairs": 0.95,
+      "csv_fields": 0.85,
+      "wrap": 0.925,
+      "json_wire": 1.0,
+      "regex_search": 0.3,
+      "base64_read": 0.8333333333333334,
+      "hex_format": 1.0
+    }
+  },
+  "leave_one_family_out": [
+    {
+      "excluded_family": "url_quote",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "query_pairs",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "csv_fields",
+      "frugal_minus_entropy_pp": 0.0
+    },
+    {
+      "excluded_family": "wrap",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "json_wire",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "regex_search",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "base64_read",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    },
+    {
+      "excluded_family": "hex_format",
+      "frugal_minus_entropy_pp": 0.23809523809523725
+    }
+  ],
+  "behavior_classes": [
+    {
+      "family": "url_quote",
+      "split": 19,
+      "configurations": 20,
+      "query_classes": 20,
+      "joint_classes": 20,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "url_quote",
+      "split": 43,
+      "configurations": 20,
+      "query_classes": 20,
+      "joint_classes": 20,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "url_quote",
+      "split": 73,
+      "configurations": 20,
+      "query_classes": 20,
+      "joint_classes": 20,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "url_quote",
+      "split": 101,
+      "configurations": 20,
+      "query_classes": 20,
+      "joint_classes": 20,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "url_quote",
+      "split": 137,
+      "configurations": 20,
+      "query_classes": 20,
+      "joint_classes": 20,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "query_pairs",
+      "split": 19,
+      "configurations": 16,
+      "query_classes": 14,
+      "joint_classes": 16,
+      "all_query_uniform": 0.875,
+      "evaluator_only_majority": 0.875
+    },
+    {
+      "family": "query_pairs",
+      "split": 43,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "query_pairs",
+      "split": 73,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "query_pairs",
+      "split": 101,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "query_pairs",
+      "split": 137,
+      "configurations": 16,
+      "query_classes": 14,
+      "joint_classes": 16,
+      "all_query_uniform": 0.875,
+      "evaluator_only_majority": 0.875
+    },
+    {
+      "family": "csv_fields",
+      "split": 19,
+      "configurations": 24,
+      "query_classes": 24,
+      "joint_classes": 24,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "csv_fields",
+      "split": 43,
+      "configurations": 24,
+      "query_classes": 20,
+      "joint_classes": 24,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "csv_fields",
+      "split": 73,
+      "configurations": 24,
+      "query_classes": 20,
+      "joint_classes": 24,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "csv_fields",
+      "split": 101,
+      "configurations": 24,
+      "query_classes": 24,
+      "joint_classes": 24,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "csv_fields",
+      "split": 137,
+      "configurations": 24,
+      "query_classes": 14,
+      "joint_classes": 24,
+      "all_query_uniform": 0.5833333333333334,
+      "evaluator_only_majority": 0.5833333333333334
+    },
+    {
+      "family": "wrap",
+      "split": 19,
+      "configurations": 16,
+      "query_classes": 14,
+      "joint_classes": 16,
+      "all_query_uniform": 0.875,
+      "evaluator_only_majority": 0.875
+    },
+    {
+      "family": "wrap",
+      "split": 43,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "wrap",
+      "split": 73,
+      "configurations": 16,
+      "query_classes": 14,
+      "joint_classes": 16,
+      "all_query_uniform": 0.875,
+      "evaluator_only_majority": 0.875
+    },
+    {
+      "family": "wrap",
+      "split": 101,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "wrap",
+      "split": 137,
+      "configurations": 16,
+      "query_classes": 14,
+      "joint_classes": 16,
+      "all_query_uniform": 0.875,
+      "evaluator_only_majority": 0.875
+    },
+    {
+      "family": "json_wire",
+      "split": 19,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "json_wire",
+      "split": 43,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "json_wire",
+      "split": 73,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "json_wire",
+      "split": 101,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "json_wire",
+      "split": 137,
+      "configurations": 16,
+      "query_classes": 16,
+      "joint_classes": 16,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "regex_search",
+      "split": 19,
+      "configurations": 16,
+      "query_classes": 4,
+      "joint_classes": 16,
+      "all_query_uniform": 0.25,
+      "evaluator_only_majority": 0.25
+    },
+    {
+      "family": "regex_search",
+      "split": 43,
+      "configurations": 16,
+      "query_classes": 2,
+      "joint_classes": 16,
+      "all_query_uniform": 0.125,
+      "evaluator_only_majority": 0.125
+    },
+    {
+      "family": "regex_search",
+      "split": 73,
+      "configurations": 16,
+      "query_classes": 8,
+      "joint_classes": 16,
+      "all_query_uniform": 0.5,
+      "evaluator_only_majority": 0.5
+    },
+    {
+      "family": "regex_search",
+      "split": 101,
+      "configurations": 16,
+      "query_classes": 4,
+      "joint_classes": 16,
+      "all_query_uniform": 0.25,
+      "evaluator_only_majority": 0.25
+    },
+    {
+      "family": "regex_search",
+      "split": 137,
+      "configurations": 16,
+      "query_classes": 6,
+      "joint_classes": 16,
+      "all_query_uniform": 0.375,
+      "evaluator_only_majority": 0.375
+    },
+    {
+      "family": "base64_read",
+      "split": 19,
+      "configurations": 6,
+      "query_classes": 5,
+      "joint_classes": 6,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "base64_read",
+      "split": 43,
+      "configurations": 6,
+      "query_classes": 5,
+      "joint_classes": 6,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "base64_read",
+      "split": 73,
+      "configurations": 6,
+      "query_classes": 5,
+      "joint_classes": 6,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "base64_read",
+      "split": 101,
+      "configurations": 6,
+      "query_classes": 5,
+      "joint_classes": 6,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "base64_read",
+      "split": 137,
+      "configurations": 6,
+      "query_classes": 5,
+      "joint_classes": 6,
+      "all_query_uniform": 0.8333333333333334,
+      "evaluator_only_majority": 0.8333333333333334
+    },
+    {
+      "family": "hex_format",
+      "split": 19,
+      "configurations": 36,
+      "query_classes": 30,
+      "joint_classes": 30,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "hex_format",
+      "split": 43,
+      "configurations": 36,
+      "query_classes": 30,
+      "joint_classes": 30,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "hex_format",
+      "split": 73,
+      "configurations": 36,
+      "query_classes": 30,
+      "joint_classes": 30,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "hex_format",
+      "split": 101,
+      "configurations": 36,
+      "query_classes": 30,
+      "joint_classes": 30,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    },
+    {
+      "family": "hex_format",
+      "split": 137,
+      "configurations": 36,
+      "query_classes": 30,
+      "joint_classes": 30,
+      "all_query_uniform": 1.0,
+      "evaluator_only_majority": 1.0
+    }
+  ],
+  "crossed": [
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.4,
+      "answer_characters": 17.0,
+      "conditional_information_bits": 1.0
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.225,
+      "questions": 1.8,
+      "input_characters": 12.0,
+      "answer_characters": 32.0,
+      "conditional_information_bits": 1.8
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.3,
+      "questions": 2.1,
+      "input_characters": 13.4,
+      "answer_characters": 37.1,
+      "conditional_information_bits": 2.1
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.15,
+      "questions": 1.0,
+      "input_characters": 6.8,
+      "answer_characters": 16.7,
+      "conditional_information_bits": 0.9622556248918265
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.225,
+      "questions": 1.8,
+      "input_characters": 11.6,
+      "answer_characters": 30.3,
+      "conditional_information_bits": 1.7622556248918264
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.3,
+      "questions": 2.1,
+      "input_characters": 13.4,
+      "answer_characters": 37.1,
+      "conditional_information_bits": 2.1
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.4,
+      "answer_characters": 17.0,
+      "conditional_information_bits": 1.0
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.225,
+      "questions": 1.8,
+      "input_characters": 12.0,
+      "answer_characters": 32.0,
+      "conditional_information_bits": 1.8
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.3,
+      "questions": 2.1,
+      "input_characters": 13.4,
+      "answer_characters": 37.1,
+      "conditional_information_bits": 2.1
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.8,
+      "answer_characters": 16.7,
+      "conditional_information_bits": 0.9622556248918265
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.225,
+      "questions": 1.8,
+      "input_characters": 11.6,
+      "answer_characters": 30.3,
+      "conditional_information_bits": 1.7622556248918264
+    },
+    {
+      "suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.3,
+      "questions": 2.1,
+      "input_characters": 13.4,
+      "answer_characters": 37.1,
+      "conditional_information_bits": 2.1
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.4,
+      "answer_characters": 17.0,
+      "conditional_information_bits": 1.0
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.25,
+      "questions": 2.0,
+      "input_characters": 10.8,
+      "answer_characters": 34.0,
+      "conditional_information_bits": 2.0
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 3.0,
+      "input_characters": 16.1,
+      "answer_characters": 51.0,
+      "conditional_information_bits": 3.0
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.15,
+      "questions": 1.0,
+      "input_characters": 6.8,
+      "answer_characters": 16.7,
+      "conditional_information_bits": 0.9622556248918265
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.25,
+      "questions": 2.0,
+      "input_characters": 11.8,
+      "answer_characters": 33.7,
+      "conditional_information_bits": 1.9622556248918266
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 3.0,
+      "input_characters": 16.4,
+      "answer_characters": 50.55,
+      "conditional_information_bits": 2.95
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.4,
+      "answer_characters": 17.0,
+      "conditional_information_bits": 1.0
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.25,
+      "questions": 2.0,
+      "input_characters": 10.8,
+      "answer_characters": 34.0,
+      "conditional_information_bits": 2.0
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 3.0,
+      "input_characters": 16.1,
+      "answer_characters": 51.0,
+      "conditional_information_bits": 3.0
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.125,
+      "questions": 1.0,
+      "input_characters": 6.8,
+      "answer_characters": 16.7,
+      "conditional_information_bits": 0.9622556248918265
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.25,
+      "questions": 2.0,
+      "input_characters": 11.8,
+      "answer_characters": 33.7,
+      "conditional_information_bits": 1.9622556248918266
+    },
+    {
+      "suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 3.0,
+      "input_characters": 16.4,
+      "answer_characters": 50.55,
+      "conditional_information_bits": 2.95
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.51,
+      "questions": 1.0,
+      "input_characters": 17.0,
+      "answer_characters": 20.875,
+      "conditional_information_bits": 2.5487949406953985
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.6875,
+      "questions": 1.625,
+      "input_characters": 24.8125,
+      "answer_characters": 31.425,
+      "conditional_information_bits": 3.29669171866887
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.8625,
+      "questions": 2.0625,
+      "input_characters": 30.5875,
+      "answer_characters": 38.6125,
+      "conditional_information_bits": 3.7061278124459127
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.51,
+      "questions": 1.0,
+      "input_characters": 17.0,
+      "answer_characters": 20.875,
+      "conditional_information_bits": 2.5487949406953985
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.75,
+      "questions": 1.75,
+      "input_characters": 29.85,
+      "answer_characters": 33.85,
+      "conditional_information_bits": 3.2743974703476995
+    },
+    {
+      "suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.8625,
+      "questions": 2.0625,
+      "input_characters": 30.5875,
+      "answer_characters": 38.6125,
+      "conditional_information_bits": 3.7061278124459127
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 1.0,
+      "input_characters": 17.0,
+      "answer_characters": 20.875,
+      "conditional_information_bits": 2.5487949406953985
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.6875,
+      "questions": 1.625,
+      "input_characters": 24.8125,
+      "answer_characters": 31.425,
+      "conditional_information_bits": 3.29669171866887
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.8625,
+      "questions": 2.0625,
+      "input_characters": 30.5875,
+      "answer_characters": 38.6125,
+      "conditional_information_bits": 3.7061278124459127
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 1,
+      "episodes": 80,
+      "heldout_exact": 0.5,
+      "questions": 1.0,
+      "input_characters": 17.0,
+      "answer_characters": 20.875,
+      "conditional_information_bits": 2.5487949406953985
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 2,
+      "episodes": 80,
+      "heldout_exact": 0.75,
+      "questions": 1.75,
+      "input_characters": 29.85,
+      "answer_characters": 33.85,
+      "conditional_information_bits": 3.2743974703476995
+    },
+    {
+      "suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 3,
+      "episodes": 80,
+      "heldout_exact": 0.8625,
+      "questions": 2.0625,
+      "input_characters": 30.5875,
+      "answer_characters": 38.6125,
+      "conditional_information_bits": 3.7061278124459127
+    }
+  ],
+  "pool_capacity": [
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 1,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 12,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 13,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 14,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 19,
+      "column": 15,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 8,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 12,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 13,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 14,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 43,
+      "column": 15,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 9,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 10,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 12,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 73,
+      "column": 15,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 12,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 14,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 101,
+      "column": 15,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 3,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 0.8112781244591328
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 5,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 12,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 14,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "original",
+      "split": 137,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 1,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 12,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 19,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 8,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 12,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 43,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 9,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 10,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 12,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 73,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 12,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 101,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 3,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 0.8112781244591328
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 5,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 12,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 13,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 14,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "single",
+      "split": 137,
+      "column": 15,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 1,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 12,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 1.9237949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 13,
+      "outcomes": 6,
+      "initial_answer_entropy_bits": 2.311278124459133
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 14,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 2.25
+    },
+    {
+      "pool": "compound",
+      "split": 19,
+      "column": 15,
+      "outcomes": 8,
+      "initial_answer_entropy_bits": 2.5487949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 8,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 12,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 1.9237949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 13,
+      "outcomes": 6,
+      "initial_answer_entropy_bits": 2.311278124459133
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 14,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 2.25
+    },
+    {
+      "pool": "compound",
+      "split": 43,
+      "column": 15,
+      "outcomes": 8,
+      "initial_answer_entropy_bits": 2.5487949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 0,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 9,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 10,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 12,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 1.9237949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 13,
+      "outcomes": 6,
+      "initial_answer_entropy_bits": 2.311278124459133
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 14,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 2.25
+    },
+    {
+      "pool": "compound",
+      "split": 73,
+      "column": 15,
+      "outcomes": 8,
+      "initial_answer_entropy_bits": 2.5487949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 3,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 5,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 7,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 12,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 1.9237949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 13,
+      "outcomes": 6,
+      "initial_answer_entropy_bits": 2.311278124459133
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 14,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 2.25
+    },
+    {
+      "pool": "compound",
+      "split": 101,
+      "column": 15,
+      "outcomes": 8,
+      "initial_answer_entropy_bits": 2.5487949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 0,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 1,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 2,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 3,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 0.8112781244591328
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 4,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 5,
+      "outcomes": 2,
+      "initial_answer_entropy_bits": 1.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 6,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 7,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 8,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 9,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 10,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 11,
+      "outcomes": 1,
+      "initial_answer_entropy_bits": -0.0
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 12,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 1.9237949406953985
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 13,
+      "outcomes": 6,
+      "initial_answer_entropy_bits": 2.311278124459133
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 14,
+      "outcomes": 7,
+      "initial_answer_entropy_bits": 2.25
+    },
+    {
+      "pool": "compound",
+      "split": 137,
+      "column": 15,
+      "outcomes": 8,
+      "initial_answer_entropy_bits": 2.5487949406953985
+    }
+  ],
+  "cost_definition": "Rebuild revision tables and selected-transcript costs from the benchmark.\n\nCPU only. Run beside scores.csv. Original benchmark methods are unchanged.\nCosts count Unicode code points in selected input and serialized outcome strings,\nexcluding protocol wrappers, JSON actions, repeated prompt context and thinking.\n"
+}

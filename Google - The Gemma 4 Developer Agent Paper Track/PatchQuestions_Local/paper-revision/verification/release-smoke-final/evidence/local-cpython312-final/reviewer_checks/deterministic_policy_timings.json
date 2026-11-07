@@ -1,0 +1,29 @@
+{
+  "entropy": {
+    "seconds": [
+      0.12409019999904558,
+      0.18276670001796447,
+      0.2775287000113167
+    ],
+    "median_seconds": 0.18276670001796447,
+    "scope": "750 targets, 40 freshly generated matrices, budget 3 only; per-matrix tree cache shared across targets; no random policies"
+  },
+  "lookahead": {
+    "seconds": [
+      0.3365570000023581,
+      0.34126560000004247,
+      0.3251649999874644
+    ],
+    "median_seconds": 0.3365570000023581,
+    "scope": "750 targets, 40 freshly generated matrices, budget 3 only; per-matrix tree cache shared across targets; no random policies"
+  },
+  "frugal": {
+    "seconds": [
+      0.3310205999878235,
+      0.34976510002161376,
+      0.33391059999121353
+    ],
+    "median_seconds": 0.33391059999121353,
+    "scope": "750 targets, 40 freshly generated matrices, budget 3 only; per-matrix tree cache shared across targets; no random policies"
+  }
+}

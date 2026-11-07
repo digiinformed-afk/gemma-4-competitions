@@ -1,0 +1,32 @@
+{
+  "kind": "scripted CPU fixture",
+  "model": "scripted BaseLlm",
+  "tools": "organizer SWEGemma tools",
+  "sandbox": "local fixture transport",
+  "swegemma": "0.2.11",
+  "charged_tool_calls": 4,
+  "adk_submission": "0.2.13",
+  "google_adk": "1.36.1",
+  "agent": "repair_agent",
+  "calls": [
+    "get_status",
+    "read_file",
+    "run_command",
+    "edit_file",
+    "run_command",
+    "submit_patch"
+  ],
+  "agent_test_exit_codes": [
+    1,
+    0
+  ],
+  "patch_bytes": 202,
+  "patch_sha256": "4bb00d2c65a2a0412e3ad57557ab6b9513570fddceab65eef5547efdc52ffd02",
+  "fresh_test_exit_codes": [
+    1,
+    0
+  ],
+  "fresh_tests_passed": 2,
+  "final_response": "Captured the upper-bound repair and ran the fixture tests.",
+  "archive_sha256": "13dfe5ed9d6295b89fbaf9e9ea2e5158e7a52e44bc67e6eb66fdfc4c1803da80"
+}

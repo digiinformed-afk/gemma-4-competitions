@@ -1,0 +1,148 @@
+protocol_validation.json
+{
+  "entropy_frozen_episodes_checked": 750,
+  "native_vs_displayed_differences": [],
+  "pilot_entropy": [
+    {
+      "family": "url_quote",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 3
+    },
+    {
+      "family": "url_quote",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 3
+    },
+    {
+      "family": "query_pairs",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "query_pairs",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "csv_fields",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 3
+    },
+    {
+      "family": "csv_fields",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 3
+    },
+    {
+      "family": "wrap",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "wrap",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 3
+    },
+    {
+      "family": "json_wire",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "json_wire",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "regex_search",
+      "target": 0,
+      "heldout_exact": 0.25,
+      "questions": 2
+    },
+    {
+      "family": "regex_search",
+      "target": 1,
+      "heldout_exact": 0.25,
+      "questions": 2
+    },
+    {
+      "family": "base64_read",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "base64_read",
+      "target": 1,
+      "heldout_exact": 0.5,
+      "questions": 2
+    },
+    {
+      "family": "hex_format",
+      "target": 0,
+      "heldout_exact": 1.0,
+      "questions": 1
+    },
+    {
+      "family": "hex_format",
+      "target": 1,
+      "heldout_exact": 1.0,
+      "questions": 1
+    }
+  ],
+  "pilot_entropy_mean": 0.875,
+  "inconsistent_pick_fixture": {
+    "family": "wrap",
+    "split": 43,
+    "target": 10,
+    "picked_original_candidate": 14,
+    "query": 9,
+    "input": "abcdefgh-z",
+    "target_answer": [
+      "return",
+      [
+        "abcdefgh-z"
+      ]
+    ],
+    "picked_candidate_answer": [
+      "return",
+      [
+        "abcdefgh-",
+        "z"
+      ]
+    ],
+    "argv": [
+      "C:\\Users\\Inspection Br\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "replay.py",
+      "wrap",
+      "43",
+      "10",
+      "--shuffle",
+      "2026"
+    ],
+    "actions": [
+      {
+        "ask": 9
+      },
+      {
+        "pick": 4
+      }
+    ],
+    "final_result": {
+      "heldout_exact": true,
+      "queries": 1
+    },
+    "note": "This is allowed by the explicitly held-out-only endpoint. It does not affect classical policies, which always pick survivors. It needs a separate consistency metric/gate for model evaluations."
+  }
+}

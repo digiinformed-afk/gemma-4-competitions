@@ -1,0 +1,11 @@
+{
+  "binary_4_by_3_matrices": 4096,
+  "budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "tree_objective_checks": 16384,
+  "wall_seconds": 7.078696900018258
+}

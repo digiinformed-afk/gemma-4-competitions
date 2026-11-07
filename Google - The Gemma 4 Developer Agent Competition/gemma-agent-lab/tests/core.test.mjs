@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {budget,wilson,validateState} from '../dist/logic.js';
+import {makeFolds} from '../scripts/make-folds.mjs';
+import {summarize} from '../scripts/summarize.mjs';
+import {resources} from '../dist/data.js';
+const state=()=>({version:1,done:{},read:{},saved:{},notes:{},runs:[],custom:[],budget:{tasks:120,setup:45,reserve:72}});
+test('budget reserves setup and safety; rejects impossible budgets',()=>{assert.equal(budget(state().budget),5.025);assert.equal(budget({tasks:0,setup:0,reserve:0}),null);assert.equal(budget({tasks:120,setup:650,reserve:72}),null);assert.equal(budget({tasks:1.2,setup:0,reserve:0}),null);});
+test('Wilson boundaries and nonzero uncertainty for perfect runs',()=>{const zero=wilson(0,10),perfect=wilson(10,10);assert.ok(zero[0]<1e-10&&zero[1]>.27);assert.ok(perfect[0]<.73&&perfect[1]>.9999);assert.throws(()=>wilson(2,1));});
+test('backup roundtrip and malformed imports',()=>{assert.equal(validateState(JSON.parse(JSON.stringify(state()))),true);assert.throws(()=>validateState({version:2}));let s=state();s.custom=[{id:'user-1',title:'Bad',url:'javascript:alert(1)',author:'x',year:'2026',type:'Paper',priority:'Useful',summary:'x',action:'x'}];assert.throws(()=>validateState(s));s=state();s.done=JSON.parse('{"__proto__":true}');assert.throws(()=>validateState(s));});
+test('result summaries count missing tasks and reject duplicates',()=>{const row={instance_id:'a',outcome:'resolved',seconds:10,tool_errors:0};const result=summarize([row],['a','b']);assert.equal(result.resolve_rate,.5);assert.equal(result.outcomes.unstarted,1);assert.throws(()=>summarize([row,row],['a','b']));assert.throws(()=>summarize([row],['b']));});
+test('repository-disjoint folds do not export gold data',()=>{const rows=[{instance_id:'a1',repo:'a',patch:'SECRET',test_patch:'SECRET'},{instance_id:'a2',repo:'a'},{instance_id:'b1',repo:'b'}],result=makeFolds(rows);assert.equal(result.folds.length,2);for(const f of result.folds)assert.ok(f.train_ids.every(x=>!f.validation_ids.includes(x)));assert.deepEqual(result.folds[0].validation_ids,['a1','a2']);assert.ok(!JSON.stringify(result).includes('SECRET'));assert.equal(result.task_set_sha256,makeFolds([...rows].reverse()).task_set_sha256);});
+test('resource IDs are unique and sources use HTTPS',()=>{assert.equal(new Set(resources.map(r=>r.id)).size,resources.length);resources.forEach(r=>assert.equal(new URL(r.url).protocol,'https:'));});

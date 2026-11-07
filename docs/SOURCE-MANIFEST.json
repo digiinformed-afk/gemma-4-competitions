@@ -1,0 +1,2835 @@
+{
+  "captured": "2026-11-07",
+  "files": [
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/.gitignore",
+      "bytes": 74,
+      "sha256": "95ef3f90af53935d51a464e035a046a08ff75ce3af94450cd56ff26370682a49"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/artifacts/main-track-pilot.ipynb",
+      "bytes": 66847,
+      "sha256": "45943a3de655fcd24ec83860f6e6e11155ad9dee36e9275ca1b7ed4e0d5a4902"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/artifacts/scripted-smoke.json",
+      "bytes": 839,
+      "sha256": "d8da21b43f88895e60061d5bdb529c71c7192d88ee1e10cc1a0d91d467e462e1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/artifacts/submission.zip",
+      "bytes": 1717,
+      "sha256": "13dfe5ed9d6295b89fbaf9e9ea2e5158e7a52e44bc67e6eb66fdfc4c1803da80"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/candidate/agent.yaml",
+      "bytes": 403,
+      "sha256": "d0a0549e95e9bab3ef8298a5a7c42708fcc25658cab90d6da968da4162eff2fd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/candidate/eval_config.yaml",
+      "bytes": 93,
+      "sha256": "20b1f877d6e7b256b93c629d837c9078493239c159fdf2a0810ed29d9e532417"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/candidate/instruction.md",
+      "bytes": 2170,
+      "sha256": "7949f966dd62cc0a8e58bee44f9d02da10b9fe042b450980998f127f9120eb4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/app.js",
+      "bytes": 29164,
+      "sha256": "ee5e9d0638a8d58ba21814d301252fc4926d55544e9d9399a8ec08b194be2fe6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/cognitive-core-research.md",
+      "bytes": 8008,
+      "sha256": "ad1d2b53b5fe8295cf959dbcd563924b09bdb0a3c763d583a9cb00a7cb5baf4c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/cognitive.js",
+      "bytes": 7710,
+      "sha256": "0f1ced22c0723433c5453fab90e9e41d8b87c691c93201b2b933cb4f388c3789"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/compute-plan.md",
+      "bytes": 5501,
+      "sha256": "97c672a76a43f3c4fb51c7c1c3da8db980a3a25d2558c96a466f6114563435f0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/data.js",
+      "bytes": 14871,
+      "sha256": "d8078301a123e3794f0f878403aade88130d307c143bc16e637a2e6e53de9e09"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/evidence-ledger-template.md",
+      "bytes": 1743,
+      "sha256": "44bb2e72ec5d9af9e7aa924742d17351eb3c54537eadee1a55786cee26bf317f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/experiment-template.jsonl",
+      "bytes": 358,
+      "sha256": "6aea3362afff7e7001bfc5d26183fd41d39f41de7f35b5f1f83acf758d9f51b0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/index.html",
+      "bytes": 2163,
+      "sha256": "acb00c99d019c06fff74a908049cd24d29504ee813669743cc5bb3b5d81cae46"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/logic.js",
+      "bytes": 2782,
+      "sha256": "ca059b0032a48063af84bb2d4d5714048b3185a4b65fd09680b5389b77f44c8e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/solution-blueprint.md",
+      "bytes": 12574,
+      "sha256": "41b74dae33503b95de619708b622ac6b1de1e151eed72776f5443984999d1568"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/styles.css",
+      "bytes": 14464,
+      "sha256": "d1d50b3b85a9c9d61cac2f8de9c49d325f6cd57580d1112cab9aee48b7b01401"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/dist/system-prompt.md",
+      "bytes": 3167,
+      "sha256": "e49b3dd38e6e8ff262e61759660b51c786e094d588c8a93403677a766696f674"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/MAIN-TRACK-STATUS.md",
+      "bytes": 4515,
+      "sha256": "832051658697a91f77029f4f3096135ed1802a61e9aeae235639e1f010094132"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/package.json",
+      "bytes": 246,
+      "sha256": "90e47bb52567c6a6073a100d9b982c959291099eb61397105f5cfd0830f07053"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/README.md",
+      "bytes": 7211,
+      "sha256": "25fa0085eac79feaf2ca3aa157a390451c90f59337ea53882233066a1f204b14"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/build-submission.py",
+      "bytes": 9547,
+      "sha256": "6bb275992600a8c973526bb5a65a005c47c2b87f9c499440ef4c541705a4a4dc"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/compare-runs.mjs",
+      "bytes": 6846,
+      "sha256": "0cba107f5210106d7f9ba94b50404e896928a048819287dd87325eae0fa659ee"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/freeze-schedule.py",
+      "bytes": 4621,
+      "sha256": "319db998a754a47b9082c76cccbbf32eb54d3d582064de68933e1ddf0710f366"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/make-folds.mjs",
+      "bytes": 1353,
+      "sha256": "f84134d2d43f6cbf4956214d20174e8a0cd8296ec9dcab9b7c5a0df6e6f7c83c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/make-pilot-notebook.py",
+      "bytes": 10452,
+      "sha256": "59346427a26f4ecf7dc83a95057b47bdecc78b518a03ed455eaebe091f0a3f05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/run-kaggle.py",
+      "bytes": 17291,
+      "sha256": "dec4f935ab7d98f95dd1aa5034c350a462fafacbb5e3822c68ef1d24566e2926"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/save-checkpoint.py",
+      "bytes": 2519,
+      "sha256": "526255db8254c98f60f46832954d958fbec971e33603ed7496e058a50f4298ca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/smoke-agent.py",
+      "bytes": 10688,
+      "sha256": "7434e56ab591c21757c16f6e358c3ae499026770e8182d4f18cc5d2909ccdb72"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/scripts/summarize.mjs",
+      "bytes": 3333,
+      "sha256": "759d7a643ada05d97defa85e18b00ca95fe3ace35407919cce00c5b705b4ce91"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/server.mjs",
+      "bytes": 1029,
+      "sha256": "df08350c499cde1e3500ccd3dc706209399c860c10c17d00446ddc0be580e546"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/core.test.mjs",
+      "bytes": 2480,
+      "sha256": "fd026163878f51dfd2b822d79e4e4fdd8ab9dd764d47e19940f244c73d1715e1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/empty-workspace.json",
+      "bytes": 125,
+      "sha256": "3ec702d7436a822ba7f46f7d53cb388c452cf6d4eb8e72bab1ae1af16e9943b6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/evaluation.test.mjs",
+      "bytes": 5465,
+      "sha256": "d9dc3d65b334b3b32c8a4eb8e9e496ba6279f760dc32a45b40e83a7d304647be"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/test_build_submission.py",
+      "bytes": 7133,
+      "sha256": "1e6c8c2bf8ffd04dc76dce58ea4ffb4974a11ddd62ee4083deeb07389617a5a5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/test_freeze_schedule.py",
+      "bytes": 4368,
+      "sha256": "b2100e0247194bec63e815475210c1992b961480b2bfe8b84808a35746f155ad"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/test_pilot_notebook.py",
+      "bytes": 6165,
+      "sha256": "ca12d51a2ae376a79a2b21f71fd831fcb338f487713eb9548f62eab3f250c6a6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/tests/test_run_kaggle.py",
+      "bytes": 6531,
+      "sha256": "44cdddf5161c98c32353bae6a0645bd2830f8d81a626d4cd0d4092eaab227228"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/package.json",
+      "bytes": 195,
+      "sha256": "d91d28a6108eeaaf7582361ad85defd5fdf2976e90801092e1fdddcdd17cb444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/build_notebook.py",
+      "bytes": 5486,
+      "sha256": "9f4ea1ae4881204ccbcaa7802f7ff8c6d62afe7eb23368e5867e6acc8dd9df65"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/CHANGELOG.md",
+      "bytes": 5374,
+      "sha256": "c77872b93c4ea270c75e2888b2d2ce7d652af2589058a4757d34d927ed6e356c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/checkpoint.py",
+      "bytes": 1704,
+      "sha256": "5fe92baeac150fa6ad00faabc838a3f02e551835a94459cd5641da1cde862596"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/CLAIM-EVIDENCE.md",
+      "bytes": 3307,
+      "sha256": "74b2c58e7134421f1e619af27767ba29e041442c49e5e656c11fea997e1c45fd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/execute_notebook.py",
+      "bytes": 2670,
+      "sha256": "72bb985b20a06f838a872038d1f2648516ca605df622a5877ac4b93504d3fb70"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/LATEST-CHECKPOINT.txt",
+      "bytes": 32,
+      "sha256": "078e602fd57473245a3fa9c0afcee511d63af35f41adff173209a3fc331002df"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/QUESTIONS-RESOLVED.md",
+      "bytes": 3662,
+      "sha256": "59404e5b6b890ae6aef007a9b2f8a217719aedf51b09200fdfdf2fdda0c679dd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/release.py",
+      "bytes": 9974,
+      "sha256": "492cdf90e4d1a33ddd6a1e41213830df759adc8239b96d95431e8cc833f9d208"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/reproduce.py",
+      "bytes": 4344,
+      "sha256": "4e975f5d24d0f3fd73d0a8ef936871aed39cd4a071b90279902df996f5f0bc1f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/reproduce_paper.py",
+      "bytes": 3323,
+      "sha256": "5acda0b6b4410cef8071bc92b5ba6ac88c7b6821cdeb605fadadec70e947b8ec"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/STATUS.md",
+      "bytes": 3916,
+      "sha256": "b772cfe7ba0a943d6061610c718d4f1c43baeea78f12cc9934a34a7b0728eea7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/SUBMISSION-CHECKLIST.md",
+      "bytes": 4831,
+      "sha256": "e3613aceaa3db1d123209ce2a2b43aaf9d6bcb8de737ca00af36353e995d8c59"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/tests/test_pilot.py",
+      "bytes": 7718,
+      "sha256": "35db94b942fd09f144bfa81608b6dd3bf81122f31d3121c6a38c1162593e7db7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/EXECUTION-RECORD.json",
+      "bytes": 1584,
+      "sha256": "78e2690aa38ed2b59e62a9dbe14c3cbd9a5e0505bcc4b7835492d541bd245c20"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/protocol_audit.py",
+      "bytes": 2967,
+      "sha256": "21c6692b1abe342815bb997ebf212d725bc24fc3009ba4c5a8e313d5b809dee5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/cognitive-core-study.md",
+      "bytes": 4189,
+      "sha256": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/PatchQuestions.ipynb",
+      "bytes": 26647,
+      "sha256": "05fd37d69fb95dffbc6f28bb597686490644898f874e14517d54b64f34e6872d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/PatchQuestions_Card.png",
+      "bytes": 20824,
+      "sha256": "467f0c1c24d8a62f60a83ca67e18438e6782f7dafc8b00795c19d53a8eaec663"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/PatchQuestions_Writeup.md",
+      "bytes": 11415,
+      "sha256": "af5043e5721c459eaae74934f584e0b212a5de8c26c93808e23bb509c0ac874b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/README.md",
+      "bytes": 2419,
+      "sha256": "3a5e52b533bab57b48d2a073ad7e1f3ca44772afa5b838a5078f80ae55afd44f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/research-evidence-notes.md",
+      "bytes": 5267,
+      "sha256": "f45faed569661074e4c3245bc78527268f85a0b4c895e241a673463853a36c2f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/research-library.json",
+      "bytes": 36670,
+      "sha256": "0fea58912bc8c85ea84a4310ee9882e18f94e903dca24e7729b637c28530075c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reference/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_audit.py",
+      "bytes": 14599,
+      "sha256": "ee08ab36984efb2c402dd2fd6a531bcb6018fcdbbd1929e92bbd51b1ad458e05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_audit.py.stderr.txt",
+      "bytes": 843,
+      "sha256": "4defac414e8093f0c4c5f1d401d61cb6231c67f15292a3fd72cb17f7803c3715"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_audit.stdout.txt",
+      "bytes": 127,
+      "sha256": "db8d7344de70fdb1135d947ef34aab87393ebf86da14b2610a3e048e86bceb26"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/crossed_probe_results.json",
+      "bytes": 44275,
+      "sha256": "c85bed1ad658174a77f5cede24cc9fb509b3a949883bc550e5d3cc27b10e120e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/crossed_probe_rows.csv",
+      "bytes": 880752,
+      "sha256": "8bf99d4cf2d146edb228ed52b442b9e2f1c3845e5b01c42890a4ec71f946d564"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/effects_redundancy_sensitivity.json",
+      "bytes": 13322,
+      "sha256": "1ab3b6d84f1cc0b035a192fea1f14e75e3d6bfecb2a5c8d8800d05da4a829444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/matched_pilot_baselines.json",
+      "bytes": 7345,
+      "sha256": "19850bfd4c2a048c2cd791d0019e7cde3bbb013977b71cc486fe63770ea3e54d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/objective_counterexamples.json",
+      "bytes": 1330,
+      "sha256": "7e0dafa3a175ae2489fa65baff49521a4e4b098cba5b3e93c69ef783250f6d5d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/reviewer_checks/timing_entropy.py",
+      "bytes": 8101,
+      "sha256": "53bb32ccca7b290eaeacd7244a0c4cb1a0f955bcb8236c8aa7128f0e18294659"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "798cd6c77053e042350e33bd476b525821beb551d563665733fad851f02580aa"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312/run_cpython_3_12_14/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/EXECUTION-RECORD.json",
+      "bytes": 2822,
+      "sha256": "986836fe975c391af519ef54874629ad2642312ddd5354ebc32419a8c6b31fce"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/protocol_audit.py",
+      "bytes": 2967,
+      "sha256": "21c6692b1abe342815bb997ebf212d725bc24fc3009ba4c5a8e313d5b809dee5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/protocol_audit.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/protocol_audit.stdout.txt",
+      "bytes": 3061,
+      "sha256": "bf8aacfddaeaf84b81d347416ed5624dfab94f25650e658694564de5282fbf85"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/cognitive-core-study.md",
+      "bytes": 4189,
+      "sha256": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/PatchQuestions.ipynb",
+      "bytes": 26647,
+      "sha256": "05fd37d69fb95dffbc6f28bb597686490644898f874e14517d54b64f34e6872d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/PatchQuestions_Card.png",
+      "bytes": 20824,
+      "sha256": "467f0c1c24d8a62f60a83ca67e18438e6782f7dafc8b00795c19d53a8eaec663"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/PatchQuestions_Writeup.md",
+      "bytes": 11415,
+      "sha256": "af5043e5721c459eaae74934f584e0b212a5de8c26c93808e23bb509c0ac874b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/README.md",
+      "bytes": 2419,
+      "sha256": "3a5e52b533bab57b48d2a073ad7e1f3ca44772afa5b838a5078f80ae55afd44f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/research-evidence-notes.md",
+      "bytes": 5267,
+      "sha256": "f45faed569661074e4c3245bc78527268f85a0b4c895e241a673463853a36c2f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/research-library.json",
+      "bytes": 36670,
+      "sha256": "0fea58912bc8c85ea84a4310ee9882e18f94e903dca24e7729b637c28530075c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reference/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_audit.original.py",
+      "bytes": 14599,
+      "sha256": "ee08ab36984efb2c402dd2fd6a531bcb6018fcdbbd1929e92bbd51b1ad458e05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_audit.py",
+      "bytes": 14856,
+      "sha256": "70701b89675383d62406636001fab597694f9ff6de0446029b8542250b416fdc"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_audit.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_audit.stdout.txt",
+      "bytes": 1720,
+      "sha256": "e5fc48f0936e8feb725a0bcbb416a6ffff078b791ed1ea4f07a756d72fcfb2ce"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/crossed_probe_results.json",
+      "bytes": 44275,
+      "sha256": "c85bed1ad658174a77f5cede24cc9fb509b3a949883bc550e5d3cc27b10e120e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/crossed_probe_rows.csv",
+      "bytes": 880752,
+      "sha256": "8bf99d4cf2d146edb228ed52b442b9e2f1c3845e5b01c42890a4ec71f946d564"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/deterministic_policy_timings.json",
+      "bytes": 941,
+      "sha256": "35cb80ff22cc31c77541b3a00dbe5c3fb50a603f33ff6625cfcfe43b4fc03d60"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/effects_redundancy_sensitivity.json",
+      "bytes": 13322,
+      "sha256": "1ab3b6d84f1cc0b035a192fea1f14e75e3d6bfecb2a5c8d8800d05da4a829444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/inconsistent_pick_transcript.txt",
+      "bytes": 8998,
+      "sha256": "8d3ad7b38e336b0f8bb95f73527b41102196dbcf314e25fbd160697ddb9a02be"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/matched_pilot_baselines.json",
+      "bytes": 7345,
+      "sha256": "19850bfd4c2a048c2cd791d0019e7cde3bbb013977b71cc486fe63770ea3e54d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/objective_counterexamples.json",
+      "bytes": 1330,
+      "sha256": "7e0dafa3a175ae2489fa65baff49521a4e4b098cba5b3e93c69ef783250f6d5d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/protocol_validation.json",
+      "bytes": 3033,
+      "sha256": "d7dbf701fc9fa49da9fc128b6f038a30da3a30650502756153d1a3f8df0d84e5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/random_path_validation.json",
+      "bytes": 164,
+      "sha256": "42523ca08c8731e2efa047fe0f8ed2f68b9bfd97d59e46f142197e341b91c8f9"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/run_metadata.json",
+      "bytes": 382,
+      "sha256": "5123e833a01efa675535b4280d3b03e00c320d249f35b8fee54e17a902539bca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/timing_entropy.py",
+      "bytes": 8101,
+      "sha256": "53bb32ccca7b290eaeacd7244a0c4cb1a0f955bcb8236c8aa7128f0e18294659"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/timing_frugal.py",
+      "bytes": 8100,
+      "sha256": "0793074ffa5690ea00d5996a765b4a94507d9a0360221700026532f8f0b931bd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/timing_lookahead.py",
+      "bytes": 8103,
+      "sha256": "ac43222086fc06edc26616d3eacc7b73ad4b3441aa1d624fd3025ad469683d1d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/reviewer_checks/tree_enumeration_validation.json",
+      "bytes": 164,
+      "sha256": "51e51fc96c91758e1dc8c1d7ff2dcd373cd73fd9331f77a3c448cebfa93564f4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "015dbdfd4585d5d7e31e7693f49f4c6ea2ef24fd569812667104ee1e55df6eac"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-final/run_cpython_3_12_14/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/EXECUTION-RECORD.json",
+      "bytes": 1722,
+      "sha256": "842f8eb1c5a12d9061949b5c066e7af023de4b4b63aba1cdda118f2580ab9060"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/protocol_audit.py",
+      "bytes": 2967,
+      "sha256": "21c6692b1abe342815bb997ebf212d725bc24fc3009ba4c5a8e313d5b809dee5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/cognitive-core-study.md",
+      "bytes": 4189,
+      "sha256": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/PatchQuestions.ipynb",
+      "bytes": 26647,
+      "sha256": "05fd37d69fb95dffbc6f28bb597686490644898f874e14517d54b64f34e6872d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/PatchQuestions_Card.png",
+      "bytes": 20824,
+      "sha256": "467f0c1c24d8a62f60a83ca67e18438e6782f7dafc8b00795c19d53a8eaec663"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/PatchQuestions_Writeup.md",
+      "bytes": 11415,
+      "sha256": "af5043e5721c459eaae74934f584e0b212a5de8c26c93808e23bb509c0ac874b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/README.md",
+      "bytes": 2419,
+      "sha256": "3a5e52b533bab57b48d2a073ad7e1f3ca44772afa5b838a5078f80ae55afd44f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/research-evidence-notes.md",
+      "bytes": 5267,
+      "sha256": "f45faed569661074e4c3245bc78527268f85a0b4c895e241a673463853a36c2f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/research-library.json",
+      "bytes": 36670,
+      "sha256": "0fea58912bc8c85ea84a4310ee9882e18f94e903dca24e7729b637c28530075c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reference/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_audit.original.py",
+      "bytes": 14599,
+      "sha256": "ee08ab36984efb2c402dd2fd6a531bcb6018fcdbbd1929e92bbd51b1ad458e05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_audit.py",
+      "bytes": 14838,
+      "sha256": "ee0a9d7fccbda9ed5851bd83662781cc9c04092bf70dc0bc687a5d5743a22214"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_audit.py.stderr.txt",
+      "bytes": 1306,
+      "sha256": "f852ac7e0fbc76955ebf4e60e997163b3dbffd514d2d8b247bd49f3382384ef7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_audit.stdout.txt",
+      "bytes": 127,
+      "sha256": "db8d7344de70fdb1135d947ef34aab87393ebf86da14b2610a3e048e86bceb26"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/crossed_probe_results.json",
+      "bytes": 44275,
+      "sha256": "c85bed1ad658174a77f5cede24cc9fb509b3a949883bc550e5d3cc27b10e120e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/crossed_probe_rows.csv",
+      "bytes": 880752,
+      "sha256": "8bf99d4cf2d146edb228ed52b442b9e2f1c3845e5b01c42890a4ec71f946d564"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/effects_redundancy_sensitivity.json",
+      "bytes": 13322,
+      "sha256": "1ab3b6d84f1cc0b035a192fea1f14e75e3d6bfecb2a5c8d8800d05da4a829444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/matched_pilot_baselines.json",
+      "bytes": 7345,
+      "sha256": "19850bfd4c2a048c2cd791d0019e7cde3bbb013977b71cc486fe63770ea3e54d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/objective_counterexamples.json",
+      "bytes": 1330,
+      "sha256": "7e0dafa3a175ae2489fa65baff49521a4e4b098cba5b3e93c69ef783250f6d5d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/reviewer_checks/timing_entropy.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "18a58f56ae066402bdeabac30301b11cd4c0f31d860aa499909601d01f4831ac"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/local-cpython312-utf8/run_cpython_3_12_14/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/notebook/EXECUTION.json",
+      "bytes": 434,
+      "sha256": "8bdbe7eafcdce550639ac23c6a3293c07078fb20d08a393da9ed997701ceabcd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/notebook/PatchQuestions.executed.ipynb",
+      "bytes": 140376,
+      "sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/pilot-tests.txt",
+      "bytes": 1454,
+      "sha256": "a624bd9fd907c4b951678bd972fe7a029a186bf6304bc1aa7a28442d83eafce1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/CHANGELOG.md",
+      "bytes": 4885,
+      "sha256": "33fb674522409ca9ff4351bb90f074f6a5aafa7e085b607cb15b6377227d08ca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/CLAIM-EVIDENCE.md",
+      "bytes": 3307,
+      "sha256": "74b2c58e7134421f1e619af27767ba29e041442c49e5e656c11fea997e1c45fd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/EXECUTION-RECORD.json",
+      "bytes": 2822,
+      "sha256": "986836fe975c391af519ef54874629ad2642312ddd5354ebc32419a8c6b31fce"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/crossed_probe_results.json",
+      "bytes": 44275,
+      "sha256": "c85bed1ad658174a77f5cede24cc9fb509b3a949883bc550e5d3cc27b10e120e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/crossed_probe_rows.csv",
+      "bytes": 880752,
+      "sha256": "8bf99d4cf2d146edb228ed52b442b9e2f1c3845e5b01c42890a4ec71f946d564"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/deterministic_policy_timings.json",
+      "bytes": 941,
+      "sha256": "35cb80ff22cc31c77541b3a00dbe5c3fb50a603f33ff6625cfcfe43b4fc03d60"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/effects_redundancy_sensitivity.json",
+      "bytes": 13322,
+      "sha256": "1ab3b6d84f1cc0b035a192fea1f14e75e3d6bfecb2a5c8d8800d05da4a829444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/inconsistent_pick_transcript.txt",
+      "bytes": 8998,
+      "sha256": "8d3ad7b38e336b0f8bb95f73527b41102196dbcf314e25fbd160697ddb9a02be"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/matched_pilot_baselines.json",
+      "bytes": 7345,
+      "sha256": "19850bfd4c2a048c2cd791d0019e7cde3bbb013977b71cc486fe63770ea3e54d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/objective_counterexamples.json",
+      "bytes": 1330,
+      "sha256": "7e0dafa3a175ae2489fa65baff49521a4e4b098cba5b3e93c69ef783250f6d5d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/protocol_validation.json",
+      "bytes": 2936,
+      "sha256": "ea6e34a04349e731315a5e060facf7bb9a683ff48311b5bdb3910194a6c0b28d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/random_path_validation.json",
+      "bytes": 164,
+      "sha256": "42523ca08c8731e2efa047fe0f8ed2f68b9bfd97d59e46f142197e341b91c8f9"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/run_metadata.json",
+      "bytes": 285,
+      "sha256": "d67ff3ca50b1c7ed6caf249063c39400607ffde31c5aa90e35ae29be784424d0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/reviewer_checks/tree_enumeration_validation.json",
+      "bytes": 164,
+      "sha256": "51e51fc96c91758e1dc8c1d7ff2dcd373cd73fd9331f77a3c448cebfa93564f4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "015dbdfd4585d5d7e31e7693f49f4c6ea2ef24fd569812667104ee1e55df6eac"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/local-cpython312-final/run_cpython_3_12_14/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/notebook/EXECUTION.json",
+      "bytes": 434,
+      "sha256": "8bdbe7eafcdce550639ac23c6a3293c07078fb20d08a393da9ed997701ceabcd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/pilot-tests.txt",
+      "bytes": 1454,
+      "sha256": "3e6ae01cb95e12e3dabeccd3af2fe27bbd067a5791d8eee3b911e0d3908773ab"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/revision-analysis/revision-results.json",
+      "bytes": 62149,
+      "sha256": "6d58c4b15d835ec8cbd4d557ad2117fcde5b431081e19252e2f081a849cdd145"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/revision-analysis/selected-transcripts.csv",
+      "bytes": 196587,
+      "sha256": "efd2d7dcdb860e4fa9093781d2b62951d51b6918295de90b0e92264b87a92cff"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/evidence/revision-analysis/TABLES.md",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/FILE_MANIFEST.json",
+      "bytes": 18253,
+      "sha256": "536021d3dd5de502645dc8a8edb29c6039917fb453a4626d3a4e7506b7bf77e7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/cognitive-check.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/paper_analysis.py",
+      "bytes": 8309,
+      "sha256": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/paper_analysis.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/pilot.py",
+      "bytes": 16418,
+      "sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/REPRODUCTION.json",
+      "bytes": 2165,
+      "sha256": "33922c72ea7b618286b4fa2162d9d16e44c48ac9ec63d6e316aebb903ac72f3e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/revision-analysis.txt",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/revision-results/revision-results.json",
+      "bytes": 62149,
+      "sha256": "6d58c4b15d835ec8cbd4d557ad2117fcde5b431081e19252e2f081a849cdd145"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/revision-results/selected-transcripts.csv",
+      "bytes": 196587,
+      "sha256": "efd2d7dcdb860e4fa9093781d2b62951d51b6918295de90b0e92264b87a92cff"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/revision-results/TABLES.md",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/runtime_frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "efec8dfa5eb8d7fe8dfaaf103b48cb13acf8c007b07ca5cfc34d1b7112e614c0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/fresh-run/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/paper_analysis.py",
+      "bytes": 8309,
+      "sha256": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/PatchQuestions.ipynb",
+      "bytes": 140376,
+      "sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/PatchQuestions_Writeup.md",
+      "bytes": 15104,
+      "sha256": "2f0fff3e716e09f660e5d0638b7000026fcfcd055dc57dfe6a6e4e43a3896b89"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/pilot.py",
+      "bytes": 16418,
+      "sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/README.md",
+      "bytes": 7780,
+      "sha256": "c0cba965297917caf673fec17a8f691932d4fe97f3c98275b550daa9c4670af0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/QUESTIONS-RESOLVED.md",
+      "bytes": 3662,
+      "sha256": "59404e5b6b890ae6aef007a9b2f8a217719aedf51b09200fdfdf2fdda0c679dd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/FINAL-EXTERNAL-REVIEW.md",
+      "bytes": 65239,
+      "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/protocol_audit.py",
+      "bytes": 2967,
+      "sha256": "21c6692b1abe342815bb997ebf212d725bc24fc3009ba4c5a8e313d5b809dee5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reference/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reviewer_audit.original.py",
+      "bytes": 14599,
+      "sha256": "ee08ab36984efb2c402dd2fd6a531bcb6018fcdbbd1929e92bbd51b1ad458e05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/reviewer_audit.py",
+      "bytes": 14856,
+      "sha256": "70701b89675383d62406636001fab597694f9ff6de0446029b8542250b416fdc"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/reviewer/run_cpython_3_12_14/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/START_HERE.md",
+      "bytes": 1787,
+      "sha256": "cc8dca1c1cd82fd815d757fdd59ee5cb9c87313183d64632cf435934aafd3013"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/STATUS.md",
+      "bytes": 3916,
+      "sha256": "b772cfe7ba0a943d6061610c718d4f1c43baeea78f12cc9934a34a7b0728eea7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/SUBMISSION-CHECKLIST.md",
+      "bytes": 4831,
+      "sha256": "e3613aceaa3db1d123209ce2a2b43aaf9d6bcb8de737ca00af36353e995d8c59"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/tests/test_pilot.py",
+      "bytes": 7718,
+      "sha256": "35db94b942fd09f144bfa81608b6dd3bf81122f31d3121c6a38c1162593e7db7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/tools/build_notebook.py",
+      "bytes": 5486,
+      "sha256": "9f4ea1ae4881204ccbcaa7802f7ff8c6d62afe7eb23368e5867e6acc8dd9df65"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/tools/execute_notebook.py",
+      "bytes": 2670,
+      "sha256": "72bb985b20a06f838a872038d1f2648516ca605df622a5877ac4b93504d3fb70"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/tools/reproduce_paper.py",
+      "bytes": 3085,
+      "sha256": "58bac8350d2abd78f54c99d1fbdcc6b0698ae1844b2c8a0f9f9fa08bc226bae9"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke/WORD-COUNT.json",
+      "bytes": 307,
+      "sha256": "37a8b9ac53da1d239f27e6a16903fa26512319a301f7cea8729f9319d6b31a5c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/CHANGELOG.md",
+      "bytes": 5374,
+      "sha256": "c77872b93c4ea270c75e2888b2d2ce7d652af2589058a4757d34d927ed6e356c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/CLAIM-EVIDENCE.md",
+      "bytes": 3307,
+      "sha256": "74b2c58e7134421f1e619af27767ba29e041442c49e5e656c11fea997e1c45fd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/EXECUTION-RECORD.json",
+      "bytes": 2822,
+      "sha256": "986836fe975c391af519ef54874629ad2642312ddd5354ebc32419a8c6b31fce"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/crossed_probe_results.json",
+      "bytes": 44275,
+      "sha256": "c85bed1ad658174a77f5cede24cc9fb509b3a949883bc550e5d3cc27b10e120e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/crossed_probe_rows.csv",
+      "bytes": 880752,
+      "sha256": "8bf99d4cf2d146edb228ed52b442b9e2f1c3845e5b01c42890a4ec71f946d564"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/deterministic_policy_timings.json",
+      "bytes": 941,
+      "sha256": "35cb80ff22cc31c77541b3a00dbe5c3fb50a603f33ff6625cfcfe43b4fc03d60"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/effects_redundancy_sensitivity.json",
+      "bytes": 13322,
+      "sha256": "1ab3b6d84f1cc0b035a192fea1f14e75e3d6bfecb2a5c8d8800d05da4a829444"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/inconsistent_pick_transcript.txt",
+      "bytes": 8998,
+      "sha256": "8d3ad7b38e336b0f8bb95f73527b41102196dbcf314e25fbd160697ddb9a02be"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/matched_pilot_baselines.json",
+      "bytes": 7345,
+      "sha256": "19850bfd4c2a048c2cd791d0019e7cde3bbb013977b71cc486fe63770ea3e54d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/objective_counterexamples.json",
+      "bytes": 1330,
+      "sha256": "7e0dafa3a175ae2489fa65baff49521a4e4b098cba5b3e93c69ef783250f6d5d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/protocol_validation.json",
+      "bytes": 2936,
+      "sha256": "ea6e34a04349e731315a5e060facf7bb9a683ff48311b5bdb3910194a6c0b28d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/random_path_validation.json",
+      "bytes": 164,
+      "sha256": "42523ca08c8731e2efa047fe0f8ed2f68b9bfd97d59e46f142197e341b91c8f9"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/run_metadata.json",
+      "bytes": 285,
+      "sha256": "d67ff3ca50b1c7ed6caf249063c39400607ffde31c5aa90e35ae29be784424d0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/reviewer_checks/tree_enumeration_validation.json",
+      "bytes": 164,
+      "sha256": "51e51fc96c91758e1dc8c1d7ff2dcd373cd73fd9331f77a3c448cebfa93564f4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "015dbdfd4585d5d7e31e7693f49f4c6ea2ef24fd569812667104ee1e55df6eac"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/local-cpython312-final/run_cpython_3_12_14/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/notebook/EXECUTION.json",
+      "bytes": 434,
+      "sha256": "8bdbe7eafcdce550639ac23c6a3293c07078fb20d08a393da9ed997701ceabcd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/pilot-tests.txt",
+      "bytes": 1454,
+      "sha256": "a624bd9fd907c4b951678bd972fe7a029a186bf6304bc1aa7a28442d83eafce1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/revision-analysis/revision-results.json",
+      "bytes": 62149,
+      "sha256": "6d58c4b15d835ec8cbd4d557ad2117fcde5b431081e19252e2f081a849cdd145"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/revision-analysis/selected-transcripts.csv",
+      "bytes": 196587,
+      "sha256": "efd2d7dcdb860e4fa9093781d2b62951d51b6918295de90b0e92264b87a92cff"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/evidence/revision-analysis/TABLES.md",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/FILE_MANIFEST.json",
+      "bytes": 18253,
+      "sha256": "76517d9cefc91fb89202af74013170ba38b2a20a9ce842e447b254b47ea50ce8"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/analyze.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/audit.json",
+      "bytes": 3309,
+      "sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/benchmark.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/cognitive-check.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/export.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/export_cases.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/frozen_cases_reference.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/paper_analysis.py",
+      "bytes": 8309,
+      "sha256": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/paper_analysis.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/pilot.py",
+      "bytes": 16418,
+      "sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/REPRODUCTION.json",
+      "bytes": 2210,
+      "sha256": "895884dbf37f8ab78cfa05d9deb1c3fb59e434bc7368ba32edbe376a6f62f2a3"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/revision-analysis.txt",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/revision-results/revision-results.json",
+      "bytes": 62149,
+      "sha256": "6d58c4b15d835ec8cbd4d557ad2117fcde5b431081e19252e2f081a849cdd145"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/revision-results/selected-transcripts.csv",
+      "bytes": 196587,
+      "sha256": "efd2d7dcdb860e4fa9093781d2b62951d51b6918295de90b0e92264b87a92cff"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/revision-results/TABLES.md",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/runtime_frozen_cases.jsonl.gz",
+      "bytes": 50083,
+      "sha256": "167696a331363421ace9b6c0e9e220b9a729190b3e7261298b04c23aec52d3b4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/summary.json",
+      "bytes": 856,
+      "sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/verify.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/fresh-run/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/paper_analysis.py",
+      "bytes": 8309,
+      "sha256": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/PatchQuestions.ipynb",
+      "bytes": 140376,
+      "sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/PatchQuestions_Writeup.md",
+      "bytes": 15104,
+      "sha256": "2f0fff3e716e09f660e5d0638b7000026fcfcd055dc57dfe6a6e4e43a3896b89"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/pilot.py",
+      "bytes": 16418,
+      "sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/README.md",
+      "bytes": 7780,
+      "sha256": "c0cba965297917caf673fec17a8f691932d4fe97f3c98275b550daa9c4670af0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/QUESTIONS-RESOLVED.md",
+      "bytes": 3662,
+      "sha256": "59404e5b6b890ae6aef007a9b2f8a217719aedf51b09200fdfdf2fdda0c679dd"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/FINAL-EXTERNAL-REVIEW.md",
+      "bytes": 65239,
+      "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/protocol_audit.py",
+      "bytes": 2967,
+      "sha256": "21c6692b1abe342815bb997ebf212d725bc24fc3009ba4c5a8e313d5b809dee5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reference/paper/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reviewer_audit.original.py",
+      "bytes": 14599,
+      "sha256": "ee08ab36984efb2c402dd2fd6a531bcb6018fcdbbd1929e92bbd51b1ad458e05"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/reviewer_audit.py",
+      "bytes": 14856,
+      "sha256": "70701b89675383d62406636001fab597694f9ff6de0446029b8542250b416fdc"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/reviewer/run_cpython_3_12_14/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/START_HERE.md",
+      "bytes": 1787,
+      "sha256": "cc8dca1c1cd82fd815d757fdd59ee5cb9c87313183d64632cf435934aafd3013"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/STATUS.md",
+      "bytes": 3916,
+      "sha256": "b772cfe7ba0a943d6061610c718d4f1c43baeea78f12cc9934a34a7b0728eea7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/SUBMISSION-CHECKLIST.md",
+      "bytes": 4831,
+      "sha256": "e3613aceaa3db1d123209ce2a2b43aaf9d6bcb8de737ca00af36353e995d8c59"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/tests/test_pilot.py",
+      "bytes": 7718,
+      "sha256": "35db94b942fd09f144bfa81608b6dd3bf81122f31d3121c6a38c1162593e7db7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/tools/build_notebook.py",
+      "bytes": 5486,
+      "sha256": "9f4ea1ae4881204ccbcaa7802f7ff8c6d62afe7eb23368e5867e6acc8dd9df65"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/tools/execute_notebook.py",
+      "bytes": 2670,
+      "sha256": "72bb985b20a06f838a872038d1f2648516ca605df622a5877ac4b93504d3fb70"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/tools/reproduce_paper.py",
+      "bytes": 3323,
+      "sha256": "5acda0b6b4410cef8071bc92b5ba6ac88c7b6821cdeb605fadadec70e947b8ec"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/release-smoke-final/WORD-COUNT.json",
+      "bytes": 307,
+      "sha256": "37a8b9ac53da1d239f27e6a16903fa26512319a301f7cea8729f9319d6b31a5c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/RELEASE-SMOKE.json",
+      "bytes": 543,
+      "sha256": "1185c466ebdf9389f7bc804133788472637b7a42363eb1558a8be1b90392c9a9"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/RELEASE.json",
+      "bytes": 713,
+      "sha256": "9cc986bf6250b0b380055d4d1da2bed432202461faf51d734140ba79334a7f9c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/revision-analysis/revision-results.json",
+      "bytes": 62149,
+      "sha256": "6d58c4b15d835ec8cbd4d557ad2117fcde5b431081e19252e2f081a849cdd145"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/revision-analysis/selected-transcripts.csv",
+      "bytes": 196587,
+      "sha256": "efd2d7dcdb860e4fa9093781d2b62951d51b6918295de90b0e92264b87a92cff"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/verification/revision-analysis/TABLES.md",
+      "bytes": 497,
+      "sha256": "cb60d8f97cf8830cb9b7bc98a597115a5a84eaf15e60a9e7c8b2c83786765ba6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/WORD-COUNT.json",
+      "bytes": 307,
+      "sha256": "37a8b9ac53da1d239f27e6a16903fa26512319a301f7cea8729f9319d6b31a5c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/app.js",
+      "bytes": 76812,
+      "sha256": "e5418d03fd21683bee5a03661cc10d224669d5ac8ea8cb5d19070fe1dabce770"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/baseline.json",
+      "bytes": 3102,
+      "sha256": "b2642738df22ad556c0c9d3c9e16ce285d6e899fa93b54fb567ab067dc7d69b1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/cases.json",
+      "bytes": 978321,
+      "sha256": "77c95675b6add9289ee225473117b81ed8f6a31176a0309748851ad5df6289d1"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/favicon.svg",
+      "bytes": 251,
+      "sha256": "d97717eea6fb2a0c404372819cca12d875f020e88e3baffd973c4948c7ec1e78"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/index.html",
+      "bytes": 560,
+      "sha256": "cdba9b28d60c82d1ea1b4759a8d9e03a9dbb04e029a54483c7842ccba4077152"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/audit.json",
+      "bytes": 3091,
+      "sha256": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/cognitive-core-study.md",
+      "bytes": 4189,
+      "sha256": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/cross_version_summary.json",
+      "bytes": 816,
+      "sha256": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/export_cases.py",
+      "bytes": 990,
+      "sha256": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/intervention.json",
+      "bytes": 500,
+      "sha256": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/paper_analysis.py",
+      "bytes": 8309,
+      "sha256": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions.ipynb",
+      "bytes": 140376,
+      "sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions_Card.png",
+      "bytes": 20824,
+      "sha256": "467f0c1c24d8a62f60a83ca67e18438e6782f7dafc8b00795c19d53a8eaec663"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions_Research_Package.zip",
+      "bytes": 178881,
+      "sha256": "4b02c95dbde13fa71d4ea6254cdb74e9996b90ffd2817fbce0373de5ff153ba7"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions_Writeup.md",
+      "bytes": 15104,
+      "sha256": "2f0fff3e716e09f660e5d0638b7000026fcfcd055dc57dfe6a6e4e43a3896b89"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/pilot.py",
+      "bytes": 16418,
+      "sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/README.md",
+      "bytes": 7780,
+      "sha256": "c0cba965297917caf673fec17a8f691932d4fe97f3c98275b550daa9c4670af0"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/research-evidence-notes.md",
+      "bytes": 5267,
+      "sha256": "f45faed569661074e4c3245bc78527268f85a0b4c895e241a673463853a36c2f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/research-library.json",
+      "bytes": 36670,
+      "sha256": "0fea58912bc8c85ea84a4310ee9882e18f94e903dca24e7729b637c28530075c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/scores.csv",
+      "bytes": 1042652,
+      "sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/summary.json",
+      "bytes": 818,
+      "sha256": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/research-utils.js",
+      "bytes": 2985,
+      "sha256": "c2db443c73ddc87c3eba2f6c64a642fb38a608fc2a52f6ae0876c383d417fc0d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/seed.json",
+      "bytes": 19045,
+      "sha256": "303732b36a0ef0005c691c5e9f4606b5abc58fab507925322a2f6904adf9ef76"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/style.css",
+      "bytes": 48332,
+      "sha256": "48a0fe7e12c2682e96a4c7661cd3aa44e6f701f4dd4540f17558c3e00a9011eb"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/README.md",
+      "bytes": 4973,
+      "sha256": "6bb4ba49255a12085ccf56c61704e80c0ed905020de6a76bd122e689ae5ac661"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/ai.mjs",
+      "bytes": 7321,
+      "sha256": "cb6823eb64c752a33132005ea34479f5df274db116a853b69f60617c079af409"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/discover.mjs",
+      "bytes": 1588,
+      "sha256": "7bd4b9dc7420c0f815e19955e342bcc96b20104384efeaf468d2e162e2b98dda"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/helpers.mjs",
+      "bytes": 326,
+      "sha256": "a55993061cb312a0bb3976ccd057fe14f270bfd8841f1c0f57047dd35cd35331"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/seed.json",
+      "bytes": 19045,
+      "sha256": "303732b36a0ef0005c691c5e9f4606b5abc58fab507925322a2f6904adf9ef76"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/validation.mjs",
+      "bytes": 3212,
+      "sha256": "54a72bdc97ccd4fb9b38384b109e1f2730b29b16642441a49560d814fae9bc5c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/errors.js",
+      "bytes": 243,
+      "sha256": "d40831f478288d76e82bbbcc3b7e95c8513b6e76471f2d49a37c979bc57d492d"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/external.js",
+      "bytes": 205,
+      "sha256": "5d26d2e47e2352def36f89a3e8bf8581da22b7f857e07ef3114cd52cf4813445"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/enumUtil.js",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/errorUtil.js",
+      "bytes": 300,
+      "sha256": "68589c0cf44c8b4ad19b77418f53caad2cd1dbc8d714f526e1876ebdee4828c5"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/parseUtil.js",
+      "bytes": 3601,
+      "sha256": "b57484013bb360bac2e334d58fcd5f6cbfa63ffcc7d8ff3dbbb3380ca659b956"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/partialUtil.js",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/typeAliases.js",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/helpers/util.js",
+      "bytes": 4055,
+      "sha256": "906ef685e5853d496e293ee8f8a2bb8b1ed2d078a1bcdfedb2dfd61d75b6330c"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/index.js",
+      "bytes": 99,
+      "sha256": "3db2efd285e7328d8014b54a7fce3f4861ebcdc655df40517092ed0050983617"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/LICENSE",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/locales/en.js",
+      "bytes": 5602,
+      "sha256": "51a6dcc5d4bd52a64da127c012c6c963395c1d9a343ad75d4a8eca662fc8b205"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/standard-schema.js",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/types.js",
+      "bytes": 131212,
+      "sha256": "9763a2938f0e7f983363ef4bf6530e7583e3f2d54f8a4a6684efad58febc6e8e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server/vendor/zod/ZodError.js",
+      "bytes": 4349,
+      "sha256": "f5ac9e86b92e201d41e294d7aa35986a2aa28829e1bcc8ac25f7c8dce0674b99"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server.mjs",
+      "bytes": 6646,
+      "sha256": "8f48e60ab9dfb4a8d0600916f3be423facadee4ecedd199a1811b998d09551ec"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/start.sh",
+      "bytes": 318,
+      "sha256": "49215e867644a19c865aaa9dd93e4d273cb9c08ae45b9c35b2c659dd4ce9343f"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/Start_Windows.bat",
+      "bytes": 432,
+      "sha256": "6c32cf594b3ea09c0800c6a0a603854a5bda750feb54ea042d31603e87ae771e"
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/tests/smoke.mjs",
+      "bytes": 5091,
+      "sha256": "2c8c41eeca61cde9605e2046fd4529308c67ffdae00f7473775a11d218d18dc0"
+    },
+    {
+      "path": "shared/EXPERIMENT-PROTOCOL.md",
+      "bytes": 9772,
+      "sha256": "2a1fcf2de9f66f547b46445b4c5dea912d8b69c365537609a7466809527a3e75"
+    },
+    {
+      "path": "shared/OTHER-AI-PAPER-REVIEW-PROMPT.md",
+      "bytes": 13058,
+      "sha256": "1e92e3942167f0e059d4507b5d613b8a20783532a97bce87fa7960c9142336a3"
+    },
+    {
+      "path": "shared/package_ai_review.py",
+      "bytes": 6716,
+      "sha256": "1480da575b043b4ec5b79dfb38168a2cd3cfdbae97f2ee905a6707cdfa54c414"
+    },
+    {
+      "path": "shared/PROGRAM-PLAN.md",
+      "bytes": 19220,
+      "sha256": "003031ec01733495a98d8e11064a3931e75e82eb17d7be1c5d973e2f814305b0"
+    },
+    {
+      "path": "shared/REQUIREMENTS-COVERAGE.md",
+      "bytes": 5033,
+      "sha256": "18f00982cf054ea902f576820828d766626f975e9b9b2796b895d3de9765bab5"
+    },
+    {
+      "path": "shared/RESEARCH-REVIEW.md",
+      "bytes": 9473,
+      "sha256": "4a6607d0104c5d91d2813c1bd9c38af55921e69dc96a1f70ef189b0713fb16e9"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/ASSESSMENT.md",
+      "bytes": 6591,
+      "sha256": "c44abc448611d96761f1e7a693638dbf4da819361c8a49ccd6a13e0811e03ab6"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/FOLLOW-UP-PROMPT.md",
+      "bytes": 8445,
+      "sha256": "b6cfbc2e3f15475ad1eb2ce9de69d78cae09ec9cf7526f6186073b4317c0ccd8"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/incoming/PatchQuestions_Research_Review.md",
+      "bytes": 65239,
+      "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/incoming/PatchQuestions_Review_Progress.zip",
+      "bytes": 653552,
+      "sha256": "a78e0658e6bf86fecd45e71a81ac98c0c242b68c11fe8ffc816f772762268c17"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/INTAKE-VERIFICATION.json",
+      "bytes": 26954,
+      "sha256": "4962310d71bbbae880a3b548eddeadbff70ca7d0508d3a9e97158aac5ae92760"
+    },
+    {
+      "path": "shared/reviews/2026-11-07-other-ai/verify-intake.py",
+      "bytes": 7987,
+      "sha256": "d477f0aa4327e1ede22242da7154382aa0383a7537b286070512b647dcd75482"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/analyze.py",
+      "bytes": 1104,
+      "sha256": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/analyze.py.stderr.txt",
+      "bytes": 1148,
+      "sha256": "77735bec41d854540f504a6d0cac3e61df22f39f218a3c334f2bdd874db477f8"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/audit.json",
+      "bytes": 3303,
+      "sha256": "876614edb1b63bb787651b8f093b9476a7d0f141013ea1bf83d105da1df949ee"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/benchmark.py",
+      "bytes": 8019,
+      "sha256": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/benchmark.py.stderr.txt",
+      "bytes": 2308,
+      "sha256": "2bc82a2399b8433013755a05f851baf63a465b421d4c42eca1f06610a4efe009"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/cognitive-check.txt",
+      "bytes": 83,
+      "sha256": "09beabe00b8f28e09cdbf5b13436b987d921f01e777b8444c551b0ca7b53510e"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/cognitive_probe.py",
+      "bytes": 3706,
+      "sha256": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/cognitive_probe.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/frozen_cases.jsonl.gz",
+      "bytes": 50070,
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/intervention.json",
+      "bytes": 536,
+      "sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/intervention.py",
+      "bytes": 1120,
+      "sha256": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/intervention.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/replay.py",
+      "bytes": 2197,
+      "sha256": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/scores.csv",
+      "bytes": 1042233,
+      "sha256": "559b4e11a4de1f81123266fbea32d419f82fd77cdeba474b133db3205ffd98aa"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/summary.json",
+      "bytes": 853,
+      "sha256": "9eacd13ea72a01513cdbedce113608b27179dc5433a9845928f59b998fa2701a"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/verify.py",
+      "bytes": 1798,
+      "sha256": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/verify.py.stderr.txt",
+      "bytes": 1148,
+      "sha256": "77735bec41d854540f504a6d0cac3e61df22f39f218a3c334f2bdd874db477f8"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/verify.txt",
+      "bytes": 70,
+      "sha256": "917e1a03bca265e3bf36b55f08e792abd5833204066a5b3c9c9802dd8320296a"
+    },
+    {
+      "path": "shared/verification/2026-11-07-python315/workspace-audit.json",
+      "bytes": 6403,
+      "sha256": "d806f4a299174eda3f61d4bcbdd401664530bfb4584a6b814d7d6422979c59d0"
+    },
+    {
+      "path": "shared/verify_workspace.py",
+      "bytes": 5817,
+      "sha256": "b4c77cb7d39e23aae89a298ba0d5f247af477ea5cd4836845418c90b98090613"
+    },
+    {
+      "path": "exports/OTHER-AI-PAPER-REVIEW-PROMPT.md",
+      "bytes": 13058,
+      "sha256": "1e92e3942167f0e059d4507b5d613b8a20783532a97bce87fa7960c9142336a3"
+    },
+    {
+      "path": "exports/PatchQuestions_AI_Review_2026-11-07.sha256",
+      "bytes": 107,
+      "sha256": "3e208856f21de63e8bf5afccd9c26a4e06a79bcf944185c997501b62604fe44b"
+    },
+    {
+      "path": "exports/PatchQuestions_AI_Review_2026-11-07.zip",
+      "bytes": 305109,
+      "sha256": "6f2e3a897fa154177446f1c791c3cc20922b22c97d294ddd3a39c0a234e39e49"
+    },
+    {
+      "path": "exports/PatchQuestions_AI_Review_START_HERE.md",
+      "bytes": 3614,
+      "sha256": "7bb991384740bf86293be4a4809d1c252bb678d7ba1f804d6e6db519272cb7ac"
+    },
+    {
+      "path": "exports/PatchQuestions_Next_AI_Prompt.md",
+      "bytes": 8445,
+      "sha256": "b6cfbc2e3f15475ad1eb2ce9de69d78cae09ec9cf7526f6186073b4317c0ccd8"
+    },
+    {
+      "path": "exports/PatchQuestions_Paper_Revision_2026-11-07.sha256",
+      "bytes": 112,
+      "sha256": "b5ac41f0d7dc0bd3b98b0b863a9be841eead3c30eadd691da197e49c7c743f06"
+    },
+    {
+      "path": "exports/PatchQuestions_Paper_Revision_2026-11-07.zip",
+      "bytes": 719128,
+      "sha256": "c335c52e7d8ade20a5ce3ac0cd08e1493f99b7a8dccb8d582a3062ea8c2f14d6"
+    },
+    {
+      "path": "exports/PatchQuestions_Revised_2026-11-07.ipynb",
+      "bytes": 140376,
+      "sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20"
+    },
+    {
+      "path": "exports/PatchQuestions_Revision_Handoff_2026-11-07.manifest.json",
+      "bytes": 959,
+      "sha256": "95f0eaa78063a9909ad1d032e31282b40cb50bdca43bb0143a46df6adcbb5024"
+    },
+    {
+      "path": "exports/PatchQuestions_Revision_Handoff_2026-11-07.sha256",
+      "bytes": 114,
+      "sha256": "16ff7bd7a3e40460c23c064891f5b982af2c0d9de27acbefa9c39423226f8af0"
+    },
+    {
+      "path": "exports/PatchQuestions_Revision_Handoff_2026-11-07.zip",
+      "bytes": 671922,
+      "sha256": "17c718b1697a20433d410a777e2a12a42745ec708e75188df4864e18deaad7c3"
+    },
+    {
+      "path": "exports/PatchQuestions_Writeup_Revised_2026-11-07.md",
+      "bytes": 15104,
+      "sha256": "2f0fff3e716e09f660e5d0638b7000026fcfcd055dc57dfe6a6e4e43a3896b89"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2892,
+      "sha256": "32abf4d80a1f5136115d39056e49bc62f21cfc91e6ee85b28288efbf34356ae8"
+    },
+    {
+      "path": "PatchQuestions_Research_Review.md",
+      "bytes": 65239,
+      "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
+    }
+  ]
+}

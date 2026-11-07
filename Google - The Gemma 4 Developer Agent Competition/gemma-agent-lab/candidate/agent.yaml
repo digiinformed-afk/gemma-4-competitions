@@ -1,0 +1,17 @@
+agent_class: LlmAgent
+name: repair_agent
+description: Repairs the reported Python issue in the checked-out repository.
+model: gemma-4-31b-it-qat-w4a16-ct
+instruction: !include instruction.md
+tools:
+  - get_status
+  - run_command
+  - read_file
+  - edit_file
+  - write_file
+  - submit_patch
+generate_content_config:
+  temperature: 0.2
+  max_output_tokens: 1536
+  thinking_config:
+    thinking_budget: 384

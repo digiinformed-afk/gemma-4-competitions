@@ -1,0 +1,95 @@
+[
+  {
+    "label": "minimal_tie",
+    "query": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "heldout": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "query_metrics": [
+      {
+        "query": 0,
+        "leaves": 2,
+        "identity": 0.6666666666666666,
+        "behavioral": 0.6666666666666666
+      },
+      {
+        "query": 1,
+        "leaves": 2,
+        "identity": 0.6666666666666666,
+        "behavioral": 1.0
+      }
+    ],
+    "package_frugal_1": 0.6666666666666666
+  },
+  {
+    "label": "strict_conflict",
+    "query": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "heldout": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "query_metrics": [
+      {
+        "query": 0,
+        "leaves": 3,
+        "identity": 0.75,
+        "behavioral": 0.75
+      },
+      {
+        "query": 1,
+        "leaves": 2,
+        "identity": 0.5,
+        "behavioral": 1.0
+      }
+    ],
+    "package_frugal_1": 0.75
+  }
+]

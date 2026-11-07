@@ -1,0 +1,11 @@
+import {spawn} from 'node:child_process';
+import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+await import('./build-pages.mjs');
+const children=[];
+for(const cwd of ['Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab','Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local'])children.push(spawn(process.execPath,['server.mjs'],{cwd,stdio:'inherit',env:process.env}));
+const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.md':'text/plain','.svg':'image/svg+xml','.zip':'application/zip'};
+const base=path.resolve('site');
+http.createServer((req,res)=>{try{const u=new URL(req.url,'http://localhost');let p=path.resolve(base,'.'+decodeURIComponent(u.pathname));if(!p.startsWith(base+path.sep)&&p!==base)throw Error();if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.writeHead(200,{'Content-Type':mime[path.extname(p)]||'application/octet-stream'});res.end(fs.readFileSync(p));}catch{res.writeHead(404);res.end('Not found');}}).listen(8080,'127.0.0.1',()=>console.log('Hub: http://127.0.0.1:8080 | Full paper: :3000 | Agent: :4173'));
+function stop(){children.forEach(c=>c.kill());process.exit();}process.on('SIGINT',stop);process.on('SIGTERM',stop);

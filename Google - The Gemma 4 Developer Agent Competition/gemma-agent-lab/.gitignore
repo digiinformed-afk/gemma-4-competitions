@@ -1,0 +1,7 @@
+node_modules/
+artifacts/
+private-data/
+*.tar.gz
+*.zip
+.env*
+!.env.example

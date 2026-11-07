@@ -1,0 +1,111 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "runs": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "benchmark.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 5.275878999993438
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "analyze.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 1.1061049999843817
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "intervention.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 2.5764145999855828
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "verify.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 0.9939277000084985
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "export_cases.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 0.25629799999296665
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "cognitive_probe.py",
+        "--check"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 0.24637860001530498
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "reviewer_audit.py"
+      ],
+      "cwd": ".",
+      "returncode": 0,
+      "wall_seconds": 30.766940300003625
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "protocol_audit.py"
+      ],
+      "cwd": ".",
+      "returncode": 0,
+      "wall_seconds": 0.3768201999773737
+    }
+  ],
+  "comparisons": {
+    "summary.json": {
+      "semantic_equal": true,
+      "byte_equal": false,
+      "actual_sha256": "3f860b2df178e7f7fc0c758c582ab55589a4f2df8d38681279e8f5f36a827aa4"
+    },
+    "audit.json": {
+      "semantic_equal": true,
+      "byte_equal": false,
+      "actual_sha256": "7c3399c8264ba1e32a8aba798d80d097c8da48be12b84b758fcf3e21113b4aa5"
+    },
+    "intervention.json": {
+      "semantic_equal": true,
+      "byte_equal": false,
+      "actual_sha256": "bbbe6488529d876b64dfeaa2fa8edfc0a11322c363c9581082bd3f9cd77b3979"
+    },
+    "scores.csv": {
+      "semantic_equal": true,
+      "byte_equal": true,
+      "actual_sha256": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e"
+    }
+  },
+  "reviewer_portability_edit": "Explicit UTF-8 for reading/writing benchmark source in dynamic timing variants; untouched original preserved",
+  "scope": "Fresh same-version Windows execution. JSON parsed equality accommodates Windows stdout newlines; source/reference data preserved unchanged. No model session."
+}

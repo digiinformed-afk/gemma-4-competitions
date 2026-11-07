@@ -1,0 +1,78 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "runs": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "benchmark.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 5.265755200001877
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "analyze.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 1.1026199999905657
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "intervention.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 2.5762020999973174
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "verify.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 1.0038604000001214
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "export_cases.py"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 0.2797660999931395
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "cognitive_probe.py",
+        "--check"
+      ],
+      "cwd": "run_cpython_3_12_14",
+      "returncode": 0,
+      "wall_seconds": 0.2582162999897264
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "reviewer_audit.py"
+      ],
+      "cwd": ".",
+      "returncode": 1,
+      "wall_seconds": 2.9456735999847297
+    }
+  ],
+  "comparisons": {}
+}

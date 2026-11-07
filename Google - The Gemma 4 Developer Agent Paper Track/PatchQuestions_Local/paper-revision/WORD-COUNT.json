@@ -1,0 +1,6 @@
+{
+  "scope": "Entire Markdown including title, subtitle, table contents and references. The official page provides no detailed word-tokenization algorithm; final platform rendering must be checked.",
+  "raw_whitespace_tokens": 2159,
+  "visible_whitespace_tokens": 2159,
+  "alphanumeric_words": 2070
+}

@@ -1,0 +1,30 @@
+{
+  "purpose": "Paper revision handoff after external review intake; no publication or model run performed",
+  "files": [
+    {
+      "path": "FOLLOW-UP-PROMPT.md",
+      "bytes": 8445,
+      "sha256": "b6cfbc2e3f15475ad1eb2ce9de69d78cae09ec9cf7526f6186073b4317c0ccd8"
+    },
+    {
+      "path": "ASSESSMENT.md",
+      "bytes": 6591,
+      "sha256": "c44abc448611d96761f1e7a693638dbf4da819361c8a49ccd6a13e0811e03ab6"
+    },
+    {
+      "path": "INTAKE-VERIFICATION.json",
+      "bytes": 26954,
+      "sha256": "4962310d71bbbae880a3b548eddeadbff70ca7d0508d3a9e97158aac5ae92760"
+    },
+    {
+      "path": "PatchQuestions_Research_Review.md",
+      "bytes": 65239,
+      "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
+    },
+    {
+      "path": "PatchQuestions_Review_Progress.zip",
+      "bytes": 653552,
+      "sha256": "a78e0658e6bf86fecd45e71a81ac98c0c242b68c11fe8ffc816f772762268c17"
+    }
+  ]
+}

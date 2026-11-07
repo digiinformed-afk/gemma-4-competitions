@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "c335c52e7d8ade20a5ce3ac0cd08e1493f99b7a8dccb8d582a3062ea8c2f14d6",
+  "extracted_release_reproduction": "passed",
+  "comparison": {
+    "scores_byte_equal": true,
+    "frozen_records_equal": true,
+    "frozen_decompressed_bytes_equal": false,
+    "summary.json": true,
+    "audit.json": true,
+    "intervention.json": true
+  },
+  "all_commands_exit_zero": true,
+  "presentation_control_returncode": 0,
+  "note": "Decompressed JSONL byte differences are Windows CRLF. All 40 parsed matrix records match."
+}

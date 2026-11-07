@@ -1,0 +1,1 @@
+{"instance_id":"EXAMPLE_ONLY_REPLACE_WITH_REAL_TASK_ID","outcome":"unstarted","seconds":0,"tool_errors":null,"notes":"Example only. Use unresolved for a failed grade with unknown cause. Other outcomes include resolved, test_failure, timeout, setup_failure, invalid_patch, empty_patch and unstarted. Use null when the harness exposes no tool-error counter."}

@@ -1,0 +1,1734 @@
+{
+  "results": [
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.08671875,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.09937499999999999,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.11283482142857142,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.1375,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.22916666666666666,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.125
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.15
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.1
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.15
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.1
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.1,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.13010416666666666,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.16549107142857142,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.14166666666666666,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.26805555555555555,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.5125,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.15,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.17476562499999998,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.2679727182539683,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.3534565263605442,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.34729166666666667,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.6002242063492064,
+      "queries": 1.8068750000000002
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.7759290674603174,
+      "queries": 2.356376488095238
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.51,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.6875,
+      "queries": 1.625
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.85,
+      "queries": 2.05
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.51,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.6875,
+      "queries": 1.625
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.0625
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.51,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.75,
+      "queries": 1.875
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.6375
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.075,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.51,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.75,
+      "queries": 1.75
+    },
+    {
+      "scoring_suite": "original_holdout",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.0625
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.07421875,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.0871875,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.10122767857142856,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.125
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.15
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.1
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.15
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.225,
+      "queries": 1.8
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "original",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.3,
+      "queries": 2.1
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.0859375,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.11479166666666667,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.14933035714285717,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.125,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.25,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "single",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.5,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 1,
+      "heldout_exact": 0.1640625,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 2,
+      "heldout_exact": 0.25906250000000003,
+      "queries": 2.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random",
+      "budget": 3,
+      "heldout_exact": 0.34622767857142855,
+      "queries": 3.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 1,
+      "heldout_exact": 0.33958333333333335,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 2,
+      "heldout_exact": 0.5975669642857142,
+      "queries": 1.8068750000000002
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "random_split",
+      "budget": 3,
+      "heldout_exact": 0.7753199404761905,
+      "queries": 2.356376488095238
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 1,
+      "heldout_exact": 0.5,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 2,
+      "heldout_exact": 0.6875,
+      "queries": 1.625
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "diversity",
+      "budget": 3,
+      "heldout_exact": 0.85,
+      "queries": 2.05
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 1,
+      "heldout_exact": 0.5,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 2,
+      "heldout_exact": 0.6875,
+      "queries": 1.625
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "entropy",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.0625
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 1,
+      "heldout_exact": 0.5,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 2,
+      "heldout_exact": 0.75,
+      "queries": 1.875
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "lookahead",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.6375
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 0,
+      "heldout_exact": 0.0625,
+      "queries": 0.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 1,
+      "heldout_exact": 0.5,
+      "queries": 1.0
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 2,
+      "heldout_exact": 0.75,
+      "queries": 1.75
+    },
+    {
+      "scoring_suite": "transfer",
+      "pool": "compound",
+      "policy": "frugal",
+      "budget": 3,
+      "heldout_exact": 0.8625,
+      "queries": 2.0625
+    }
+  ],
+  "query_complexity": [
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|!x",
+      "input_characters": 9,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|A",
+      "input_characters": 8,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|a\nb",
+      "input_characters": 10,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 28.0,
+      "max_serialized_answer_characters": 28
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|aXb",
+      "input_characters": 10,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 24.0,
+      "max_serialized_answer_characters": 28
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|x\nb",
+      "input_characters": 10,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 28.0,
+      "max_serialized_answer_characters": 28
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|\u00e9",
+      "input_characters": 8,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|\u212a",
+      "input_characters": 8,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 0.8112781244591328,
+      "mean_serialized_answer_characters": 15.5,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "[a-z]+|\uff19",
+      "input_characters": 8,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|!x",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|A",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|a\nb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|aXb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|x\nb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|\u00e9",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|\u212a",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\d+|\uff19",
+      "input_characters": 5,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|!x",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|A",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|a\nb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 28.0,
+      "max_serialized_answer_characters": 28
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|aXb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|x\nb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 28.0,
+      "max_serialized_answer_characters": 28
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|\u00e9",
+      "input_characters": 5,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|\u212a",
+      "input_characters": 5,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "\\w+|\uff19",
+      "input_characters": 5,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|!x",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|A",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|a\nb",
+      "input_characters": 8,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|aXb",
+      "input_characters": 8,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|x\nb",
+      "input_characters": 8,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|\u00e9",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|\u212a",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^a.b|\uff19",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|!x",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|A",
+      "input_characters": 4,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|a\nb",
+      "input_characters": 6,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|aXb",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|x\nb",
+      "input_characters": 6,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|\u00e9",
+      "input_characters": 4,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|\u212a",
+      "input_characters": 4,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "^b|\uff19",
+      "input_characters": 4,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|!x",
+      "input_characters": 6,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|A",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|a\nb",
+      "input_characters": 7,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|aXb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|x\nb",
+      "input_characters": 7,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|\u00e9",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|\u212a",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a.b|\uff19",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|!x",
+      "input_characters": 4,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|A",
+      "input_characters": 3,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|a\nb",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|aXb",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 20.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|x\nb",
+      "input_characters": 5,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|\u00e9",
+      "input_characters": 3,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|\u212a",
+      "input_characters": 3,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "original_universe",
+      "input": "a|\uff19",
+      "input_characters": 3,
+      "distinct_answers": 1,
+      "answer_entropy_bits": -0.0,
+      "mean_serialized_answer_characters": 14.0,
+      "max_serialized_answer_characters": 14
+    },
+    {
+      "pool": "single",
+      "input": "q|Q",
+      "input_characters": 3,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "single",
+      "input": "^q|p\nq",
+      "input_characters": 6,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "single",
+      "input": "q.z|q\nz",
+      "input_characters": 7,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "single",
+      "input": "\\w|\u0416",
+      "input_characters": 4,
+      "distinct_answers": 2,
+      "answer_entropy_bits": 1.0,
+      "mean_serialized_answer_characters": 17.0,
+      "max_serialized_answer_characters": 20
+    },
+    {
+      "pool": "compound",
+      "input": "^q.\\w|q0a\nQ0b\nq\n\u0416\nq0\u00e9\nQ\nz",
+      "input_characters": 25,
+      "distinct_answers": 7,
+      "answer_entropy_bits": 1.9237949406953985,
+      "mean_serialized_answer_characters": 26.875,
+      "max_serialized_answer_characters": 57
+    },
+    {
+      "pool": "compound",
+      "input": "^q.\\w|Q0\u0416\nq\nx\nq0b",
+      "input_characters": 17,
+      "distinct_answers": 6,
+      "answer_entropy_bits": 2.311278124459133,
+      "mean_serialized_answer_characters": 21.25,
+      "max_serialized_answer_characters": 37
+    },
+    {
+      "pool": "compound",
+      "input": "^q.\\w|q\n\u0416\nQ0b\nq1\u0416",
+      "input_characters": 17,
+      "distinct_answers": 7,
+      "answer_entropy_bits": 2.25,
+      "mean_serialized_answer_characters": 19.25,
+      "max_serialized_answer_characters": 37
+    },
+    {
+      "pool": "compound",
+      "input": "^q.\\w|Q0b\nq\ny\nq1\u0416",
+      "input_characters": 17,
+      "distinct_answers": 8,
+      "answer_entropy_bits": 2.5487949406953985,
+      "mean_serialized_answer_characters": 20.875,
+      "max_serialized_answer_characters": 37
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+async function api(path, options = {}) {
+  const key='patchquestions-github-pages-v1';
+  const method=options.method||'GET';
+  if(path==='/api/workspace') {
+    if(method==='GET') {
+      const saved=localStorage.getItem(key);
+      if(saved)return JSON.parse(saved);
+      const r=await fetch('./seed.json');if(!r.ok)throw new Error('Cannot load the bundled checkpoint.');
+      return {workspace:await r.json(),revision:0};
+    }
+    const body=JSON.parse(options.body);
+    const w=method==='POST'?body:body.workspace;
+    if(!w||!Array.isArray(w.tasks)||!Array.isArray(w.notes)||typeof w.manuscript!=='string'||!w.settings)throw new Error('Invalid workspace backup.');
+    if(method==='POST')return {valid:true};
+    const old=JSON.parse(localStorage.getItem(key)||'{"revision":0}');
+    if(body.revision!==old.revision){const e=new Error('Another tab saved newer work. Export your changes, then reload.');e.status=409;throw e;}
+    const revision=old.revision+1;
+    localStorage.setItem(key,JSON.stringify({workspace:w,revision}));
+    return {revision};
+  }
+  if(path==='/api/files'&&method==='GET')return {files:[]};
+  if(path.startsWith('/api/'))throw new Error('This feature needs the full Node app. Open the repository in Codespaces from the competition hub. AI keys and uploads are not sent from this Pages edition.');
+  const response=await fetch(path.replace(/^\//,'./'),{...options,signal:options.signal||AbortSignal.timeout(30000)});
+  if(!response.ok)throw new Error('Resource could not be loaded: '+path);
+  return response.json();
+}

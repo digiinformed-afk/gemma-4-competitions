@@ -1,0 +1,79 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_files": {
+    "analyze.py": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463",
+    "benchmark.py": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b",
+    "cognitive_probe.py": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51",
+    "export_cases.py": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb",
+    "intervention.py": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e",
+    "paper_analysis.py": "bb54aa303e120f9d73e38d5c23ccb0b32090d930cf1af165ce53868faf49960d",
+    "pilot.py": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db",
+    "replay.py": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f",
+    "verify.py": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+  },
+  "runs": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "benchmark.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 5.465696100000059
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "analyze.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.099179999990156
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "intervention.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 2.582667599985143
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "verify.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.9745846000150777
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "export_cases.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.26400540000759065
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "paper_analysis.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 3.666928899998311
+    }
+  ],
+  "reference_comparison": {
+    "scores_byte_equal": true,
+    "frozen_records_equal": true,
+    "frozen_decompressed_bytes_equal": false,
+    "summary.json": true,
+    "audit.json": true,
+    "intervention.json": true
+  },
+  "presentation_control_returncode": 0
+}

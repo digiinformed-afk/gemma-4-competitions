@@ -1,0 +1,199 @@
+{
+  "review_date_pkt": "2026-11-07",
+  "python": "3.15.2",
+  "source": "D:\\Kaggle Competitions\\Google - The Gemma 4 Developer Agent Paper Track\\PatchQuestions_Local\\public\\project",
+  "output": "D:\\Kaggle Competitions\\shared\\verification\\2026-11-07-python315",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Inspection Br\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+        "-B",
+        "benchmark.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.475
+    },
+    {
+      "command": [
+        "C:\\Users\\Inspection Br\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+        "-B",
+        "analyze.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.136
+    },
+    {
+      "command": [
+        "C:\\Users\\Inspection Br\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+        "-B",
+        "intervention.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.217
+    },
+    {
+      "command": [
+        "C:\\Users\\Inspection Br\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+        "-B",
+        "verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.844
+    },
+    {
+      "command": [
+        "C:\\Users\\Inspection Br\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe",
+        "-B",
+        "cognitive_probe.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.249
+    }
+  ],
+  "source_sha256": {
+    "analyze.py": "267810f1e6d9fd489f0fd35752088ed81a4cb79e66b0622f7ebbf22794c57463",
+    "audit.json": "f455f769ccfb1c56f4c2501348925723bd4efc82bdf4ed84eb3e8c63ae813965",
+    "benchmark.py": "f93461f08464e6cbb2c19ff58e48f6bb0b5c17437ccc5077c9c24d8493e33c4b",
+    "cognitive-core-study.md": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2",
+    "cognitive_probe.py": "acbf0d2c994b25c295f2f98c699f74fe15ac5c6436141f21ff4f7bb38fdcdd51",
+    "cross_version_summary.json": "796180d0f28713aeb40f3afd8bbf3c53ed53071bc01d2b4f075ffb8b07f50c4f",
+    "export_cases.py": "745a6f661037be8c607fbc664c3bc9398db82c37f58fdb1b2c7c97161daf4eeb",
+    "frozen_cases.jsonl.gz": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f",
+    "intervention.json": "31855d2a90dfda3c40b3b9d8268e04c4c937e2d7277eadf0ec179ddc1f10460d",
+    "intervention.py": "49fe5cc70f6e3baadb6649ccf8a3ace2629971cd6ac9c86355cabda29199f35e",
+    "PatchQuestions.ipynb": "05fd37d69fb95dffbc6f28bb597686490644898f874e14517d54b64f34e6872d",
+    "PatchQuestions_Card.png": "467f0c1c24d8a62f60a83ca67e18438e6782f7dafc8b00795c19d53a8eaec663",
+    "PatchQuestions_Research_Package.zip": "4b02c95dbde13fa71d4ea6254cdb74e9996b90ffd2817fbce0373de5ff153ba7",
+    "PatchQuestions_Writeup.md": "af5043e5721c459eaae74934f584e0b212a5de8c26c93808e23bb509c0ac874b",
+    "README.md": "3a5e52b533bab57b48d2a073ad7e1f3ca44772afa5b838a5078f80ae55afd44f",
+    "replay.py": "ef7bb913c2503ac158b8323c808bfd93b36d308b67a8fd057084981e3910f04f",
+    "research-evidence-notes.md": "f45faed569661074e4c3245bc78527268f85a0b4c895e241a673463853a36c2f",
+    "research-library.json": "0fea58912bc8c85ea84a4310ee9882e18f94e903dca24e7729b637c28530075c",
+    "scores.csv": "eae609c072072ea13fb7f1f6266933859387bd6e45a1e392b0c4539f43750f5e",
+    "summary.json": "4b9b02973762eedf365eaaf9ec4d15c256dc5c4c9c8703c6500663f4fe57beca",
+    "verify.py": "3d306abaf430a09a61e50151633deeac6256b43f15eff867cca3b638f3ae5fa6"
+  },
+  "stored_results": {
+    "rows": 18000,
+    "episodes": 750,
+    "families": 8,
+    "summary_matches_scores": true,
+    "summary_rebuilt": {
+      "random": {
+        "0": 0.07051504629629629,
+        "1": 0.3071941912615741,
+        "2": 0.46353822544642853,
+        "3": 0.5683128759984228
+      },
+      "random_split": {
+        "0": 0.07051504629629629,
+        "1": 0.34244809737908694,
+        "2": 0.5920951422795265,
+        "3": 0.7631887749141841
+      },
+      "diversity": {
+        "0": 0.07051504629629629,
+        "1": 0.5208854166666667,
+        "2": 0.7279166666666667,
+        "3": 0.848125
+      },
+      "entropy": {
+        "0": 0.07051504629629629,
+        "1": 0.5163541666666667,
+        "2": 0.7288541666666667,
+        "3": 0.8527083333333333
+      },
+      "lookahead": {
+        "0": 0.07051504629629629,
+        "1": 0.5208854166666667,
+        "2": 0.7442708333333333,
+        "3": 0.8547916666666666
+      },
+      "frugal": {
+        "0": 0.07051504629629629,
+        "1": 0.5208854166666667,
+        "2": 0.7442708333333333,
+        "3": 0.8547916666666666
+      }
+    }
+  },
+  "questions_at_budget3": {
+    "entropy": 1.8819791666666668,
+    "lookahead": 2.265625,
+    "frugal": 1.8644791666666667
+  },
+  "manuscript_whitespace_words": 1806,
+  "notebook_modules_match": {
+    "benchmark.py": true,
+    "replay.py": true,
+    "analyze.py": true,
+    "intervention.py": true,
+    "verify.py": true,
+    "export_cases.py": true
+  },
+  "zip_entries": [
+    "analyze.py",
+    "benchmark.py",
+    "export_cases.py",
+    "intervention.py",
+    "replay.py",
+    "verify.py",
+    "PatchQuestions_Writeup.md",
+    "README.md",
+    "audit.json",
+    "cross_version_summary.json",
+    "intervention.json",
+    "summary.json",
+    "scores.csv",
+    "frozen_cases.jsonl.gz",
+    "PatchQuestions.ipynb",
+    "PatchQuestions_Card.png"
+  ],
+  "zip_files_differing_from_working_copy": [],
+  "research_extensions_absent_from_zip": [
+    "cognitive_probe.py",
+    "cognitive-core-study.md",
+    "research-evidence-notes.md",
+    "research-library.json"
+  ],
+  "runtime_summary_delta_percentage_points": {
+    "random": {
+      "0": 0.0,
+      "1": -0.14322916666666963,
+      "2": -0.21050347222221766,
+      "3": -0.19661458333333215
+    },
+    "random_split": {
+      "0": 0.0,
+      "1": 0.2211602055352091,
+      "2": 0.1519054826346511,
+      "3": 0.001821866405204986
+    },
+    "diversity": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "entropy": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "lookahead": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "frugal": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    }
+  },
+  "original_sources_unchanged": true
+}

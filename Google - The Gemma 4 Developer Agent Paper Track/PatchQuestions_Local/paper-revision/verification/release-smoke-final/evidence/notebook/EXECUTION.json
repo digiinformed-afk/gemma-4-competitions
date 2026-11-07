@@ -1,0 +1,14 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "input_notebook_sha256": "4369dd467d0ebe1a10d98cb6a5f17d5e1e0ede5b9eb9574a851bb41c385d57d4",
+  "packages": {
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "jupyter-client": "8.10.0"
+  },
+  "completed": true,
+  "executed_code_cells": 16,
+  "error_outputs": 0,
+  "wall_seconds": 26.153702699986752
+}

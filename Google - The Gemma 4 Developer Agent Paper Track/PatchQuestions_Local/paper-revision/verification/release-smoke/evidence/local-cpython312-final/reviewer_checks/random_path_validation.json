@@ -1,0 +1,6 @@
+{
+  "metric_comparisons": 24000,
+  "terminal_subsets_or_paths": 1015896,
+  "max_absolute_error": 1.7763568394002505e-15,
+  "wall_seconds": 18.216046999994433
+}

@@ -1,0 +1,17 @@
+test_inconsistent_heldout_success_is_primary_failure (test_pilot.PilotTests.test_inconsistent_heldout_success_is_primary_failure) ... ok
+test_invalid_json_and_types (test_pilot.PilotTests.test_invalid_json_and_types) ... ok
+test_masking_preserves_every_partition (test_pilot.PilotTests.test_masking_preserves_every_partition) ... ok
+test_matched_old_sample_baselines (test_pilot.PilotTests.test_matched_old_sample_baselines) ... ok
+test_model_input_whitelist_and_no_private_grade (test_pilot.PilotTests.test_model_input_whitelist_and_no_private_grade) ... ok
+test_plan_pairing_and_private_sampling (test_pilot.PilotTests.test_plan_pairing_and_private_sampling) ... ok
+test_remote_endpoint_rejected_before_import_or_network (test_pilot.PilotTests.test_remote_endpoint_rejected_before_import_or_network) ... ok
+test_repeated_query_and_out_of_range (test_pilot.PilotTests.test_repeated_query_and_out_of_range) ... ok
+test_target_pick_succeeds (test_pilot.PilotTests.test_target_pick_succeeds) ... ok
+test_three_asks_then_pick (test_pilot.PilotTests.test_three_asks_then_pick) ... ok
+test_transport_logs_truncation_and_missing_sessions (test_pilot.PilotTests.test_transport_logs_truncation_and_missing_sessions) ... ok
+test_unstarted_sessions_remain_in_denominator (test_pilot.PilotTests.test_unstarted_sessions_remain_in_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.080s
+
+OK

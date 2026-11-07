@@ -1,0 +1,842 @@
+[
+  {
+    "id": "karpathycore",
+    "type": "talk",
+    "title": "Karpathy on the cognitive core",
+    "authors": "Andrej Karpathy and Dwarkesh Patel",
+    "year": 2025,
+    "date": "2025",
+    "venue": "Dwarkesh Podcast",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://www.dwarkesh.com/p/andrej-karpathy?t=3380",
+    "summary": "Karpathy proposes retaining general problem-solving strategies while relying more on looking up detailed knowledge. Around 56:20 he explains why reducing memorized facts interests him.",
+    "action": "Compare Gemma choosing a question from familiar API examples with the same decision expressed as anonymous symbols.",
+    "caveat": "A conjecture from an interview. Renaming symbols changes the input representation and cannot isolate a mechanism in model weights.",
+    "tags": [
+      "cognitive core",
+      "clarification"
+    ],
+    "verifiedAt": "2026-11-06"
+  },
+  {
+    "id": "ambigswe",
+    "type": "paper",
+    "title": "Ambig-SWE: Interactive Agents to Overcome Underspecificity in Software Engineering",
+    "authors": "Sanidhya Vijayvargiya et al.",
+    "year": 2025,
+    "date": "2025",
+    "venue": "arXiv",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2502.13069",
+    "summary": "The authors distinguish recognizing missing requirements, asking a targeted question and using the answer.",
+    "action": "Log wasted questions and whether the final choice contradicts an answer the agent already received.",
+    "caveat": "PatchQuestions supplies a fixed menu and a reliable oracle. Free-form clarification involves additional skills.",
+    "tags": [
+      "cognitive core",
+      "clarification"
+    ],
+    "verifiedAt": "2026-11-06"
+  },
+  {
+    "id": "askassume",
+    "type": "paper",
+    "title": "Ask or Assume? Uncertainty-Aware Clarification-Seeking in Coding Agents",
+    "authors": "Nicholas Edwards and Sebastian Schuster",
+    "year": 2026,
+    "date": "2026",
+    "venue": "ACL Anthology",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://aclanthology.org/2026.findings-emnlp.15/",
+    "summary": "The authors separate uncertainty detection from execution in a study of underspecified repository issues. Their scaffold spends clarification effort selectively.",
+    "action": "Allow an early final choice and report accuracy alongside questions actually used.",
+    "caveat": "Their repository resolution rate and our held-out agreement have different denominators and success criteria.",
+    "tags": [
+      "cognitive core",
+      "clarification"
+    ],
+    "verifiedAt": "2026-11-06"
+  },
+  {
+    "id": "sweclar",
+    "type": "paper",
+    "title": "SWE-Clar: Can Coding Agents Clarify Incomplete Client Requirements and Deliver Greenfield Software?",
+    "authors": "Jialei Li et al.",
+    "year": 2026,
+    "date": "2026",
+    "venue": "arXiv",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2610.31854",
+    "summary": "SWE-Clar separates clarification conversations from implementation and evaluates both against client requirements.",
+    "action": "Keep the transcript and held-out test outcome as separate evidence for each episode.",
+    "caveat": "Greenfield commissions and finite API configuration choices measure different tasks. This is a preprint.",
+    "tags": [
+      "cognitive core",
+      "clarification"
+    ],
+    "verifiedAt": "2026-11-06"
+  },
+  {
+    "id": "inpafer",
+    "type": "paper",
+    "title": "Interactive Patch Filtering as Debugging Aid",
+    "authors": "Jingjing Liang, Ruyi Ji, Jiajun Jiang, Shurui Zhou, Yiling Lou, Yingfei Xiong, Gang Huang",
+    "year": 2021,
+    "date": "2021-09",
+    "venue": "ICSME 2021",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://xiongyingfei.github.io/publication/ICSME21.html",
+    "pdfUrl": "https://xgdsmileboy.github.io/files/paper/icsme21.pdf",
+    "summary": "InPaFer helps developers review generated patches by asking questions that eliminate groups of incorrect patches. It is direct prior art for interactive patch filtering.",
+    "action": "Read the filtering criteria and user-study design. Explain precisely what PatchQuestions adds through exact finite evaluation and probe-vocabulary experiments.",
+    "caveat": "Asking developers distinguishing questions is already established. The 2020 arXiv draft has a different author list from the 2021 published paper.",
+    "tags": [
+      "patch selection",
+      "human feedback",
+      "novelty"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Author publication page and author-hosted paper; metadata and abstract checked.",
+    "sourceRefs": [
+      "turn8view0",
+      "turn2search53"
+    ]
+  },
+  {
+    "id": "learn2fix",
+    "type": "paper",
+    "title": "Human-In-The-Loop Automatic Program Repair",
+    "authors": "Marcel B\u00f6hme, Charaka Geethal, Van-Thuan Pham",
+    "year": 2020,
+    "date": "2020",
+    "venue": "ICST 2020; arXiv preprint 2019",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/1912.07758",
+    "pdfUrl": "https://thuanpv.github.io/publications/Learn2Fix_ICST20.pdf",
+    "summary": "LEARN2FIX uses a limited budget of user labels to learn when a program exhibits a bug, then uses the learned oracle to support repair.",
+    "action": "Add a related-work comparison covering query budgets, oracle availability, and noisy or imperfect labels.",
+    "caveat": "Its learned bug oracle and numeric-input setting differ from selecting among a fixed candidate behavior matrix.",
+    "tags": [
+      "active learning",
+      "test oracle",
+      "human feedback"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "arXiv metadata, abstract and ICST acceptance note checked.",
+    "sourceRefs": [
+      "turn7view0",
+      "turn2search52"
+    ]
+  },
+  {
+    "id": "difftgen",
+    "type": "paper",
+    "title": "Identifying Test-Suite-Overfitted Patches through Test Case Generation",
+    "authors": "Qi Xin, Steven P. Reiss",
+    "year": 2017,
+    "date": "2017-07",
+    "venue": "ISSTA 2017",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://conf.researchr.org/details/issta-2017/issta-2017-research/29/Identifying-Test-Suite-Overfitted-Patches-through-Test-Case-Generation",
+    "summary": "DiffTGen generates inputs that expose semantic differences and helps detect patches that pass existing tests while failing to repair the underlying behavior.",
+    "action": "Compare informative probe generation with fixed-pool question selection, and document which trusted reference supplies the expected outputs.",
+    "caveat": "Behavioral differences expose uncertainty. They require an oracle before they establish correctness.",
+    "tags": [
+      "test generation",
+      "overfitting",
+      "patch assessment"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official ISSTA program and abstract checked.",
+    "sourceRefs": [
+      "turn7view5"
+    ]
+  },
+  {
+    "id": "xtestcluster",
+    "type": "paper",
+    "title": "Test-based Patch Clustering for Automatically-Generated Patches Assessment",
+    "authors": "Matias Martinez, Maria Kechagia, Anjana Perera, Justyna Petke, Federica Sarro, Aldeida Aleti",
+    "year": 2024,
+    "date": "2024",
+    "venue": "Empirical Software Engineering 29, article 116; preprint 2022",
+    "category": "Closest prior art",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2207.11082",
+    "summary": "xTestCluster groups plausible patches according to their behavior on generated tests, reducing the set of patches a developer needs to inspect.",
+    "action": "Include behavioral clustering as a baseline or explicitly position the current behavior partitions relative to it.",
+    "caveat": "The published evaluation studies Java APR patches. PatchQuestions currently studies curated Python configurations.",
+    "tags": [
+      "behavioral clustering",
+      "patch selection",
+      "novelty"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Updated arXiv metadata, abstract and journal DOI checked.",
+    "sourceRefs": [
+      "turn7view1"
+    ]
+  },
+  {
+    "id": "rgt",
+    "type": "paper",
+    "title": "Automated Patch Assessment for Program Repair at Scale",
+    "authors": "He Ye, Matias Martinez, Martin Monperrus",
+    "year": 2021,
+    "date": "2021-02-23",
+    "venue": "Empirical Software Engineering 26, article 20",
+    "category": "Patch correctness",
+    "priority": "high",
+    "url": "https://link.springer.com/article/10.1007/s10664-020-09920-w",
+    "summary": "This study assesses patches by generating tests whose expected behavior comes from a human-written reference patch, using Random Testing with Ground Truth.",
+    "action": "Make the simulated oracle assumption explicit and keep reference outputs isolated from candidate and probe generation.",
+    "caveat": "Access to a correct reference is a strong evaluation assumption that deployment may not satisfy.",
+    "tags": [
+      "reference oracle",
+      "patch assessment",
+      "data leakage"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Publisher authors, publication date and abstract checked.",
+    "sourceRefs": [
+      "turn4search2"
+    ]
+  },
+  {
+    "id": "codemonkeys",
+    "type": "paper",
+    "title": "CodeMonkeys: Scaling Test-Time Compute for Software Engineering",
+    "authors": "Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher R\u00e9, Azalia Mirhoseini",
+    "year": 2025,
+    "date": "2025-01-24",
+    "venue": "arXiv:2501.14723",
+    "category": "Coding agents",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2501.14723",
+    "summary": "CodeMonkeys generates multiple edit trajectories and selects among candidates using model-generated tests and a dedicated selection trajectory.",
+    "action": "Use its candidate-selection setting to motivate a small, controlled Gemma-generated patch study and account for test-generation cost.",
+    "caveat": "Its reported scores and spend belong to its own models, harness and benchmark. They are not evidence for PatchQuestions.",
+    "tags": [
+      "candidate generation",
+      "test-time compute",
+      "patch selection"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv authors, date and abstract checked.",
+    "sourceRefs": [
+      "turn3academia0"
+    ]
+  },
+  {
+    "id": "agentless",
+    "type": "paper",
+    "title": "Agentless: Demystifying LLM-based Software Engineering Agents",
+    "authors": "Chunqiu Steven Xia, Yinlin Deng, Soren Dunn, Lingming Zhang",
+    "year": 2024,
+    "date": "2024-07-01",
+    "venue": "arXiv:2407.01489",
+    "category": "Coding agents",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2407.01489",
+    "summary": "Agentless separates repository localization, repair and validation into a comparatively simple workflow instead of allowing unconstrained action planning.",
+    "action": "Build a minimal candidate/probe/selection pipeline first and compare the proposed selection method under a fixed scaffold.",
+    "caveat": "The original results use a particular SWE-bench subset and model configuration. Current leaderboard ranks are outside this summary.",
+    "tags": [
+      "baseline",
+      "scaffold",
+      "patch validation"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv title, authors, date and abstract checked.",
+    "sourceRefs": [
+      "turn3academia1"
+    ]
+  },
+  {
+    "id": "sweagent",
+    "type": "paper",
+    "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+    "authors": "John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press",
+    "year": 2024,
+    "date": "2024-05-06",
+    "venue": "NeurIPS 2024; arXiv:2405.15793",
+    "category": "Coding agents",
+    "priority": "medium",
+    "url": "https://arxiv.org/abs/2405.15793",
+    "summary": "SWE-agent investigates how interfaces for repository navigation, file editing and test execution affect an agent's software-engineering performance.",
+    "action": "Give the experimental model a small, explicit query/pick interface and log invalid actions and recovery attempts.",
+    "caveat": "A good interface can alter outcomes, so keep it identical across policies when testing question-selection benefits.",
+    "tags": [
+      "tool interface",
+      "evaluation",
+      "agent harness"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv abstract and official project documentation checked.",
+    "sourceRefs": [
+      "turn3academia2",
+      "turn9search2"
+    ]
+  },
+  {
+    "id": "swebench",
+    "type": "paper",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "authors": "Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan",
+    "year": 2023,
+    "date": "2023-10-10",
+    "venue": "ICLR 2024; preprint 2023",
+    "category": "Evaluation",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2310.06770",
+    "summary": "SWE-bench evaluates edits for real repository issues by executing tests on the patched codebase.",
+    "action": "Add a tightly scoped real-issue pilot after the synthetic resource is stable, with failing and regression tests isolated from the model.",
+    "caveat": "Curated API configuration recovery measures a narrower capability than repository-level repair.",
+    "tags": [
+      "real issues",
+      "held-out testing",
+      "external validity"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata and abstract checked.",
+    "sourceRefs": [
+      "turn3academia3"
+    ]
+  },
+  {
+    "id": "sweverified",
+    "type": "documentation",
+    "title": "SWE-bench Verified",
+    "authors": "SWE-bench team; OpenAI collaboration",
+    "year": 2024,
+    "date": "2024",
+    "venue": "Official benchmark documentation",
+    "category": "Evaluation",
+    "priority": "high",
+    "url": "https://www.swebench.com/verified",
+    "summary": "Verified is a human-validated subset of 500 SWE-bench instances intended to improve the reliability of task descriptions and tests.",
+    "action": "Use a small predefined subset if repository experiments fit the schedule. Record instance identifiers before tuning.",
+    "caveat": "The 500 instances are the full subset, not a claim that this project has evaluated them.",
+    "tags": [
+      "task quality",
+      "benchmark",
+      "pre-registration"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official benchmark overview checked.",
+    "sourceRefs": [
+      "turn5search2"
+    ]
+  },
+  {
+    "id": "swepro",
+    "type": "paper",
+    "title": "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?",
+    "authors": "Xiang Deng et al.",
+    "year": 2025,
+    "date": "2025-09-21",
+    "venue": "arXiv:2509.16941",
+    "category": "Evaluation",
+    "priority": "medium",
+    "url": "https://arxiv.org/abs/2509.16941",
+    "summary": "SWE-Bench Pro targets longer and more complex repository tasks across a wider set of maintained projects.",
+    "action": "Use it to delimit claims and identify future transfer targets after the paper deadline.",
+    "caveat": "Its long-horizon tasks can exceed the available one-week budget. Reported historical scores do not describe current frontier performance.",
+    "tags": [
+      "long-horizon",
+      "external validity",
+      "future work"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata and abstract checked.",
+    "sourceRefs": [
+      "turn5academia5"
+    ]
+  },
+  {
+    "id": "qbc",
+    "type": "paper",
+    "title": "Query by Committee",
+    "authors": "H. Sebastian Seung, Manfred Opper, Haim Sompolinsky",
+    "year": 1992,
+    "date": "1992",
+    "venue": "COLT 1992, pp. 287\u2013294",
+    "category": "Foundations",
+    "priority": "high",
+    "url": "https://collaborate.princeton.edu/en/publications/query-by-committee/",
+    "summary": "Query by committee selects examples where competing hypotheses disagree, providing a foundational connection to informative probe selection.",
+    "action": "Cite it when introducing disagreement and entropy baselines. Define how candidate priors and duplicated candidates affect the committee.",
+    "caveat": "Disagreement-based selection is a foundational method. A new benchmark must establish its additional contribution.",
+    "tags": [
+      "active learning",
+      "disagreement",
+      "information gain"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Author-affiliated university publication record and abstract checked.",
+    "sourceRefs": [
+      "turn4search0"
+    ]
+  },
+  {
+    "id": "activelearning",
+    "type": "paper",
+    "title": "Active Learning Literature Survey",
+    "authors": "Burr Settles",
+    "year": 2009,
+    "date": "2009",
+    "venue": "University of Wisconsin\u2013Madison, Technical Report 1648",
+    "category": "Foundations",
+    "priority": "medium",
+    "url": "https://research.cs.wisc.edu/techreports/viewreport.php?report=1648",
+    "summary": "This survey organizes active-learning settings and query strategies for learning from a constrained labeling budget.",
+    "action": "Specify whether the experiment chooses from a fixed pool or synthesizes queries, and separate label count from labeling effort.",
+    "caveat": "A survey supplies conceptual framing rather than a direct software-repair evaluation baseline.",
+    "tags": [
+      "active learning",
+      "label budget",
+      "query synthesis"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "University report record and author publications checked.",
+    "sourceRefs": [
+      "turn6search17",
+      "turn6search16"
+    ]
+  },
+  {
+    "id": "oracle",
+    "type": "paper",
+    "title": "The Oracle Problem in Software Testing: A Survey",
+    "authors": "Earl T. Barr, Mark Harman, Phil McMinn, Muzammil Shahbaz, Shin Yoo",
+    "year": 2015,
+    "date": "2015",
+    "venue": "IEEE Transactions on Software Engineering 41(5), 507\u2013525",
+    "category": "Foundations",
+    "priority": "high",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/1471263/",
+    "pdfUrl": "https://discovery.ucl.ac.uk/id/eprint/1471263/1/06963470.pdf",
+    "summary": "The test-oracle problem is deciding whether observed behavior is correct. The survey covers specifications, contracts, metamorphic relations and human judgments.",
+    "action": "State who provides expected outputs in every experiment and add an abstain option where no trusted label exists.",
+    "caveat": "Candidate consensus cannot itself establish correctness. Human labels also have costs and errors.",
+    "tags": [
+      "oracle",
+      "human effort",
+      "correctness"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Author institution's metadata and abstract checked.",
+    "sourceRefs": [
+      "turn8view1"
+    ]
+  },
+  {
+    "id": "metamorphic",
+    "type": "paper",
+    "title": "Metamorphic Testing: A Review of Challenges and Opportunities",
+    "authors": "Tsong Yueh Chen, Fei-Ching Kuo, Huai Liu, Pak-Lok Poon, Dave Towey, T. H. Tse, Zhi Quan Zhou",
+    "year": 2018,
+    "date": "2018",
+    "venue": "ACM Computing Surveys 51(1), article 4",
+    "category": "Foundations",
+    "priority": "medium",
+    "url": "https://i.cs.hku.hk/~tse/Papers/2010s/hlmtCSUR.html",
+    "summary": "Metamorphic testing checks necessary relationships between multiple executions when exact expected outputs are difficult to obtain.",
+    "action": "Explore a small set of justified API relations as an alternative or complement to asking for complete output values.",
+    "caveat": "Each relation needs domain justification. A plausible but invalid relation can wrongly reject a correct candidate.",
+    "tags": [
+      "metamorphic relations",
+      "oracle",
+      "test generation"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Author-hosted publication metadata and abstract checked.",
+    "sourceRefs": [
+      "turn8view2"
+    ]
+  },
+  {
+    "id": "pynguin",
+    "type": "paper",
+    "title": "Pynguin: Automated Unit Test Generation for Python",
+    "authors": "Stephan Lukasczyk, Gordon Fraser",
+    "year": 2022,
+    "date": "2022-02-10",
+    "venue": "ICSE 2022 Demonstrations; arXiv:2202.05218",
+    "category": "Test generation",
+    "priority": "medium",
+    "url": "https://arxiv.org/abs/2202.05218",
+    "summary": "Pynguin is an extensible Python regression-test generator that uses coverage-oriented automated generation.",
+    "action": "If integration is quick, compare a generated probe pool with the handcrafted pool while keeping the selection policy fixed.",
+    "caveat": "Coverage-oriented regression tests can preserve current behavior, including existing bugs, unless their oracle is independently validated.",
+    "tags": [
+      "Python",
+      "probe generation",
+      "coverage"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata, abstract and DOI checked.",
+    "sourceRefs": [
+      "turn7view2"
+    ]
+  },
+  {
+    "id": "evalplus",
+    "type": "paper",
+    "title": "Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation",
+    "authors": "Jiawei Liu, Chunqiu Steven Xia, Yuyao Wang, Lingming Zhang",
+    "year": 2023,
+    "date": "2023-05-02",
+    "venue": "NeurIPS 2023; arXiv:2305.01210",
+    "category": "Test generation",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2305.01210",
+    "summary": "EvalPlus expands code-generation evaluation tests using LLM-generated seeds and mutation-based inputs, revealing mistakes missed by smaller suites.",
+    "action": "Expand held-out edge cases independently of probe tuning and preserve the original fixed suite for comparison.",
+    "caveat": "More tests still approximate semantic correctness. Test generation must avoid leaking the hidden reference to the policy.",
+    "tags": [
+      "test adequacy",
+      "mutation",
+      "held-out evaluation"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata and abstract checked.",
+    "sourceRefs": [
+      "turn7view3"
+    ]
+  },
+  {
+    "id": "testgenllm",
+    "type": "paper",
+    "title": "Automated Unit Test Improvement using Large Language Models at Meta",
+    "authors": "Nadia Alshahwan, Jubin Chheda, Anastasia Finegenova, Beliz Gokkaya, Mark Harman, Inna Harper, Alexandru Marginean, Shubho Sengupta, Eddy Wang",
+    "year": 2024,
+    "date": "2024-02-14",
+    "venue": "FSE 2024 Industry; arXiv:2402.09171",
+    "category": "Test generation",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2402.09171",
+    "summary": "TestGen-LLM improves human-written tests and filters generated tests for successful builds, reliable execution and measurable improvement.",
+    "action": "Validate model-generated probes before counting them. Log syntax failures, nondeterminism and measurable behavioral distinctions separately.",
+    "caveat": "Coverage gains alone do not establish that a generated assertion represents the intended contract.",
+    "tags": [
+      "LLM tests",
+      "validation filters",
+      "industrial evidence"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata and abstract checked.",
+    "sourceRefs": [
+      "turn7view4"
+    ]
+  },
+  {
+    "id": "gemma4report",
+    "type": "paper",
+    "title": "Gemma 4 Technical Report",
+    "authors": "Gemma Team et al.",
+    "year": 2026,
+    "date": "2026-07-02",
+    "venue": "arXiv:2607.02770",
+    "category": "Gemma and competition",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2607.02770",
+    "summary": "The Gemma team describes the open-weight family, efficiency decisions, reasoning behavior and evaluation in its technical report.",
+    "action": "Record the exact model artifact and revision used in experiments. Cite the model report without transferring family-level claims to our result.",
+    "caveat": "The competition-supported model identifier must be verified against Kaggle's current harness rather than inferred from a family overview.",
+    "tags": [
+      "Gemma 4",
+      "model provenance",
+      "reproducibility"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv author listing, date and abstract checked.",
+    "sourceRefs": [
+      "turn5academia4"
+    ]
+  },
+  {
+    "id": "competitionpaper",
+    "type": "documentation",
+    "title": "Google \u2014 The Gemma 4 Developer Agent Paper Track",
+    "authors": "Google DeepMind; Kaggle",
+    "year": 2026,
+    "date": "2026",
+    "venue": "Official competition overview",
+    "category": "Gemma and competition",
+    "priority": "high",
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/overview",
+    "summary": "The paper track accepts original unpublished research in a Kaggle Writeup, capped at 3,000 words. Judging equally weights novelty, quality, relevance, verifiability and clarity.",
+    "action": "Submit the final Writeup before 12 November 2026, 23:59 UTC (13 November, 04:59 Pakistan time). A saved draft must still be submitted.",
+    "caveat": "Source retrieval confirmed the official requirements; competition pages can be updated, so recheck the live page before submitting.",
+    "tags": [
+      "deadline",
+      "rubric",
+      "submission"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official Kaggle indexed overview checked; live page extraction unavailable through search open.",
+    "sourceRefs": [
+      "turn8search0"
+    ]
+  },
+  {
+    "id": "competitionmain",
+    "type": "documentation",
+    "title": "Google \u2014 The Gemma 4 Developer Agent Competition",
+    "authors": "Google DeepMind; Kaggle",
+    "year": 2026,
+    "date": "2026",
+    "venue": "Official prediction competition",
+    "category": "Gemma and competition",
+    "priority": "high",
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/overview",
+    "summary": "The main track evaluates repository patches through validation tests and defines the supported model variant and agent harness. It is a separate entry from the paper track.",
+    "action": "Keep research-adviser API use separate from the offline competition agent. Verify exact model and harness constraints before running a main-track submission.",
+    "caveat": "Participation in the main track is optional for the paper. Graph and embedding data are encouraged for papers, with no mandatory use stated in the overview.",
+    "tags": [
+      "offline agent",
+      "harness",
+      "scope"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official Kaggle indexed main overview checked.",
+    "sourceRefs": [
+      "turn8search1",
+      "turn8search2"
+    ]
+  },
+  {
+    "id": "effectiveagents",
+    "type": "article",
+    "title": "Building effective agents",
+    "authors": "Anthropic Engineering",
+    "year": 2024,
+    "date": "2024-12-19",
+    "venue": "Anthropic engineering essay",
+    "category": "Expert guidance",
+    "priority": "medium",
+    "url": "https://www.anthropic.com/research/building-effective-agents",
+    "summary": "Anthropic describes simple composable agent patterns and advises adding complexity when evaluation supports the tradeoff.",
+    "action": "Keep this week's experiment pipeline small, inspectable and bounded by measurable stop conditions.",
+    "caveat": "Engineering guidance is experiential rather than a controlled PatchQuestions result. The article itself notes that tooling has changed since publication.",
+    "tags": [
+      "expert opinion",
+      "simplicity",
+      "agent design"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official article title, date and relevant guidance checked.",
+    "sourceRefs": [
+      "turn12view2"
+    ]
+  },
+  {
+    "id": "agentevals",
+    "type": "article",
+    "title": "Demystifying evals for AI agents",
+    "authors": "Anthropic Engineering",
+    "year": 2026,
+    "date": "2026-01-09",
+    "venue": "Anthropic engineering essay",
+    "category": "Expert guidance",
+    "priority": "high",
+    "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+    "summary": "The essay distinguishes tasks, trials, graders, transcripts and outcomes, and discusses combining deterministic and calibrated human or model grading.",
+    "action": "Store full trial provenance and actual graded outcomes. Repeat stochastic model trials instead of treating one successful transcript as a stable estimate.",
+    "caveat": "Use model judges for qualitative review only when calibrated. Functional correctness here should remain executable and reference-based.",
+    "tags": [
+      "evaluation design",
+      "traces",
+      "repeated trials"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official article date, definitions and grader guidance checked.",
+    "sourceRefs": [
+      "turn12view3"
+    ]
+  },
+  {
+    "id": "infranoise",
+    "type": "article",
+    "title": "Quantifying infrastructure noise in agentic coding evals",
+    "authors": "Anthropic Engineering",
+    "year": 2026,
+    "date": "2026-02-05",
+    "venue": "Anthropic empirical engineering report",
+    "category": "Evaluation",
+    "priority": "high",
+    "url": "https://www.anthropic.com/research/infrastructure-noise",
+    "summary": "Controlled internal experiments show that resource allocation and enforcement can change measured agentic benchmark performance.",
+    "action": "Record Python version, hardware, resource limits, API latency, concurrency and infrastructure failures for each model experiment.",
+    "caveat": "Its measured effect sizes concern its own setups. They motivate controls rather than predict an effect size for our benchmark.",
+    "tags": [
+      "reproducibility",
+      "infrastructure",
+      "expert evidence"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official report date, experimental description and recommendations checked.",
+    "sourceRefs": [
+      "turn11search0"
+    ]
+  },
+  {
+    "id": "toolwriting",
+    "type": "article",
+    "title": "Writing effective tools for agents \u2014 with agents",
+    "authors": "Anthropic Engineering",
+    "year": 2025,
+    "date": "2025-09-11",
+    "venue": "Anthropic engineering essay",
+    "category": "Expert guidance",
+    "priority": "medium",
+    "url": "https://www.anthropic.com/research/writing-tools-for-agents",
+    "summary": "This essay recommends explicit tool boundaries, informative responses and evaluation-driven refinement of the tools agents use.",
+    "action": "Validate the query/pick JSON protocol, provide actionable error messages and capture whether failures came from selection reasoning or tool misuse.",
+    "caveat": "A provider's engineering recommendations need project-specific validation.",
+    "tags": [
+      "tools",
+      "protocol",
+      "expert opinion"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official engineering article and research mirror checked.",
+    "sourceRefs": [
+      "turn11search1",
+      "turn11search2"
+    ]
+  },
+  {
+    "id": "gemmarelease",
+    "type": "news",
+    "title": "Gemma 4: Byte for byte, the most capable open models",
+    "authors": "Clement Farabet, Olivier Lacombe",
+    "year": 2026,
+    "date": "2026-04-02",
+    "venue": "Google DeepMind announcement",
+    "category": "Gemma and competition",
+    "priority": "medium",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+    "summary": "Google introduces the Gemma 4 family with an emphasis on reasoning, agentic workflows and local deployment.",
+    "action": "Use the announcement for project context and follow its official model links when choosing an experiment artifact.",
+    "caveat": "Vendor capability and ranking statements are time-specific promotional claims. Record the actual artifact and measured local results.",
+    "tags": [
+      "official news",
+      "Gemma 4",
+      "model context"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Official Google announcement authors, date and product framing checked.",
+    "sourceRefs": [
+      "turn9search1"
+    ]
+  },
+  {
+    "id": "swetutorial",
+    "type": "video",
+    "title": "NeurIPS Hacker Cup AI: SWEAgent",
+    "authors": "Kilian Lieret; hosted by Weights & Biases",
+    "year": 2024,
+    "date": "2024-08-15",
+    "venue": "Researcher tutorial / Weights & Biases",
+    "category": "Talks and tutorials",
+    "priority": "medium",
+    "url": "https://www.youtube.com/watch?v=d9gcXpiiDao",
+    "summary": "A researcher-led practical introduction to SWE-agent setup, operation and customization, linked from the project's official documentation.",
+    "action": "Watch the setup and configuration portions when implementing the minimal repository pilot.",
+    "caveat": "Video metadata and official documentation link were verified. The video was not watched in full, and commands may have changed.",
+    "tags": [
+      "video",
+      "researcher tutorial",
+      "SWE-agent"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "YouTube indexed metadata and official SWE-agent documentation cross-link checked; direct video fetch unavailable.",
+    "sourceRefs": [
+      "turn11youtube5",
+      "turn9search2"
+    ]
+  },
+  {
+    "id": "sweintro",
+    "type": "video",
+    "title": "SWE-agent project introduction",
+    "authors": "SWE-agent project team",
+    "year": 2024,
+    "date": "2024",
+    "venue": "Official project documentation video",
+    "category": "Talks and tutorials",
+    "priority": "medium",
+    "url": "https://www.youtube.com/watch?v=CeMtJ4XObAM",
+    "summary": "The SWE-agent maintainers link this video as the project's quick introduction to the software-engineering agent and its interface.",
+    "action": "Use it for a quick conceptual overview before reading the paper and building the experiment harness.",
+    "caveat": "The title here describes its role in the official documentation. Exact video title and publication day were not independently retrieved.",
+    "tags": [
+      "video",
+      "introductory",
+      "agent interface"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "The exact video ID was verified in official SWE-agent documentation. Direct YouTube metadata retrieval failed.",
+    "sourceRefs": [
+      "turn9search2"
+    ]
+  },
+  {
+    "id": "ofirmit",
+    "type": "talk",
+    "title": "Towards Autonomous Language Model Systems",
+    "authors": "Ofir Press",
+    "year": 2025,
+    "date": "2025-10-10",
+    "venue": "MIT CSAIL research talk",
+    "category": "Talks and tutorials",
+    "priority": "medium",
+    "url": "https://www.csail.mit.edu/event/towards-autonomous-language-model-systems",
+    "summary": "This researcher talk covers the motivation behind SWE-bench and SWE-agent and discusses autonomous software-engineering systems.",
+    "action": "Use the event abstract as researcher perspective on why realistic end-to-end evaluations matter.",
+    "caveat": "The official event page was verified. A playable recording was not located, so this entry links to the talk page.",
+    "tags": [
+      "expert perspective",
+      "research talk",
+      "evaluation"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "MIT CSAIL event date, speaker and abstract checked.",
+    "sourceRefs": [
+      "turn9search4"
+    ]
+  },
+  {
+    "id": "sweproverified",
+    "type": "paper",
+    "title": "SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+    "authors": "Pujun Zheng, Zixin Shang, Shufan Jiang, Wenhui Tian, Dongsheng Zhu, Zerun Ma, Dingbo Yuan, Qi Zhang",
+    "year": 2026,
+    "date": "2026-09-08",
+    "venue": "arXiv:2609.08149",
+    "category": "Evaluation",
+    "priority": "high",
+    "url": "https://arxiv.org/abs/2609.08149",
+    "summary": "This preprint analyzes leakage and task-quality problems in SWE-Bench Pro and introduces safeguards and task refinements.",
+    "action": "Audit candidate generation and evaluation for access to gold outputs, hidden tests and target identifiers before any Gemma comparison.",
+    "caveat": "This is a recent preprint. Its findings concern SWE-Bench Pro and should guide an audit rather than be assumed to apply identically here.",
+    "tags": [
+      "recent research",
+      "leakage",
+      "benchmark quality"
+    ],
+    "verifiedAt": "2026-11-06",
+    "verification": "Primary arXiv metadata and abstract checked.",
+    "sourceRefs": [
+      "turn5academia6"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+D:\Kaggle Competitions\shared\verification\2026-11-07-python315\benchmark.py:41: FutureWarning: invalid character '/' in Base64 data with altchars=b'._' and validate=False will be discarded in future Python versions
+  lambda c,x:base64.b64decode(x,altchars=c[0],validate=c[1]).hex()),
+D:\Kaggle Competitions\shared\verification\2026-11-07-python315\benchmark.py:41: FutureWarning: invalid character '+' in Base64 data with altchars=b'._' and validate=False will be discarded in future Python versions
+  lambda c,x:base64.b64decode(x,altchars=c[0],validate=c[1]).hex()),
+D:\Kaggle Competitions\shared\verification\2026-11-07-python315\benchmark.py:41: FutureWarning: invalid character '/' in Base64 data with altchars=b'-_' and validate=False will be discarded in future Python versions
+  lambda c,x:base64.b64decode(x,altchars=c[0],validate=c[1]).hex()),
+D:\Kaggle Competitions\shared\verification\2026-11-07-python315\benchmark.py:41: FutureWarning: invalid character '+' in Base64 data with altchars=b'-_' and validate=False will be discarded in future Python versions
+  lambda c,x:base64.b64decode(x,altchars=c[0],validate=c[1]).hex()),

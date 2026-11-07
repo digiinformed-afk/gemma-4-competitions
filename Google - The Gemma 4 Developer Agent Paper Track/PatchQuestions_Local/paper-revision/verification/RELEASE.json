@@ -1,0 +1,17 @@
+{
+  "archive": "D:\\Kaggle Competitions\\exports\\PatchQuestions_Paper_Revision_2026-11-07.zip",
+  "bytes": 719128,
+  "sha256": "c335c52e7d8ade20a5ce3ac0cd08e1493f99b7a8dccb8d582a3062ea8c2f14d6",
+  "payloads": 84,
+  "word_counts": {
+    "scope": "Entire Markdown including title, subtitle, table contents and references. The official page provides no detailed word-tokenization algorithm; final platform rendering must be checked.",
+    "raw_whitespace_tokens": 2159,
+    "visible_whitespace_tokens": 2159,
+    "alphanumeric_words": 2070
+  },
+  "source_modules_original": 7,
+  "notebook_modules": 9,
+  "notebook_code_cells_executed": 16,
+  "pilot_regression_tests": 12,
+  "integrity": "passed"
+}

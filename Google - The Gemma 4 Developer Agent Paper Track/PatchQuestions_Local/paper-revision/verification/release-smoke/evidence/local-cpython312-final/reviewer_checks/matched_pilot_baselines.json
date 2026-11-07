@@ -1,0 +1,357 @@
+{
+  "per_family": {
+    "url_quote": {
+      "random": {
+        "heldout_exact": 0.46026041666666667,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.7381001273858416,
+        "queries": 2.985925925925926
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 2.5
+      }
+    },
+    "query_pairs": {
+      "random": {
+        "heldout_exact": 0.5977678571428572,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.9656385281385281,
+        "queries": 2.479978354978355
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 2.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      }
+    },
+    "csv_fields": {
+      "random": {
+        "heldout_exact": 0.44754464285714285,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.7436105561105562,
+        "queries": 2.9000946969696972
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      }
+    },
+    "wrap": {
+      "random": {
+        "heldout_exact": 0.6098214285714285,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.9488240925740925,
+        "queries": 2.456085581085581
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 2.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 3.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 2.0
+      }
+    },
+    "json_wire": {
+      "random": {
+        "heldout_exact": 0.9728021978021978,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 1.0,
+        "queries": 1.4807692307692308
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 2.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      }
+    },
+    "regex_search": {
+      "random": {
+        "heldout_exact": 0.0875,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.25,
+        "queries": 2.0
+      },
+      "entropy": {
+        "heldout_exact": 0.25,
+        "queries": 2.0
+      },
+      "lookahead": {
+        "heldout_exact": 0.25,
+        "queries": 2.0
+      },
+      "frugal": {
+        "heldout_exact": 0.25,
+        "queries": 2.0
+      }
+    },
+    "base64_read": {
+      "random": {
+        "heldout_exact": 0.5931547619047619,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.75,
+        "queries": 1.770833333333333
+      },
+      "entropy": {
+        "heldout_exact": 0.75,
+        "queries": 1.5
+      },
+      "lookahead": {
+        "heldout_exact": 0.75,
+        "queries": 2.0
+      },
+      "frugal": {
+        "heldout_exact": 0.75,
+        "queries": 1.5
+      }
+    },
+    "hex_format": {
+      "random": {
+        "heldout_exact": 0.9782738095238095,
+        "queries": 3.0
+      },
+      "random_split": {
+        "heldout_exact": 0.9966346153846154,
+        "queries": 1.5222069597069599
+      },
+      "entropy": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      },
+      "lookahead": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      },
+      "frugal": {
+        "heldout_exact": 1.0,
+        "queries": 1.0
+      }
+    }
+  },
+  "macro": {
+    "random": {
+      "heldout_exact": 0.593390639308608,
+      "queries": 3.0
+    },
+    "random_split": {
+      "heldout_exact": 0.7991009899492042,
+      "queries": 2.199486760346135
+    },
+    "entropy": {
+      "heldout_exact": 0.875,
+      "queries": 1.8125
+    },
+    "lookahead": {
+      "heldout_exact": 0.875,
+      "queries": 2.25
+    },
+    "frugal": {
+      "heldout_exact": 0.875,
+      "queries": 1.75
+    }
+  },
+  "presentation": [
+    {
+      "family": "url_quote",
+      "N": 20,
+      "target0_display_row": 4,
+      "target1_display_row": 17,
+      "configs0and1": [
+        [
+          "0",
+          "''",
+          "'strict'"
+        ],
+        [
+          "0",
+          "''",
+          "'replace'"
+        ]
+      ]
+    },
+    {
+      "family": "query_pairs",
+      "N": 16,
+      "target0_display_row": 13,
+      "target1_display_row": 9,
+      "configs0and1": [
+        [
+          "False",
+          "False",
+          "'&'",
+          "'latin1'"
+        ],
+        [
+          "False",
+          "False",
+          "'&'",
+          "'utf8'"
+        ]
+      ]
+    },
+    {
+      "family": "csv_fields",
+      "N": 24,
+      "target0_display_row": 4,
+      "target1_display_row": 21,
+      "configs0and1": [
+        [
+          "','",
+          "False",
+          "False",
+          "None"
+        ],
+        [
+          "','",
+          "False",
+          "False",
+          "'\\\\'"
+        ]
+      ]
+    },
+    {
+      "family": "wrap",
+      "N": 16,
+      "target0_display_row": 13,
+      "target1_display_row": 9,
+      "configs0and1": [
+        [
+          "6",
+          "False",
+          "False",
+          "False"
+        ],
+        [
+          "6",
+          "False",
+          "False",
+          "True"
+        ]
+      ]
+    },
+    {
+      "family": "json_wire",
+      "N": 16,
+      "target0_display_row": 13,
+      "target1_display_row": 9,
+      "configs0and1": [
+        [
+          "False",
+          "False",
+          "False",
+          "False"
+        ],
+        [
+          "False",
+          "False",
+          "False",
+          "True"
+        ]
+      ]
+    },
+    {
+      "family": "regex_search",
+      "N": 16,
+      "target0_display_row": 13,
+      "target1_display_row": 9,
+      "configs0and1": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "re.ASCII"
+        ]
+      ]
+    },
+    {
+      "family": "base64_read",
+      "N": 6,
+      "target0_display_row": 3,
+      "target1_display_row": 5,
+      "configs0and1": [
+        [
+          "None",
+          "False"
+        ],
+        [
+          "None",
+          "True"
+        ]
+      ]
+    },
+    {
+      "family": "hex_format",
+      "N": 36,
+      "target0_display_row": 3,
+      "target1_display_row": 9,
+      "configs0and1": [
+        [
+          "':'",
+          "-3",
+          "False"
+        ],
+        [
+          "':'",
+          "-3",
+          "True"
+        ]
+      ]
+    }
+  ],
+  "warning": "Classical exact expectations only; no model sessions. Same original query order, row permutation does not affect these tie rules or uniform final selection."
+}

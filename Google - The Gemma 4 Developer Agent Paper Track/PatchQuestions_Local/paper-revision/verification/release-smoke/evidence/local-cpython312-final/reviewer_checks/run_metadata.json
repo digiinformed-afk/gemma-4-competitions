@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "<PYTHON>",
+  "argv": [
+    "reviewer_audit.py"
+  ],
+  "wall_seconds": 30.591203099989798,
+  "frozen_sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f"
+}
