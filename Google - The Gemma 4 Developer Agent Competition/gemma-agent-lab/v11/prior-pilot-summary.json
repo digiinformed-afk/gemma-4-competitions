@@ -1,0 +1,105 @@
+{
+  "revision": "runtime-v2.2",
+  "schedule": [
+    "requests_7309",
+    "rich_3130",
+    "fastapi_14262"
+  ],
+  "matched_manifests": true,
+  "primary_conclusion": "No observed improvement in tasks resolved: all three arms scored 2/3. This single three-task development pilot is not sufficient to establish a general benefit.",
+  "secondary_observation": "Hikmah successful patches contained no scratch scripts; control retained scripts in both successful patches, policy in one. This is an exploratory post-hoc observation, not proof of a causal effect.",
+  "data_export": "Current result text, visible manifest fields, full preflight values, system prompt messages, patch text and test output were preserved from Kaggle UI. Complete trace archives remain in saved Kaggle version outputs; archive download timed out.",
+  "source": {
+    "artifact": "Hikmah_Runtime_Repair_v2.zip",
+    "version": "5",
+    "member": "final-evidence-v2.2/comparison.json",
+    "sha256": "d7b6ed84725de83d21ade3f3dfd09940ed5c767d719a2c0db04d1e4e6f504eac"
+  },
+  "arms": [
+    {
+      "arm": "control",
+      "resolved": 2,
+      "total": 3,
+      "cold_wall_seconds": 1432.954538254,
+      "tool_calls": 79,
+      "outcomes": [
+        {
+          "instance_id": "requests_7309",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 29
+        },
+        {
+          "instance_id": "rich_3130",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 16
+        },
+        {
+          "instance_id": "fastapi_14262",
+          "outcome": "timeout",
+          "test_exit_code": -1,
+          "tool_calls": 34
+        }
+      ]
+    },
+    {
+      "arm": "policy",
+      "resolved": 2,
+      "total": 3,
+      "cold_wall_seconds": 1503.761469512,
+      "tool_calls": 102,
+      "outcomes": [
+        {
+          "instance_id": "requests_7309",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 30
+        },
+        {
+          "instance_id": "rich_3130",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 40
+        },
+        {
+          "instance_id": "fastapi_14262",
+          "outcome": "timeout",
+          "test_exit_code": -1,
+          "tool_calls": 32
+        }
+      ]
+    },
+    {
+      "arm": "hikmah",
+      "resolved": 2,
+      "total": 3,
+      "cold_wall_seconds": 1421.745518308,
+      "tool_calls": 87,
+      "outcomes": [
+        {
+          "instance_id": "requests_7309",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 17
+        },
+        {
+          "instance_id": "rich_3130",
+          "outcome": "resolved",
+          "test_exit_code": 0,
+          "tool_calls": 30
+        },
+        {
+          "instance_id": "fastapi_14262",
+          "outcome": "timeout",
+          "test_exit_code": 2,
+          "tool_calls": 40
+        }
+      ]
+    }
+  ],
+  "v11": {
+    "status": "reconstructed; GPU untested",
+    "result": null
+  }
+}

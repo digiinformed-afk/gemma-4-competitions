@@ -11,6 +11,7 @@ fs.cpSync(path.join(paper,'public'),path.join(site,'paper'),{recursive:true,filt
 fs.cpSync('exports',path.join(site,'downloads'),{recursive:true});
 fs.mkdirSync(path.join(site,'downloads/agent'),{recursive:true});
 for(const f of ['submission.zip','main-track-pilot.ipynb','scripted-smoke.json']) fs.copyFileSync(path.join(main,'artifacts',f),path.join(site,'downloads/agent',f));
+fs.cpSync(path.join(main,'v11'),path.join(site,'downloads/agent/v11'),{recursive:true,filter:src=>!src.includes('__pycache__')});
 const seed=JSON.parse(fs.readFileSync(path.join(paper,'server/seed.json'),'utf8'));
 seed.manuscript=fs.readFileSync(path.join(paper,'public/project/PatchQuestions_Writeup.md'),'utf8');
 seed.gates={...seed.gates,baseline:true,archive:true,draft:true,novelty:true,cost:true,reproduce:true,submitted:false};

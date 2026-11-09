@@ -98,8 +98,10 @@
     },
     {
       "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/MAIN-TRACK-STATUS.md",
-      "bytes": 4515,
-      "sha256": "832051658697a91f77029f4f3096135ed1802a61e9aeae235639e1f010094132"
+      "bytes": 5680,
+      "sha256": "3291e5440e0d7ae6ee4e1b4a51f91bc1d137709a2a78d63374ef1f10fb270b67",
+      "imported_sha256": "832051658697a91f77029f4f3096135ed1802a61e9aeae235639e1f010094132",
+      "updated": "2026-11-09"
     },
     {
       "path": "Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/package.json",
@@ -2618,8 +2620,10 @@
     },
     {
       "path": "shared/PROGRAM-PLAN.md",
-      "bytes": 19220,
-      "sha256": "003031ec01733495a98d8e11064a3931e75e82eb17d7be1c5d973e2f814305b0"
+      "bytes": 19687,
+      "sha256": "fc66504335bda7b73eb3b2aff669c0f34e2a11bfdc49fbd48d4d32027cf0cef6",
+      "imported_sha256": "003031ec01733495a98d8e11064a3931e75e82eb17d7be1c5d973e2f814305b0",
+      "updated": "2026-11-09"
     },
     {
       "path": "shared/REQUIREMENTS-COVERAGE.md",
@@ -2823,13 +2827,16 @@
     },
     {
       "path": "README.md",
-      "bytes": 2892,
-      "sha256": "32abf4d80a1f5136115d39056e49bc62f21cfc91e6ee85b28288efbf34356ae8"
+      "bytes": 3677,
+      "sha256": "31229a61ce3f9ac3a46fdfa576717227a780947c56ea4b5524c4b70a789f1d1b",
+      "imported_sha256": "32abf4d80a1f5136115d39056e49bc62f21cfc91e6ee85b28288efbf34356ae8",
+      "updated": "2026-11-09"
     },
     {
       "path": "PatchQuestions_Research_Review.md",
       "bytes": 65239,
       "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
     }
-  ]
+  ],
+  "revision_note": "2026-11-09: current status and plan updated for the prior GPU pilot and reconstructed V11; imported_sha256 preserves original import fingerprints."
 }

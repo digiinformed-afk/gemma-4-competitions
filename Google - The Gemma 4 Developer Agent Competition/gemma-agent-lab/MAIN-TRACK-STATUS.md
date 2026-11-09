@@ -1,4 +1,26 @@
-# Main-track checkpoint
+# Main-track checkpoint — 9 November 2026
+
+## Current: V11 reconstructed; GPU evaluation pending
+
+The earlier matched Kaggle comparison completed on four L4 GPUs: control, generic
+policy and Hikmah each resolved **2/3**. Requests and Rich passed; FastAPI remained
+unresolved. No repair-rate gain is established, and no leaderboard score or final
+Kaggle submission is recorded.
+
+[Version 11 source, notebook and next steps](v11/README.md) supersede the older
+resume instructions below. V11 reconstructs the documented Canvas plan on the
+saved repaired runtime-v2.2 notebook; the original Canvas export was unavailable.
+It adds batched call-chain discovery, public API prechecks, larger local budgets,
+shorter decoding and separate agent/result archives. Three local CPU checks pass;
+**V11 has not run on GPU**. The recovered prior-pilot summary is in
+[v11/prior-pilot-summary.json](v11/prior-pilot-summary.json).
+
+Next: run V11 Hikmah on the same three tasks, then matched V11 controls, then a
+larger frozen public development set and untouched HTTPX confirmation. Keep this
+small tuned pilot distinct from the final hidden-task evaluation.
+
+## Historical checkpoint — 7 November 2026
+
 
 Updated 7 November 2026. The paper review is with the other AI. Work in this folder can proceed independently.
 
