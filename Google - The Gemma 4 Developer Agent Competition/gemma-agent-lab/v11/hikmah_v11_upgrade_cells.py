@@ -151,7 +151,9 @@ V11 plan on the saved repaired runtime-v2.2 notebook; it is not the original Can
 
 Use a fresh **private** Kaggle Python 3.12 session, L4 ×4, Internet off. Attach the
 competition data, official 31B QAT model v2, organizer wheelhouse, and the existing
-private Hikmah Runtime Wheelhouse (all six hash-pinned supplemental wheels).
+private Hikmah Runtime Wheelhouse. The earlier attachment supplies Pygments only;
+attach the other five wheels from the repair ZIP source/extra-wheels/ directory
+or extend the private wheelhouse to contain all six hash-pinned wheels.
 No model weights, competition snapshots, task statements or wheel bytes are bundled.
 
 Default arm: `sample-hikmah`. For a matched comparison rerun `sample-control` and

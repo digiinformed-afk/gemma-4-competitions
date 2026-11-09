@@ -40,9 +40,12 @@ enforcement or extra harness allowances. No FastAPI solution is hardcoded.
 1. Import the V11 notebook into a fresh **private** session. Select original
    Python 3.12, **L4 ×4**, and Internet off.
 2. Attach competition data, the organizer wheelhouse, official **31B IT QAT
-   W4A16 CT model v2**, and the existing private Hikmah Runtime Wheelhouse.
-   All six supplemental wheel filenames/digests are embedded; wheel bytes are
-   not. The notebook fails if its required inputs or frozen task identities differ.
+   W4A16 CT model v2**, and the private Hikmah Runtime Wheelhouse.
+   The earlier attached wheelhouse supplies **Pygments only**. Also attach the
+   other five wheels from `Hikmah_Runtime_Repair_v2.zip/source/extra-wheels/`
+   (asttokens, dirty_equals, executing, inline_snapshot and starlette), or extend
+   your private wheelhouse to include all six. All six filenames/digests are
+   embedded; wheel bytes are not. The notebook fails if its required inputs or frozen task identities differ.
 3. Run the default `sample-hikmah` arm on `requests_7309`, `rich_3130`, and
    `fastapi_14262`. Inspect the actual traces, test outcomes and patch capture.
    **3/3 is the debugging target**, not a promised result.
