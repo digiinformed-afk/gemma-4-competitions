@@ -19,7 +19,7 @@ test('atlas data has valid evidence links and distinct reported results',()=>{
  assert.ok(D.sources.length>=25);assert.equal(D.concepts.length,55);
  const ids=new Set(D.sources.map(x=>x.id));assert.equal(ids.size,D.sources.length);
  for(const collection of [D.timeline,D.community,D.bottlenecks,D.plan])for(const item of collection)assert.ok(ids.has(item.source),item.title||item.name);
- for(const s of D.sources)assert.ok(new URL(s.url).protocol==='https:');
+ for(const s of D.sources){assert.ok(new URL(s.url).protocol==='https:');assert.notEqual(new URL(s.url).hostname,'chatgpt.com','Public atlas must not link private files');}
  assert.equal(D.sources.find(x=>x.id==='latest').kind,'Reported');
  assert.ok(D.timeline.filter(x=>/HTTPX|V12|Larger-memory/.test(x.title)).every(x=>x.status==='Reported'));
 });
