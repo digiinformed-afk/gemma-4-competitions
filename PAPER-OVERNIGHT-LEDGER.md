@@ -31,3 +31,13 @@ At time of this entry, no new Kaggle Writeup submission is confirmed. GitHub Act
 python scripts/paper_open_set.py --self-test
 python scripts/paper_open_set.py --output paper-results/open-set.json
 ```
+
+
+## Study 1a: independent exhaustive selector audit (2026-11-12 01:xx PKT)
+
+- **Code committed:** [scripts/paper_open_set_exhaustive_audit.py](scripts/paper_open_set_exhaustive_audit.py), commit `15277bc461222db25445d1b81c581d5f9f37508e`.
+- **Executed cross-check:** independent JavaScript enumeration of all 512 binary 3-candidate × 3-query matrices, all 3 target identities (1,536 target conditions), both presence states, all three query budgets, and the fixed/entropy-stop/entropy-verify policy rules. This is a *toy exhaustive correctness check*, not a new software benchmark or model experiment.
+- **Observed invariants:** 0 false absent-target detections when the correct candidate is present; 0 cases where entropy-stop detects absence but entropy-verify fails; 2,088 absent-target/budget conditions where verification detects and entropy-stop does not; 360 target conditions with a remaining candidate identical on every query, and 0 detections in those indistinguishable cases across all three policies at budget three.
+- **Reproduction status:** independent JavaScript audit **executed**. Python audit source **committed but not yet executed in GitHub Actions**; no Python pass is claimed. Run `python scripts/paper_open_set_exhaustive_audit.py` in a checked-out repository to cross-validate the expected counts. This small-grid check does not independently replicate the 13,500-row real frozen-matrix study.
+- **Interpretation:** zero false positives and the monotonicity of verification versus early stopping follow from the perfect-oracle, exact-match protocol. They should **not** be presented as empirical robustness to noisy labels. Detection is impossible when a missing target has a query-identical available candidate.
+- **Next priority:** run the Python audit in CI, then add a matched noisy-oracle study; do not change the manuscript's central result based on toy enumeration alone.
