@@ -50,3 +50,12 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Status:** SOURCE COMMITTED, **NOT YET EXECUTED**. No numerical noise findings are claimed. This is a toy correctness/stress test, not a Gemma experiment or a prospective benchmark. Run `python scripts/paper_noisy_oracle_audit.py --output paper-results/noisy-oracle-toy.json` and independently check the resulting JSON before citing any result.
 - **Additional validation this run:** an independent JavaScript enumeration rechecked the earlier 512-matrix perfect-oracle invariants: 0 present false detections, 0 verification regressions, 2,088 verification-only detections across budgets, 360 indistinguishable absent target conditions, 0 impossible detections. This **does not** constitute execution of the committed Python exhaustive-audit script.
 - **Caution:** under label noise, hard elimination may falsely reject an actually present target. Any claimed open-set benefit must be reported alongside false-rejection rate; do not add noisy-oracle conclusions to the manuscript until execution.
+
+
+## Study 1c: independent noisy-oracle enumeration (2026-11-12, executed)
+
+- **Result report committed:** [PAPER-NOISY-ORACLE-TOY-RESULTS-2026-11-12.md](PAPER-NOISY-ORACLE-TOY-RESULTS-2026-11-12.md), commit `9eaf5b20e723926bc0e26d106fb9e646c32425b0`.
+- **Execution:** independent JavaScript exact weighted enumeration executed in ChatGPT tool runtime. Local Python/container execution failed to start; **neither committed Python audit has been run here**, and no CI pass is claimed.
+- **Budget 3:** target-present false-rejection for verification: 0% (no noise), 10.92% (5% flips), 29.54% (15% flips); absent-target detection 76.56% in this exhaustive symmetric 3×3 binary toy. Entropy-stop has zero contradiction detection in this toy setup, not generally.
+- **Interpretation:** hard-elimination verification is vulnerable to noisy labels. This is a toy protocol result, **not Gemma performance** or real bug-repair evidence; keep separate from frozen 750-condition benchmark. The report contains matched controls, question counts and limitations.
+- **Next:** run Python audits in CI and compare all 54 result cells, then focus on the actual Kaggle Writeup submission and claim audit.
