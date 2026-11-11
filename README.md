@@ -2,16 +2,16 @@
 
 Two Google Gemma 4 competition projects, their source code, current progress, research evidence and recovery instructions in one repository.
 
-**[Open the competition hub](https://digiinformed-afk.github.io/gemma-4-competitions/)** · **[Edit in your browser](https://github.dev/digiinformed-afk/gemma-4-competitions)** · **[Shared progress](https://github.com/digiinformed-afk/gemma-4-competitions/issues)**
+**[Open the interactive research atlas](https://digiinformed-afk.github.io/gemma-4-competitions/atlas.html)** · **[Open the competition hub](https://digiinformed-afk.github.io/gemma-4-competitions/)** · **[Edit in your browser](https://github.dev/digiinformed-afk/gemma-4-competitions)** · **[Shared progress](https://github.com/digiinformed-afk/gemma-4-competitions/issues)**
 
-## Current checkpoint — 9 November 2026
+## Current checkpoint — 11 November 2026
 
 | Track | Verified progress | Next action |
 |---|---|---|
 | PatchQuestions paper | Revised manuscript; 18,000 score rows reproduced on CPython 3.12.14; 16 notebook code cells executed; strict optional model supervisor tested | Author/platform review and Kaggle Writeup submission |
-| Main repair agent | Saved matched L4×4 pilot: control, generic policy and Hikmah each resolved 2/3; reconstructed V11 notebook passes three CPU checks and awaits GPU testing | Run V11 Hikmah smoke, matched V11 controls, then broader public-task evaluation |
+| Main repair agent | Saved matched L4×4 pilot: control, generic policy and Hikmah each resolved 2/3. Newer session reports: V12/control/V14 each 2/3; both Hikmah and control passed one HTTPX case. Raw newest-run audit pending. | Audit latest manifests/traces and exact import controls, then freeze broader matched evaluation with new confirmation tasks |
 
-The earlier real Gemma GPU pilot resolved Requests and Rich; FastAPI remained unresolved. No leaderboard score or final Kaggle submission is recorded. V11 is a documented reconstruction, not a recovered copy of the inaccessible Canvas export, and has no GPU result yet. [V11 notebook, source and way forward](<Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/v11/README.md>). A paper benchmark result is not a repository repair score.
+The earlier real Gemma GPU pilot resolved Requests and Rich; FastAPI remained unresolved. No leaderboard score or final Kaggle submission is recorded. V11 is a documented reconstruction, not a recovered copy of the inaccessible Canvas export; its historical README has no GPU result. Later session reports retain V12, describe slower V14 and a timed-out larger-memory diagnostic, with no clear Hikmah repair advantage. The HTTPX report records Hikmah 603s/31 calls and control 583s/34 calls; its exact raw conditions are pending audit and cannot be merged with the older three-task pilot. HTTPX has now been exposed, so future confirmation needs fresh tasks. [V11 notebook, source and way forward](<Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/v11/README.md>). A paper benchmark result is not a repository repair score.
 
 Deadlines from the saved 7 November plan: paper **13 November 2026, 04:59 PKT**; main entry/team merger **26 November, 04:59 PKT**; main submission **3 December, 04:59 PKT**. Consult the official Kaggle pages for subsequent changes.
 
