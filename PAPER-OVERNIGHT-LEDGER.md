@@ -59,3 +59,13 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Budget 3:** target-present false-rejection for verification: 0% (no noise), 10.92% (5% flips), 29.54% (15% flips); absent-target detection 76.56% in this exhaustive symmetric 3×3 binary toy. Entropy-stop has zero contradiction detection in this toy setup, not generally.
 - **Interpretation:** hard-elimination verification is vulnerable to noisy labels. This is a toy protocol result, **not Gemma performance** or real bug-repair evidence; keep separate from frozen 750-condition benchmark. The report contains matched controls, question counts and limitations.
 - **Next:** run Python audits in CI and compare all 54 result cells, then focus on the actual Kaggle Writeup submission and claim audit.
+
+## Study 1d: Python CI cross-validation completed (2026-11-12 04:xx PKT)
+
+- **Commit:** `bc92b29fd9739b0a7f8fc7293df024dd410b6803` extended `.github/workflows/paper-experiments.yml` to run both previously unexecuted Python audits on CPython 3.12, in addition to preserving the original frozen-matrix experiment.
+- **Verified GitHub Actions execution:** [run 43116822447](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43116822447) completed successfully. Both `open-set` and `independent-toy-audits` jobs have GitHub-reported `success` conclusions.
+- **Independent Python audit:** `scripts/paper_open_set_exhaustive_audit.py` executed with its built-in exact count assertions. This validates the 512-matrix invariants previously obtained through independent JavaScript enumeration.
+- **Noisy-oracle Python audit:** `scripts/paper_noisy_oracle_audit.py` executed, wrote `paper-results/noisy-oracle-toy.json`, and passed independently specified anchor assertions for budget-three 0%, 5%, and 15% noise cells. The CI job uploaded machine-readable JSON and audit logs using `actions/upload-artifact@v4`.
+- **Scope:** The Python/JavaScript agreement is a *toy protocol correctness cross-check*, not an independent prospective software-task sample, not a Gemma evaluation, and not evidence of end-to-end repair improvement. The CI assertions check anchor cells, not all 54 result cells against a separate implementation.
+- **Submission remains unconfirmed:** a successful GitHub Actions run is not a Kaggle Writeup submission. Author-side Kaggle sign-in, final rendered word count, declarations and explicit Submit action remain necessary before **2026-11-12 23:59 UTC**.
+- **Next:** perform a final manuscript claim/word-count audit and prioritize Kaggle submission. Further experiments should not delay submission.
