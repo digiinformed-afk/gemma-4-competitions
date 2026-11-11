@@ -1,0 +1,29 @@
+name: Paper robustness experiment
+on:
+  push:
+    paths:
+      - 'scripts/paper_open_set.py'
+      - '.github/workflows/paper-experiments.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  open-set:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests and fixed-matrix experiment
+        run: |
+          python scripts/paper_open_set.py --self-test
+          python scripts/paper_open_set.py --output paper-results/open-set.json
+      - name: Upload immutable run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: patchquestions-open-set-${{ github.run_id }}
+          path: paper-results/open-set.json
+          if-no-files-found: error
+          retention-days: 30
