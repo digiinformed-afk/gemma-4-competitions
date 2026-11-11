@@ -33,7 +33,7 @@ def canon(value):
 
 def entropy(values):
     counts = Counter(values)
-    n = len(values)
+    n = sum(counts.values())
     return -sum((k / n) * math.log2(k / n) for k in counts.values()) if n else 0.0
 
 
