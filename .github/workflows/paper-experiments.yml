@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - 'scripts/paper_open_set.py'
+      - 'scripts/paper_open_set_exhaustive_audit.py'
+      - 'scripts/paper_noisy_oracle_audit.py'
       - '.github/workflows/paper-experiments.yml'
   workflow_dispatch:
 permissions:
@@ -20,10 +22,46 @@ jobs:
         run: |
           python scripts/paper_open_set.py --self-test
           python scripts/paper_open_set.py --output paper-results/open-set.json
-      - name: Upload immutable run artifact
+      - name: Upload open-set artifact
         uses: actions/upload-artifact@v4
         with:
           name: patchquestions-open-set-${{ github.run_id }}
           path: paper-results/open-set.json
           if-no-files-found: error
+          retention-days: 30
+  independent-toy-audits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Exact small-matrix selector audit
+        run: python scripts/paper_open_set_exhaustive_audit.py | tee exhaustive-audit.log
+      - name: Exact noisy-oracle enumeration
+        run: python scripts/paper_noisy_oracle_audit.py --output paper-results/noisy-oracle-toy.json | tee noisy-oracle.log
+      - name: Verify expected independently enumerated anchor cells
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('paper-results/noisy-oracle-toy.json').read_text())['results']
+          def value(p, absent, policy):
+              return d[f'noise={p}|absent={absent}|policy={policy}|budget=3']['contradiction_rate']
+          assert abs(value(0.0,True,'entropy_verify') - 0.765625) < 1e-10
+          assert abs(value(0.05,False,'entropy_verify') - 0.1092) < 0.0001
+          assert abs(value(0.15,False,'entropy_verify') - 0.2954) < 0.0001
+          print('Independent anchor checks passed')
+          PY
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: patchquestions-toy-audits-${{ github.run_id }}
+          path: |
+            paper-results/noisy-oracle-toy.json
+            exhaustive-audit.log
+            noisy-oracle.log
+          if-no-files-found: warn
           retention-days: 30
