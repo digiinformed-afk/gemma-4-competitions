@@ -2,7 +2,11 @@
 
 Two Google Gemma 4 competition projects, their source code, current progress, research evidence and recovery instructions in one repository.
 
-**[Open the interactive research atlas](https://digiinformed-afk.github.io/gemma-4-competitions/atlas.html)** · **[Open the competition hub](https://digiinformed-afk.github.io/gemma-4-competitions/)** · **[Edit in your browser](https://github.dev/digiinformed-afk/gemma-4-competitions)** · **[Shared progress](https://github.com/digiinformed-afk/gemma-4-competitions/issues)**
+**[Open the resumable control center](https://digiinformed-afk.github.io/gemma-4-competitions/control-center.html)** · **[Open the interactive research atlas](https://digiinformed-afk.github.io/gemma-4-competitions/atlas.html)** · **[Open the competition hub](https://digiinformed-afk.github.io/gemma-4-competitions/)** · **[Edit in your browser](https://github.dev/digiinformed-afk/gemma-4-competitions)** · **[Shared progress](https://github.com/digiinformed-afk/gemma-4-competitions/issues)**
+
+## Resumable control center
+
+`web/control-center.html` is a static, dependency-free research operations dashboard published at `/control-center.html`. It supports separate Main/Paper Track views, version/task/experiment ledgers, comparison warnings, time/tool/compute logs, verification gates, failure triage, research proposals, submission history, local ZIP directory inspection, SHA-256 snapshots, browser autosave, resume briefs, and JSON export/import. All user edits are browser-local and do not update GitHub or Kaggle automatically. Share reviewed changes in GitHub Issues and export a backup between devices. The ZIP inspector is a heuristic browser preflight, not the official evaluator or schema validator. Seeded later V14/HTTPX outcomes are marked tentative until raw trace/hashes are audited.
 
 ## Current checkpoint — 11 November 2026
 
