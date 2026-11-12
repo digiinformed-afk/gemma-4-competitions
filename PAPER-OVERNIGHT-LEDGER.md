@@ -69,3 +69,12 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Scope:** The Python/JavaScript agreement is a *toy protocol correctness cross-check*, not an independent prospective software-task sample, not a Gemma evaluation, and not evidence of end-to-end repair improvement. The CI assertions check anchor cells, not all 54 result cells against a separate implementation.
 - **Submission remains unconfirmed:** a successful GitHub Actions run is not a Kaggle Writeup submission. Author-side Kaggle sign-in, final rendered word count, declarations and explicit Submit action remain necessary before **2026-11-12 23:59 UTC**.
 - **Next:** perform a final manuscript claim/word-count audit and prioritize Kaggle submission. Further experiments should not delay submission.
+
+## Study 1e: final manuscript claim audit (2026-11-12 05:xx PKT)
+
+- **Executed:** fetched canonical `public/project/PatchQuestions_Writeup.md` from `main` and checked required sections, references, research claims and whitespace word count. Updated the limitations paragraph in commit `c7a2fa2ac38cebcce58c859f0f87a11ef4d7b34c`.
+- **Word count:** 2,483 whitespace-delimited words including title, subtitle, tables and references, below the competition's 3,000-word limit. Kaggle's rendered counter remains unverified.
+- **Correction:** replaced misleading broad claim that noisy labels were entirely unevaluated with a tightly scoped description of the independently cross-validated **binary toy** noise audit, including false-rejection tradeoff. It is explicitly separated from the eight-family benchmark and real Gemma/repository repair.
+- **Evidence:** [successful Python audit CI](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43116822447); [original frozen-matrix/open-set CI](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43091180332). Neither is a Kaggle submission.
+- **Submission blocker:** authenticated Kaggle Writeup creation, eligibility declarations, rendered preview and explicit final Submit remain unverified. No new model experiments should displace submission priority.
+- **Next:** confirm actual Kaggle submission status through an authenticated session; if absent, submit the updated 2,483-word manuscript before 2026-11-12 23:59 UTC. Do not claim submitted without a platform receipt.
