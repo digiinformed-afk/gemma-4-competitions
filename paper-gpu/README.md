@@ -9,3 +9,5 @@ Outputs include environment and model metadata, a disjoint calibration exchange,
 CPU verification uses the canonical project's paper-revision/tests/test_pilot.py. The implementation adds token-mapping, control-arm, incomplete-pair, entropy-selection, and tampered-transcript checks to the original twelve tests. No GPU result is bundled.
 
 For external local serving, use the canonical pilot.py freeze, baselines, run, summarize and replay commands. Pass --controls to freeze to include all 64 sessions. An existing run directory is never overwritten. Failed runs are preserved and corrected configurations receive a new run ID.
+
+The offline installer is extracted from Ryan Holbrook’s Getting Started – Gemma 4 Developer Agent v3, licensed under Apache 2.0. The license is included. Fork the existing working Python 3.12 notebook, keep Pin to original environment selected, then import this notebook. A newly created notebook defaults to Python 3.13 and cannot install the organizer cp312 wheels. The first cell now checks Python 3.12 before installation.
