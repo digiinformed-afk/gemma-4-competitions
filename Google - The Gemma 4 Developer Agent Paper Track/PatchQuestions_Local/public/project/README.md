@@ -4,7 +4,7 @@ The revised manuscript is `PatchQuestions_Writeup.md`. It describes an executabl
 
 ## Reproduce on CPU
 
-Open `PatchQuestions.ipynb` in Kaggle or Jupyter and run every cell in a fresh kernel. It embeds **nine modules**, creates a fresh output directory and rebuilds the benchmark, crossed entropy/frugal comparison, selected-transcript costs, reference verification, frozen matrices and presentation control. The notebook's deterministic supervisor fixture is a software test. No model session is run. No network, GPU or package installation is needed inside the notebook.
+Open `PatchQuestions.ipynb` in Kaggle or Jupyter and run every cell in a fresh kernel. It embeds the versioned Python modules, creates a fresh output directory and rebuilds the benchmark, crossed entropy/frugal comparison, selected-transcript costs, reference verification, frozen matrices and presentation control. The notebook's deterministic supervisor fixture is a software test. No model session is run. No network, GPU or package installation is needed inside the notebook.
 
 Use **CPython 3.12.14** for the reference measurements. Other runtimes may change library behavior, particularly Base64. The embedded original frozen matrices are preserved separately from regenerated runtime matrices.
 
@@ -44,18 +44,19 @@ Historical `replay.py` and `cognitive_probe.py` implement held-out-only grading.
 
 The new supervisor reports valid completion, query consistency, held-out agreement and identity separately. Primary success requires the first three. Strict JSON parsing rejects duplicate keys, Boolean/noninteger indices, repeated/out-of-range queries, over-budget actions and malformed responses. Model requests include only instructions, displayed matrix, previous actions and requested answers. Private grades are never fed back. No execution tools are supplied.
 
-`pilot.py freeze` creates a private supervisor plan after development-only serving checks. It samples two targets per family across configuration-index halves, shuffles each pair's rows independently and uses randomly renamed masked labels. Named/masked row order is matched and starting view alternates. This differs from the older unrun targets-0/1 proposal; it remains a convenience feasibility sample. No scored plan has been frozen for a real checkpoint in this release.
+`pilot.py freeze` creates a private supervisor plan after development-only serving checks. It samples two targets per family across configuration-index halves, shuffles each pair's rows independently and uses randomly renamed masked labels. Named/masked row order is matched and starting view alternates. This differs from the older unrun targets-0/1 proposal; it remains a convenience feasibility sample. The GPU worker freezes the scored plan only after a real serving/tokenizer calibration passes. The optional --controls flag adds 16 immediate-pick sessions and 16 entropy-assisted final picks, with targets and row order matched to the named view.
 
-The `--model-info` JSON must supply exactly these confirmed fields: `served_model`, `model_revision`, `tokenizer_revision`, `quantization`, `serving_stack`, `hardware`, `context_tokens`, `max_tokens`, `temperature`, `top_p`, `seed`, `timeout_seconds`. Values must be selected and recorded using development cases before freezing. The release supplies no pretend confirmed model configuration.
+The `--model-info` JSON must supply these confirmed fields: `served_model`, `model_revision`, `tokenizer_revision`, `quantization`, `serving_stack`, `hardware`, `context_tokens`, `max_tokens`, `temperature`, `top_p`, `seed`, `timeout_seconds`. Optional `chat_template_kwargs` must match the server. Values must be selected and recorded using development cases before freezing. The release supplies no pretend confirmed model configuration.
 
 ```sh
-python -B pilot.py freeze --model-info confirmed-model-info.json --output private-plan.json
+python -B pilot.py freeze --controls --model-info confirmed-model-info.json --output private-plan.json
 python -B pilot.py baselines --plan private-plan.json > matched-baselines.json
 python -B pilot.py run --plan private-plan.json --endpoint http://127.0.0.1:8000 --tokenizer /local/exact-tokenizer --output new-run
 python -B pilot.py summarize new-run
+python -B pilot.py replay new-run
 ```
 
-Live inference needs `transformers` for the exact local tokenizer and an already-running local server supporting `/v1/chat/completions`. The tokenizer loads locally with remote code disabled. Requests use server-side chat formatting, so verify that the local tokenizer/chat template matches the server on development requests. Preflight counts reserve output tokens; no prompt truncation is requested. The adapter is unit-tested using test doubles and has not been tested against a real Gemma endpoint. [Serving API reference](https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/).
+Live inference needs `transformers` for the exact local tokenizer and an already-running local server supporting `/v1/chat/completions`. The tokenizer loads locally with remote code disabled. Requests use server-side chat formatting, so verify that the local tokenizer/chat template matches the server on development requests. Preflight counts reserve output tokens; no prompt truncation is requested. The adapter has 18 passing CPU tests, including a full 64-session scripted-transport run. A real Gemma GPU attempt is tracked in the repository paper-gpu/STATUS.md; test-double success is not model evidence. [Serving API reference](https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/).
 
 The plan hashes data, supervisor source and instruction. Keep it and the frozen archive outside evaluated-model access. A separate process alone does not sandbox a tool-enabled agent. Store all model/tokenizer/quantization hashes and server launch configuration with the confirmed revision metadata; the supervisor cannot independently certify weight identity.
 

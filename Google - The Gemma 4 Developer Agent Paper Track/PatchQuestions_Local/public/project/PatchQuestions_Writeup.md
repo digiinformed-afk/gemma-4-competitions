@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Selecting a useful clarification requires separating available candidate behaviors from the policy used to acquire trusted labels. PatchQuestions is an executable API-contract disambiguation resource with 150 configurations across eight Python standard-library families. Policies inspect candidate outputs on a fixed query pool and receive the intended output only for selected inputs. Five splits and exhaustive target rotation produce 750 target–split conditions. At a maximum of three questions, random-informative selection achieves 76.32% full held-out agreement, entropy 85.27%, and an identity-optimal frugal tree 85.48%. Mean question counts are 1.88 for entropy, 1.86 for frugal and 2.27 for ordinary tree search. In an exploratory regex intervention, compound probes increase three-question agreement from 30% to 86.25% for both entropy and frugal selection, while increasing answer capacity. We provide exact randomized baselines, frozen behavior matrices and reproducible CPU evaluation. The resource isolates selection under correct-candidate and perfect-oracle assumptions. Human-time savings and repository-repair gains remain unevaluated. An exploratory candidate-deletion stress test suggests verification questions can detect absent targets after identity uncertainty disappears.
+Selecting a useful clarification requires separating available candidate behaviors from the policy used to acquire trusted labels. PatchQuestions is an executable API-contract disambiguation resource with 150 configurations across eight Python standard-library families. Policies inspect candidate outputs on a fixed query pool and receive the intended output only for selected inputs. Five splits and exhaustive target rotation produce 750 target–split conditions. At a maximum of three questions, random-informative selection achieves 76.32% full held-out agreement, entropy 85.27%, and an identity-optimal frugal tree 85.48%. Mean question counts are 1.88 for entropy, 1.86 for frugal and 2.27 for ordinary tree search. In an exploratory regex intervention, compound probes increase three-question agreement from 30% to 86.25% for both entropy and frugal selection, while increasing answer capacity. We provide exact randomized baselines, frozen behavior matrices and reproducible CPU evaluation. A small Gemma 4 GPU pilot separately diagnoses question selection, evidence use and output-format failures. The resource isolates selection under correct-candidate and perfect-oracle assumptions. Human-time savings and repository-repair gains remain unevaluated. An exploratory candidate-deletion stress test suggests verification questions can detect absent targets after identity uncertainty disappears.
 
 ## Introduction
 
@@ -106,6 +106,23 @@ At three questions, family-macro rates of detecting that no candidate matches th
 
 The result highlights a distinction: **a question may stop helping identify the best surviving candidate while still helping falsify the entire candidate set**. This intervention shares the same eight curated families and overlapping split universes, assumes a perfect oracle, and does not evaluate Gemma or repository repair. It motivates open-set verification as a future research target, not a general performance claim.
 
+## Exploratory Gemma 4 GPU pilot
+
+We additionally ran base Gemma 4 31B instruction-tuned QAT w4a16 (model version 2), without adapters, using tensor parallelism on four L4 GPUs and offline vLLM 0.19.1. Temperature was zero, seed 2026, thinking disabled, context 32,768 tokens and output limit 128 tokens per turn. Two targets per family, one sampled from each configuration-index half in split 19, formed 16 convenience pairs. Named and anonymized views shared targets and row order, alternated starting view, and used fresh contexts. Anonymization replaced inputs and per-column outcome names while preserving partitions. Free selection allowed up to three questions before a final pick.
+
+| Condition | Strict successes | Recorded sessions |
+|---|---:|---:|
+| Free named | 3/16 (18.75%) | 16 |
+| Free anonymized | 4/16 (25.00%) | 16 |
+| Named entropy-assisted pick | 8/16 (50.00%) | 16 |
+| Named zero-question control | 0/16 | 16 protocol failures |
+
+Strict success requires legal completion, consistency with acquired answers and complete held-out agreement. Named/anonymized paired outcomes were two named wins, three anonymized wins and eleven ties. On these same targets, CPU entropy with uniform survivor selection has 87.50% expected success; random-informative has 77.74%. These differ from the full-benchmark averages.
+
+Assistance supplies up to three CPU-selected entropy exchanges before the model's single final pick; it changes the interaction pattern. Six assisted picks contradicted supplied answers. All zero-question responses wrapped JSON in Markdown fences and failed strict parsing; that arm's prompt omitted the free arm's explicit JSON example and no-prose wording. Its zero score therefore cannot establish selection accuracy. Original failures remain unrepaired in the reported run.
+
+All 64 scheduled sessions were recorded. Downloaded transcripts reproduce saved grades and matched baselines; all 116 scored requests match logged prompt-token counts after a calibrated one-token offset. Sources, hashes and [replay evidence](https://github.com/digiinformed-afk/gemma-4-competitions/tree/main/paper-gpu/verification/gpu-attempt-368723141) are retained. This small, prompt-sensitive pilot provides diagnostic evidence, without establishing significance, generalization or repository-repair benefit.
+
 ## Related work
 
 | Prior work | Established overlap | Scope isolated here |
@@ -125,7 +142,7 @@ The CPU notebook rebuilds the benchmark, crossed comparison and transcript costs
 
 The trusted oracle, present target, uniform configuration prior and precomputed candidate behavior are restrictive assumptions. A separate exhaustive **toy** audit of all 512 binary 3-candidate × 3-query matrices examines independent answer flips, not realistic annotation noise. With three questions, hard-elimination verification falsely rejects a present target in 0%, 10.92%, and 29.54% of conditions at 0%, 5%, and 15% oracle-error rates, respectively; its absent-target contradiction rate is 76.56% in that symmetric toy setting. [Python CI cross-validation](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43116822447) passed anchor assertions. These figures are not from the eight-family benchmark and are not evidence of noise-tolerant repair. Real-world missing-candidate detection, arbitrary Python outputs and human annotation costs remain unevaluated. Real repair may be dominated by generating candidates or obtaining justified expected behavior. Model-written expectations and candidate votes cannot substitute for a trusted contract.
 
-We include a tested supervisor for future text-only model comparisons. Its primary success requires valid completion, consistency with acquired answers and held-out agreement; historical held-out-only scoring remains available separately. This prevents a candidate from being counted as successful evidence use merely because it matches the held-out suite while contradicting an answer. The supervisor keeps targets and grading outputs outside model requests. Its local serving adapter requires model-specific validation before use. No learned-model session, human study or repository repair is reported.
+The supervisor keeps targets and grading outputs outside model requests. The GPU pilot uses the original probe pool, not the richer regex intervention. No human study, real repository repair or validated internal cognitive core is reported.
 
 ## References
 

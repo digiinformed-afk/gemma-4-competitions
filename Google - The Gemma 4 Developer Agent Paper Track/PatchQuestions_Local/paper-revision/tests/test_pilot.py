@@ -48,6 +48,23 @@ class PilotTests(unittest.TestCase):
             with self.subTest(value=value), self.assertRaises(pilot.ProtocolError):
                 pilot.parse_action(value)
 
+    def test_zero_control_requests_bare_json_and_still_rejects_fences(self):
+        c = self.cases['wrap', 43]
+        s = pilot.Session(c, 0, list(range(len(c['configs']))), 'named', budget=0)
+        self.assertIn('{"pick": row}', s.initial['instructions'])
+        self.assertIn('No Markdown code fences', s.initial['instructions'])
+        with self.assertRaises(pilot.ProtocolError):
+            pilot.parse_action('```json\n{"pick":0}\n```')
+        with self.assertRaises(pilot.ProtocolError):
+            s.step({'ask': 0})
+        self.assertTrue(s.step({'pick': 0})[1]['success'])
+
+    def test_calibrated_token_offset_applies_to_sequence_length(self):
+        class Tokenizer:
+            def apply_chat_template(self, messages, **kwargs):
+                return [10, 20, 30]
+        self.assertEqual(pilot.count_tokens(Tokenizer(), [], {**self.info, 'token_count_offset': 1}), 4)
+
     def test_repeated_query_and_out_of_range(self):
         s = self.session()
         s.step({'ask': 0})
@@ -150,6 +167,91 @@ class PilotTests(unittest.TestCase):
                 row = json.loads(path.read_text())
                 self.assertEqual(row['error'], 'output_truncated')
             self.assertEqual(len(list((folder / 'run').glob('*.events.jsonl'))), 2)
+
+
+class GPUPlanTests(unittest.TestCase):
+    setUpClass = classmethod(PilotTests.setUpClass.__func__)
+    session = PilotTests.session
+    def test_tokenizer_mapping_is_counted_by_ids(self):
+        class Tokenizer:
+            def apply_chat_template(self, *args, **kwargs):
+                assert kwargs['return_dict'] is False
+                return {'input_ids': [[1, 2, 3, 4, 5]], 'attention_mask': [[1]*5]}
+        self.assertEqual(pilot.count_tokens(Tokenizer(), [], self.info), 5)
+
+    def test_controls_match_targets_and_zero_budget(self):
+        plan = pilot.make_plan(self.cases, 'hash', self.info, seed=9, controls=True)
+        self.assertEqual(len(plan['schedule']), 64)
+        entries = [e for e in plan['schedule'] if e.get('arm') == 'zero']
+        self.assertEqual(len(entries), 16)
+        session = pilot.new_session(self.cases, entries[0])
+        with self.assertRaises(pilot.ProtocolError):
+            session.step({'ask': 0})
+        self.assertTrue(session.step({'pick': session.key})[1]['success'])
+
+    def test_incomplete_pair_is_excluded_from_complete_analysis(self):
+        plan = pilot.make_plan(self.cases, 'hash', self.info, seed=9)
+        first = plan['schedule'][0]
+        summary = pilot.summarize(plan, [{'session_id': first['session_id'], 'success': True}])
+        self.assertEqual(summary['paired_complete']['pairs'], 0)
+        self.assertEqual(summary['paired_complete']['ties'], 0)
+        self.assertEqual(summary['paired_failure_inclusive']['incomplete_pairs'], 16)
+
+    def test_entropy_question_uses_visible_survivors(self):
+        s = self.session()
+        while len(s.asked) < 3:
+            j = pilot.entropy_question(s)
+            if j is None:
+                break
+            before = len(s.survivors)
+            s.step({'ask': j})
+            self.assertLess(len(s.survivors), before)
+        self.assertIn(s.key, s.survivors)
+
+    def test_transcript_replays_and_detects_tampered_grade(self):
+        data = PAPER / 'frozen_cases.jsonl.gz'
+        plan = pilot.make_plan(self.cases, pilot.sha(data.read_bytes()), self.info, seed=11)
+        plan['schedule'] = plan['schedule'][:1]
+        spec = plan['schedule'][0]
+        session = pilot.new_session(self.cases, spec)
+        action = {'pick': session.key}
+        _, grade = session.step(action)
+        with tempfile.TemporaryDirectory() as folder:
+            d = Path(folder)
+            pilot.save_json(d/'plan.json', plan)
+            (d/'events.jsonl').write_text(pilot.encode({'action': action})+'\n')
+            row = dict(grade, session_id=spec['session_id'], transcript='events.jsonl')
+            pilot.save_json(d/(spec['session_id']+'.result.json'), row)
+            self.assertEqual(pilot.replay(d, data)['recorded'], 1)
+            row['success'] = False
+            (d/(spec['session_id']+'.result.json')).write_text(pilot.encode(row))
+            with self.assertRaises(ValueError):
+                pilot.replay(d, data)
+
+    def test_all_64_sessions_run_and_replay_with_scripted_transport(self):
+        data = PAPER / 'frozen_cases.jsonl.gz'
+        plan = pilot.make_plan(self.cases, pilot.sha(data.read_bytes()), self.info, seed=33, controls=True)
+        picks = iter(pilot.new_session(self.cases, e).key for e in plan['schedule'])
+        class Tokenizer:
+            def apply_chat_template(self, *args, **kwargs):
+                return {'input_ids': [1, 2, 3]}
+        class Opener:
+            def open(self, request, timeout):
+                body = json.loads(request.data)
+                assert 'target' not in body and 'tools' not in body
+                reply = {'choices': [{'finish_reason': 'stop', 'message': {'content': pilot.encode({'pick': next(picks)})}}]}
+                return io.BytesIO(json.dumps(reply).encode())
+        fake = types.SimpleNamespace(AutoTokenizer=types.SimpleNamespace(from_pretrained=lambda *a, **k: Tokenizer()))
+        with tempfile.TemporaryDirectory() as folder:
+            d = Path(folder)
+            pilot.save_json(d/'plan.json', plan)
+            with patch.dict(sys.modules, {'transformers': fake}), patch.object(pilot, 'build_opener', return_value=Opener()):
+                pilot.run(d/'plan.json', data, 'http://127.0.0.1:8000', d, d/'run')
+            replay = pilot.replay(d/'run', data)
+            self.assertEqual(replay['recorded'], 64)
+            self.assertEqual(replay['paired_complete']['pairs'], 16)
+            for arm, count in [('free', 32), ('zero', 16), ('entropy_pick', 16)]:
+                self.assertEqual(replay['arms'][arm]['successes'], count)
 
 
 if __name__ == '__main__':

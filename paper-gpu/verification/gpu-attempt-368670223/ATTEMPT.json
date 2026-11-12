@@ -1,0 +1,9 @@
+{
+  "kaggle_version": 368670223,
+  "url": "https://www.kaggle.com/code/digiinformed/patchquestions-gpu-pilot-python-3-12?scriptVersionId=368670223",
+  "runtime_seconds": 1333.3,
+  "outcome": "server_startup_failure",
+  "scored_sessions": 0,
+  "cause": "CUDA OOM during 256-request sampler warmup; graph memory not included in KV budget because installer subprocess environment did not propagate",
+  "output_archive_sha256": "2c47c5fb556932e8f8023775a9e78dab5f7ca91a8bfee3a7cded44b0e6bf3834"
+}

@@ -8,11 +8,11 @@ Two Google Gemma 4 competition projects, their source code, current progress, re
 
 `web/control-center.html` is a static, dependency-free research operations dashboard published at `/control-center.html`. It supports separate Main/Paper Track views, version/task/experiment ledgers, comparison warnings, time/tool/compute logs, verification gates, failure triage, research proposals, submission history, local ZIP directory inspection, SHA-256 snapshots, browser autosave, resume briefs, and JSON export/import. All user edits are browser-local and do not update GitHub or Kaggle automatically. Share reviewed changes in GitHub Issues and export a backup between devices. The ZIP inspector is a heuristic browser preflight, not the official evaluator or schema validator. Seeded later V14/HTTPX outcomes are marked tentative until raw trace/hashes are audited.
 
-## Current checkpoint — 11 November 2026
+## Current checkpoint — 12 November 2026
 
 | Track | Verified progress | Next action |
 |---|---|---|
-| PatchQuestions paper | Revised manuscript; 18,000 score rows reproduced on CPython 3.12.14; 16 notebook code cells executed; strict optional model supervisor tested | Author/platform review and Kaggle Writeup submission |
+| PatchQuestions paper | CPU benchmark reproduced; 64 real Gemma GPU sessions retained and independently regraded; named 3/16, masked 4/16, entropy-assisted 8/16; 20 supervisor tests pass | Revised Kaggle Writeup saved; final submission confirmation pending. See [GPU evidence](paper-gpu/verification/gpu-attempt-368723141/README.md). |
 | Main repair agent | Saved matched L4×4 pilot: control, generic policy and Hikmah each resolved 2/3. Newer session reports: V12/control/V14 each 2/3; both Hikmah and control passed one HTTPX case. Raw newest-run audit pending. | Audit latest manifests/traces and exact import controls, then freeze broader matched evaluation with new confirmation tasks |
 
 The earlier real Gemma GPU pilot resolved Requests and Rich; FastAPI remained unresolved. No leaderboard score or final Kaggle submission is recorded. V11 is a documented reconstruction, not a recovered copy of the inaccessible Canvas export; its historical README has no GPU result. Later session reports retain V12, describe slower V14 and a timed-out larger-memory diagnostic, with no clear Hikmah repair advantage. The HTTPX report records Hikmah 603s/31 calls and control 583s/34 calls; its exact raw conditions are pending audit and cannot be merged with the older three-task pilot. HTTPX has now been exposed, so future confirmation needs fresh tasks. [V11 notebook, source and way forward](<Google - The Gemma 4 Developer Agent Competition/gemma-agent-lab/v11/README.md>). A paper benchmark result is not a repository repair score.

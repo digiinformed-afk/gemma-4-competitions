@@ -1,0 +1,1635 @@
+Starting offline Gemma server
+Server ready after 306.4 seconds
+Calibration: opening 36 tokens 3.8 seconds
+Calibration: multi_turn 56 tokens 0.2 seconds
+Calibration: long_matrix 8404 tokens 6.1 seconds
+Frozen 64-session schedule and matched baselines saved
+{
+  "scheduled": 64,
+  "recorded": 64,
+  "unstarted_or_interrupted": 0,
+  "conditions": {
+    "named": {
+      "denominator": 16,
+      "successes": 3,
+      "heldout_only_successes": 3,
+      "completed": 16
+    },
+    "masked": {
+      "denominator": 16,
+      "successes": 4,
+      "heldout_only_successes": 4,
+      "completed": 16
+    }
+  },
+  "paired_failure_inclusive": {
+    "named_wins": 2,
+    "masked_wins": 3,
+    "ties": 11,
+    "incomplete_pairs": 0
+  },
+  "paired_complete": {
+    "named_wins": 2,
+    "masked_wins": 3,
+    "ties": 11,
+    "pairs": 16
+  },
+  "arms": {
+    "free": {
+      "scheduled": 32,
+      "successes": 7,
+      "statuses": {
+        "completed": 32
+      }
+    },
+    "zero": {
+      "scheduled": 16,
+      "successes": 0,
+      "statuses": {
+        "protocol_failure": 16
+      }
+    },
+    "entropy_pick": {
+      "scheduled": 16,
+      "successes": 8,
+      "statuses": {
+        "completed": 16
+      }
+    }
+  },
+  "transcript_diagnostics": [
+    {
+      "session_id": "pair-02-named",
+      "uniform_survivor_score": 0.08333333333333333,
+      "survivors_after_questions": 12,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 24,
+          "survivors_after": 12,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.6258145836939115,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 0.84753068574288
+        },
+        {
+          "column": 1,
+          "survivors_before": 12,
+          "survivors_after": 12,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 15311,
+        "total_tokens": 15332
+      }
+    },
+    {
+      "session_id": "pair-02-masked",
+      "uniform_survivor_score": 0.08333333333333333,
+      "survivors_after_questions": 12,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 24,
+          "survivors_after": 12,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.6258145836939115,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 0.84753068574288
+        },
+        {
+          "column": 1,
+          "survivors_before": 12,
+          "survivors_after": 12,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 4200,
+        "total_tokens": 4221
+      }
+    },
+    {
+      "session_id": "pair-05-masked",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 9,
+          "survivors_before": 36,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.8888888888888888,
+          "entropy_bits": 1.4466166676282082,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 0.29909836655568023
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 4454,
+        "total_tokens": 4469
+      }
+    },
+    {
+      "session_id": "pair-05-named",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 36,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.9444444444444444,
+          "entropy_bits": 4.503258334775645,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 0.93108094372919
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 22112,
+        "total_tokens": 22127
+      }
+    },
+    {
+      "session_id": "pair-01-named",
+      "uniform_survivor_score": 0.16666666666666666,
+      "survivors_after_questions": 6,
+      "question_diagnostics": [
+        {
+          "column": 7,
+          "survivors_before": 6,
+          "survivors_after": 6,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": -0.0
+        },
+        {
+          "column": 13,
+          "survivors_before": 6,
+          "survivors_after": 6,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 2916,
+        "total_tokens": 2938
+      }
+    },
+    {
+      "session_id": "pair-01-masked",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 6,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.8333333333333334,
+          "entropy_bits": 1.2516291673878228,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": 0.6982662536280607
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 1014,
+        "total_tokens": 1028
+      }
+    },
+    {
+      "session_id": "pair-09-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 2.0,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 0.8
+        },
+        {
+          "column": 1,
+          "survivors_before": 4,
+          "survivors_after": 4,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.5,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-09-named",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 0.4
+        },
+        {
+          "column": 3,
+          "survivors_before": 8,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.875,
+          "entropy_bits": 2.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 13937,
+        "total_tokens": 13958
+      }
+    },
+    {
+      "session_id": "pair-04-named",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 36,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.9444444444444444,
+          "entropy_bits": 4.503258334775645,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 0.93108094372919
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 22110,
+        "total_tokens": 22124
+      }
+    },
+    {
+      "session_id": "pair-04-masked",
+      "uniform_survivor_score": 0.041666666666666664,
+      "survivors_after_questions": 24,
+      "question_diagnostics": [
+        {
+          "column": 9,
+          "survivors_before": 36,
+          "survivors_after": 24,
+          "uninformative": false,
+          "fraction_eliminated": 0.33333333333333337,
+          "entropy_bits": 1.4466166676282082,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 0.29909836655568023
+        },
+        {
+          "column": 10,
+          "survivors_before": 24,
+          "survivors_after": 24,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 4.584962500721156,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 6709,
+        "total_tokens": 6731
+      }
+    },
+    {
+      "session_id": "pair-07-masked",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.875,
+          "entropy_bits": 3.0,
+          "best_available_entropy_bits": 4.0,
+          "relative_entropy": 0.75
+        },
+        {
+          "column": 2,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 2997,
+        "total_tokens": 3018
+      }
+    },
+    {
+      "session_id": "pair-07-named",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.875,
+          "entropy_bits": 3.0,
+          "best_available_entropy_bits": 4.0,
+          "relative_entropy": 0.75
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 13584,
+        "total_tokens": 13598
+      }
+    },
+    {
+      "session_id": "pair-11-named",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 7002,
+        "total_tokens": 7023
+      }
+    },
+    {
+      "session_id": "pair-11-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-08-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 2.0,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 0.8
+        },
+        {
+          "column": 1,
+          "survivors_before": 4,
+          "survivors_after": 4,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 1.5,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-08-named",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 0.4
+        },
+        {
+          "column": 11,
+          "survivors_before": 8,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 1.5,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 0.75
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 13908,
+        "total_tokens": 13930
+      }
+    },
+    {
+      "session_id": "pair-03-named",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 5,
+          "survivors_before": 24,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.6666666666666667,
+          "entropy_bits": 1.4591479170272448,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 0.76064801430716
+        },
+        {
+          "column": 6,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.5,
+          "best_available_entropy_bits": 1.5,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 15311,
+        "total_tokens": 15332
+      }
+    },
+    {
+      "session_id": "pair-03-masked",
+      "uniform_survivor_score": 0.125,
+      "survivors_after_questions": 8,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 24,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.6666666666666667,
+          "entropy_bits": 1.6258145836939115,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 0.84753068574288
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 8,
+          "uninformative": true,
+          "fraction_eliminated": 0.0,
+          "entropy_bits": -0.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": -0.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 4200,
+        "total_tokens": 4221
+      }
+    },
+    {
+      "session_id": "pair-13-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 20,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.6,
+          "entropy_bits": 0.9709505944546686,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 0.49263061042040757
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 0.5
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 3612,
+        "total_tokens": 3634
+      }
+    },
+    {
+      "session_id": "pair-13-named",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 7,
+          "survivors_before": 20,
+          "survivors_after": 10,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 0.5073693895795924
+        },
+        {
+          "column": 4,
+          "survivors_before": 10,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.6,
+          "entropy_bits": 0.9709505944546686,
+          "best_available_entropy_bits": 1.9219280948873623,
+          "relative_entropy": 0.5051961085524236
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 10959,
+        "total_tokens": 10980
+      }
+    },
+    {
+      "session_id": "pair-06-named",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 6771,
+        "total_tokens": 6778
+      }
+    },
+    {
+      "session_id": "pair-06-masked",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.875,
+          "entropy_bits": 3.0,
+          "best_available_entropy_bits": 4.0,
+          "relative_entropy": 0.75
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1976,
+        "total_tokens": 1991
+      }
+    },
+    {
+      "session_id": "pair-15-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.5,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 0.5661664649370803
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.5,
+          "relative_entropy": 0.6666666666666666
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-15-named",
+      "uniform_survivor_score": 0.16666666666666666,
+      "survivors_after_questions": 6,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 6,
+          "uninformative": false,
+          "fraction_eliminated": 0.625,
+          "entropy_bits": 2.1556390622295662,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 0.8136336983618644
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 8236,
+        "total_tokens": 8250
+      }
+    },
+    {
+      "session_id": "pair-00-named",
+      "uniform_survivor_score": 0.3333333333333333,
+      "survivors_after_questions": 3,
+      "question_diagnostics": [
+        {
+          "column": 6,
+          "survivors_before": 6,
+          "survivors_after": 3,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": 0.5578858913022597
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 1916,
+        "total_tokens": 1930
+      }
+    },
+    {
+      "session_id": "pair-00-masked",
+      "uniform_survivor_score": 0.3333333333333333,
+      "survivors_after_questions": 3,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 6,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.33333333333333337,
+          "entropy_bits": 1.2516291673878228,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": 0.6982662536280607
+        },
+        {
+          "column": 3,
+          "survivors_before": 4,
+          "survivors_after": 3,
+          "uninformative": false,
+          "fraction_eliminated": 0.25,
+          "entropy_bits": 0.8112781244591328,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 0.8112781244591328
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 1554,
+        "total_tokens": 1575
+      }
+    },
+    {
+      "session_id": "pair-12-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 20,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.6,
+          "entropy_bits": 0.9709505944546686,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 0.49263061042040757
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 0.5
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3612,
+        "total_tokens": 3633
+      }
+    },
+    {
+      "session_id": "pair-12-named",
+      "uniform_survivor_score": 0.1,
+      "survivors_after_questions": 10,
+      "question_diagnostics": [
+        {
+          "column": 7,
+          "survivors_before": 20,
+          "survivors_after": 10,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 0.5073693895795924
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 7280,
+        "total_tokens": 7294
+      }
+    },
+    {
+      "session_id": "pair-14-named",
+      "uniform_survivor_score": 0.16666666666666666,
+      "survivors_after_questions": 6,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 16,
+          "survivors_after": 6,
+          "uninformative": false,
+          "fraction_eliminated": 0.625,
+          "entropy_bits": 2.1556390622295662,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 0.8136336983618644
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 8236,
+        "total_tokens": 8250
+      }
+    },
+    {
+      "session_id": "pair-14-masked",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 1.5,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 0.5661664649370803
+        },
+        {
+          "column": 1,
+          "survivors_before": 4,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 0.5
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-10-masked",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3024,
+        "total_tokens": 3045
+      }
+    },
+    {
+      "session_id": "pair-10-named",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 7008,
+        "total_tokens": 7029
+      }
+    },
+    {
+      "session_id": "pair-12-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 4,
+          "survivors_before": 20,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.8,
+          "entropy_bits": 1.9709505944546686,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 4,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 2,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 3726,
+        "total_tokens": 3733
+      }
+    },
+    {
+      "session_id": "pair-01-zero",
+      "uniform_survivor_score": 0.16666666666666666,
+      "survivors_after_questions": 6,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 849,
+        "total_tokens": 861
+      }
+    },
+    {
+      "session_id": "pair-14-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 8,
+          "survivors_before": 16,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.9375,
+          "entropy_bits": 2.649397470347699,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 4154,
+        "total_tokens": 4161
+      }
+    },
+    {
+      "session_id": "pair-03-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 2,
+          "survivors_before": 24,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.8333333333333334,
+          "entropy_bits": 1.9182958340544896,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 0,
+          "survivors_before": 4,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 3,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 5189,
+        "total_tokens": 5196
+      }
+    },
+    {
+      "session_id": "pair-02-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 2,
+          "survivors_before": 24,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.6666666666666667,
+          "entropy_bits": 1.9182958340544896,
+          "best_available_entropy_bits": 1.9182958340544896,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 15,
+          "survivors_before": 8,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 2.0,
+          "best_available_entropy_bits": 2.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 10,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 7,
+        "prompt_tokens": 5188,
+        "total_tokens": 5195
+      }
+    },
+    {
+      "session_id": "pair-08-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 4507,
+        "total_tokens": 4519
+      }
+    },
+    {
+      "session_id": "pair-00-zero",
+      "uniform_survivor_score": 0.16666666666666666,
+      "survivors_after_questions": 6,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 849,
+        "total_tokens": 861
+      }
+    },
+    {
+      "session_id": "pair-13-zero",
+      "uniform_survivor_score": 0.05,
+      "survivors_after_questions": 20,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 13,
+        "prompt_tokens": 3529,
+        "total_tokens": 3542
+      }
+    },
+    {
+      "session_id": "pair-01-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 14,
+          "survivors_before": 6,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.8333333333333334,
+          "entropy_bits": 1.792481250360578,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 990,
+        "total_tokens": 996
+      }
+    },
+    {
+      "session_id": "pair-02-zero",
+      "uniform_survivor_score": 0.041666666666666664,
+      "survivors_after_questions": 24,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 4975,
+        "total_tokens": 4987
+      }
+    },
+    {
+      "session_id": "pair-04-zero",
+      "uniform_survivor_score": 0.027777777777777776,
+      "survivors_after_questions": 36,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 10942,
+        "total_tokens": 10954
+      }
+    },
+    {
+      "session_id": "pair-10-entropy_pick",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 2379,
+        "total_tokens": 2385
+      }
+    },
+    {
+      "session_id": "pair-09-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 3,
+          "survivors_before": 16,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.9375,
+          "entropy_bits": 2.5,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 4670,
+        "total_tokens": 4676
+      }
+    },
+    {
+      "session_id": "pair-07-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 4,
+          "survivors_before": 16,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.9375,
+          "entropy_bits": 4.0,
+          "best_available_entropy_bits": 4.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 8,
+        "prompt_tokens": 6835,
+        "total_tokens": 6843
+      }
+    },
+    {
+      "session_id": "pair-00-entropy_pick",
+      "uniform_survivor_score": 0.5,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 14,
+          "survivors_before": 6,
+          "survivors_after": 3,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.792481250360578,
+          "best_available_entropy_bits": 1.792481250360578,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 4,
+          "survivors_before": 3,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.33333333333333337,
+          "entropy_bits": 0.9182958340544896,
+          "best_available_entropy_bits": 0.9182958340544896,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 1014,
+        "total_tokens": 1020
+      }
+    },
+    {
+      "session_id": "pair-06-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 6675,
+        "total_tokens": 6687
+      }
+    },
+    {
+      "session_id": "pair-05-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 2,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 36,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.9444444444444444,
+          "entropy_bits": 4.836591668108978,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 8,
+        "prompt_tokens": 11100,
+        "total_tokens": 11108
+      }
+    },
+    {
+      "session_id": "pair-14-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 4005,
+        "total_tokens": 4017
+      }
+    },
+    {
+      "session_id": "pair-12-zero",
+      "uniform_survivor_score": 0.05,
+      "survivors_after_questions": 20,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 13,
+        "prompt_tokens": 3529,
+        "total_tokens": 3542
+      }
+    },
+    {
+      "session_id": "pair-09-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 13,
+        "prompt_tokens": 4507,
+        "total_tokens": 4520
+      }
+    },
+    {
+      "session_id": "pair-15-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 4005,
+        "total_tokens": 4017
+      }
+    },
+    {
+      "session_id": "pair-03-zero",
+      "uniform_survivor_score": 0.041666666666666664,
+      "survivors_after_questions": 24,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 4975,
+        "total_tokens": 4987
+      }
+    },
+    {
+      "session_id": "pair-15-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 8,
+          "survivors_before": 16,
+          "survivors_after": 5,
+          "uninformative": false,
+          "fraction_eliminated": 0.6875,
+          "entropy_bits": 2.649397470347699,
+          "best_available_entropy_bits": 2.649397470347699,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 3,
+          "survivors_before": 5,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.6,
+          "entropy_bits": 1.5219280948873621,
+          "best_available_entropy_bits": 1.5219280948873621,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 0,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 4215,
+        "total_tokens": 4221
+      }
+    },
+    {
+      "session_id": "pair-05-zero",
+      "uniform_survivor_score": 0.05555555555555555,
+      "survivors_after_questions": 36,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 13,
+        "prompt_tokens": 10942,
+        "total_tokens": 10955
+      }
+    },
+    {
+      "session_id": "pair-11-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 2212,
+        "total_tokens": 2224
+      }
+    },
+    {
+      "session_id": "pair-13-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 4,
+          "survivors_before": 20,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.8,
+          "entropy_bits": 1.9709505944546686,
+          "best_available_entropy_bits": 1.9709505944546686,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 4,
+          "survivors_after": 2,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 2,
+          "survivors_before": 2,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 3724,
+        "total_tokens": 3730
+      }
+    },
+    {
+      "session_id": "pair-08-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 3,
+          "survivors_before": 16,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 2.5,
+          "best_available_entropy_bits": 2.5,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 11,
+          "survivors_before": 4,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.75,
+          "entropy_bits": 1.5,
+          "best_available_entropy_bits": 1.5,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 4685,
+        "total_tokens": 4691
+      }
+    },
+    {
+      "session_id": "pair-07-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 6675,
+        "total_tokens": 6687
+      }
+    },
+    {
+      "session_id": "pair-11-entropy_pick",
+      "uniform_survivor_score": 0.25,
+      "survivors_after_questions": 4,
+      "question_diagnostics": [
+        {
+          "column": 0,
+          "survivors_before": 16,
+          "survivors_after": 8,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        },
+        {
+          "column": 1,
+          "survivors_before": 8,
+          "survivors_after": 4,
+          "uninformative": false,
+          "fraction_eliminated": 0.5,
+          "entropy_bits": 1.0,
+          "best_available_entropy_bits": 1.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 2376,
+        "total_tokens": 2382
+      }
+    },
+    {
+      "session_id": "pair-04-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 1,
+          "survivors_before": 36,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.9722222222222222,
+          "entropy_bits": 4.836591668108978,
+          "best_available_entropy_bits": 4.836591668108978,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 11097,
+        "total_tokens": 11103
+      }
+    },
+    {
+      "session_id": "pair-06-entropy_pick",
+      "uniform_survivor_score": 1.0,
+      "survivors_after_questions": 1,
+      "question_diagnostics": [
+        {
+          "column": 4,
+          "survivors_before": 16,
+          "survivors_after": 1,
+          "uninformative": false,
+          "fraction_eliminated": 0.9375,
+          "entropy_bits": 4.0,
+          "best_available_entropy_bits": 4.0,
+          "relative_entropy": 1.0
+        }
+      ],
+      "token_usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 6835,
+        "total_tokens": 6841
+      }
+    },
+    {
+      "session_id": "pair-10-zero",
+      "uniform_survivor_score": 0.0625,
+      "survivors_after_questions": 16,
+      "question_diagnostics": [],
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 2212,
+        "total_tokens": 2224
+      }
+    }
+  ]
+}
+
+Evidence archive: /kaggle/working/patchquestions-20261112-083802.zip

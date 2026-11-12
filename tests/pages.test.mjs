@@ -33,10 +33,13 @@ test('Pages paper adapter persists edits and rejects stale revisions and server 
  await assert.rejects(context.api('/api/ai',{method:'POST'}),/full Node app/);
  await context.api('/baseline.json');assert.equal(requested.at(-1),'./baseline.json');
 });
-test('imported artifacts keep original bytes except reviewed Codespaces server allowance',()=>{
+test('imported artifacts match original bytes or explicit reviewed revisions',()=>{
  const manifest=JSON.parse(fs.readFileSync('docs/SOURCE-MANIFEST.json'));
+ const revised=new Map((manifest.reviewed_revisions||[]).map(f=>[f.path,f]));
  for(const f of manifest.files){
   if(f.path==='README.md'||f.path==='Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/server.mjs')continue;
-  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex'),f.sha256,f.path);
+  const revision=revised.get(f.path);
+  if(revision){assert.equal(revision.original_sha256,f.sha256);assert(revision.reason);}
+  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex'),revision?.sha256||f.sha256,f.path);
  }
 });

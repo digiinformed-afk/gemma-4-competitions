@@ -2838,5 +2838,55 @@
       "sha256": "6f24cc65fdbcc4632136ea17da868a3181ef07ccea0a63de87717789f396a73a"
     }
   ],
-  "revision_note": "2026-11-09: current status and plan updated for the prior GPU pilot and reconstructed V11; imported_sha256 preserves original import fingerprints."
+  "revision_note": "2026-11-09: current status and plan updated for the prior GPU pilot and reconstructed V11; imported_sha256 preserves original import fingerprints.",
+  "reviewed_revisions": [
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/paper-revision/tests/test_pilot.py",
+      "original_sha256": "35db94b942fd09f144bfa81608b6dd3bf81122f31d3121c6a38c1162593e7db7",
+      "sha256": "0ee29334b25369ac02e0b91f4bad23b73e50518a65480a24c97a31fb7ad43a38",
+      "bytes": 13179,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/cognitive-core-study.md",
+      "original_sha256": "0fc9dee7bc578ffb4f778157ba45ce73bf145bbe7a72b2bf568e89e3b89cfbd2",
+      "sha256": "cf0610a77fbcae5f8d73bd161ceb9d41f747a3564999525f807bd5a8e2793945",
+      "bytes": 4243,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions.ipynb",
+      "original_sha256": "a6d049c00b6552d3e77a08c9326df7dd37fda47dc508895cbe3bc057760c3b20",
+      "sha256": "dafe85cb219b421ff6a1a3ecf17b72afdda09cba78a7f3fcf55c4c2a8efe4a92",
+      "bytes": 137479,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/PatchQuestions_Writeup.md",
+      "original_sha256": "2f0fff3e716e09f660e5d0638b7000026fcfcd055dc57dfe6a6e4e43a3896b89",
+      "sha256": "0658b541f5d513094a7f5d8f27a095f2f29adc15be81b36eef2af3e5333cc8b7",
+      "bytes": 19723,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/pilot.py",
+      "original_sha256": "ec7241c93b8fd443604b86f64be3eac5c08a2c7d40aad5c487ebc639859390db",
+      "sha256": "5549f24e2a50f4417080ccc4660d099ff3e81d866f1abf2162fbc6878eda3e0a",
+      "bytes": 24933,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    },
+    {
+      "path": "Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project/README.md",
+      "original_sha256": "c0cba965297917caf673fec17a8f691932d4fe97f3c98275b550daa9c4670af0",
+      "sha256": "cbc805440228a9d500ce54dedd5b16ac73341ffded3b1ce859a167b39d2868f7",
+      "bytes": 8167,
+      "reviewed": "2026-11-12",
+      "reason": "Reviewed GPU pilot implementation, revised sampling note and replay-verified manuscript; original import hash retained. See paper-gpu/verification/gpu-attempt-368723141/README.md."
+    }
+  ]
 }

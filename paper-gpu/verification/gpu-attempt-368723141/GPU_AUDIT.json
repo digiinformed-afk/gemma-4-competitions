@@ -1,0 +1,119 @@
+{
+  "archive_sha256": "6885caed94e7b94fe5182776724a3f9378ffee94ab2a50ba88c414774432a481",
+  "supervisor_sha256": "1077b414d63c927f06e9748aa41af5138fba503ee95831af731ad0f56bdf04a3",
+  "data_sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f",
+  "replay_matches_saved": true,
+  "matched_baselines_recomputed": 64,
+  "summary": {
+    "scheduled": 64,
+    "recorded": 64,
+    "unstarted_or_interrupted": 0,
+    "conditions": {
+      "named": {
+        "denominator": 16,
+        "successes": 3,
+        "heldout_only_successes": 3,
+        "completed": 16
+      },
+      "masked": {
+        "denominator": 16,
+        "successes": 4,
+        "heldout_only_successes": 4,
+        "completed": 16
+      }
+    },
+    "paired_failure_inclusive": {
+      "named_wins": 2,
+      "masked_wins": 3,
+      "ties": 11,
+      "incomplete_pairs": 0
+    },
+    "paired_complete": {
+      "named_wins": 2,
+      "masked_wins": 3,
+      "ties": 11,
+      "pairs": 16
+    },
+    "arms": {
+      "free": {
+        "scheduled": 32,
+        "successes": 7,
+        "statuses": {
+          "completed": 32
+        }
+      },
+      "zero": {
+        "scheduled": 16,
+        "successes": 0,
+        "statuses": {
+          "protocol_failure": 16
+        }
+      },
+      "entropy_pick": {
+        "scheduled": 16,
+        "successes": 8,
+        "statuses": {
+          "completed": 16
+        }
+      }
+    }
+  },
+  "statuses": {
+    "completed": 48,
+    "protocol_failure": 16
+  },
+  "errors": {
+    "malformed_json": 16
+  },
+  "request_count": 116,
+  "prompt_token_mismatches": [],
+  "max_prompt_tokens": 11100,
+  "zero_response_examples": [
+    "```json\n{\"pick\": 1}\n```",
+    "```json\n{\"pick\": 2}\n```",
+    "```json\n{\"pick\": 1}\n```"
+  ],
+  "zero_all_fenced": true,
+  "model_info": {
+    "served_model": "/kaggle/input/models/google/gemma-4/other/gemma-4-31b-it-qat-w4a16-ct/2",
+    "model_revision": "/kaggle/input/models/google/gemma-4/other/gemma-4-31b-it-qat-w4a16-ct/2",
+    "tokenizer_revision": "/kaggle/input/models/google/gemma-4/other/gemma-4-31b-it-qat-w4a16-ct/2",
+    "quantization": "QAT w4a16 compressed-tensors",
+    "serving_stack": "vllm 0.19.1",
+    "hardware": [
+      "NVIDIA L4",
+      "NVIDIA L4",
+      "NVIDIA L4",
+      "NVIDIA L4"
+    ],
+    "context_tokens": 32768,
+    "max_tokens": 128,
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 2026,
+    "timeout_seconds": 180,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "token_count_offset": 1
+  },
+  "independent_raw_regrade_successes": {
+    "named": 3,
+    "masked": 4,
+    "entropy_pick": 8
+  },
+  "independent_consistent_picks": {
+    "named": 14,
+    "masked": 15,
+    "entropy_pick": 10
+  },
+  "matched_core_baselines": {
+    "entropy": 0.875,
+    "random_split": 0.7774273274468587
+  },
+  "questions_by_arm": {
+    "free": 1.625,
+    "zero": 0,
+    "entropy_pick": 1.875
+  }
+}
