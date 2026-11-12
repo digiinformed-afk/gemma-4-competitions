@@ -107,3 +107,11 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Submission attempt blocker:** attempted to inspect connected browser tabs, but the browser connector returned `Browser access requires the originating browser context`. No authenticated Kaggle account, submission form, receipt, or submitted Writeup status was accessible. **No submission was made or verified.**
 - **Experiment status:** no new experiment run; previous toy simulation and frozen benchmark evidence unchanged. No GPU or Kaggle compute used.
 - **Next action (critical):** obtain an authenticated Kaggle session in the originating connected browser context, verify official form/rules and rendered word count, perform final Writeup submission before 2026-11-12 23:59 UTC, and retain its confirmation URL/timestamp. Avoid additional experiments until this is done.
+
+## Submission gate recheck — 2026-11-12 10:56 PKT
+
+- **Reviewed current canonical sources:** fetched the manuscript, submission handoff and ledger from GitHub `main`. The manuscript continues to distinguish finite eight-family benchmark outcomes, separate binary toy-noise findings, and *no measured Gemma-agent improvement*.
+- **Public rules access:** official Kaggle Paper Track rules URL was opened, but its page yielded no machine-readable lines; platform-specific eligibility, formatting and live submission status therefore remain unverified in this run.
+- **Authenticated access attempted:** connected browser tab listing returned `Browser access requires the originating browser context`. The GitHub repository code search for `kaggle.com/writeups` returned zero matches with `incomplete_results=true`; this is **not proof** that no Writeup exists.
+- **Execution:** source review and access checks only. No new CPU experiment, GPU/Kaggle compute, model evaluation or submission occurred. Existing baseline files and manuscript were not modified.
+- **Critical next action:** author must open the authenticated Kaggle Paper Track Writeup form, verify live rules and rendered word count, press final Submit by **2026-11-12 23:59 UTC**, and preserve the submitted URL/receipt. Until then status is **unconfirmed**.
