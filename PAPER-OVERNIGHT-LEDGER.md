@@ -124,3 +124,12 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Repository review:** canonical `public/project/PatchQuestions_Writeup.md` and handoff fetched via connected GitHub; manuscript remains 2,483 words by prior independent source audit, with clear toy versus eight-family versus untested real-Gemma boundaries. This run did **not** execute an additional benchmark, and does not assert a new word-count measurement or authenticated Kaggle submission.
 - **Open critical blocker:** No authenticated Kaggle Writeup submission confirmation/URL available to this run. Official public rules are now independently verified, but final account-side eligibility, rendered word count and Submit receipt remain unverified.
 - **Priority:** immediately submit canonical Writeup, confirm public submitted status, save receipt. Do not delay for optional notebook, GPU, new experiments or cosmetic changes.
+
+
+## Submission access and source preflight (2026-11-12 14:58 PKT)
+
+- **EXECUTED:** Retrieved current canonical manuscript from GitHub default branch (blob `62dba99c6b7388b58464a51619fa2cf4cf534861`) and final submission gate (blob `315e7226c88bbb651c0ba77c8d7b524d300b067e`). Manuscript still explicitly separates finite simulated API-contract outcomes from actual Gemma-agent or repository-repair performance.
+- **RULES ACCESS LIMITATION:** Reopened https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/rules ; public page returned no readable rules lines. Prior recorded requirements are not independently revalidated in this execution.
+- **AUTHENTICATION BLOCKER:** Connected browser list-tabs failed with `Browser access requires the originating browser context`. Consequently **no Kaggle Writeup submission or receipt was observed or claimed**.
+- **LOCAL COMPUTE BLOCKER:** Attempted shallow repository clone in the local container; DNS resolution of github.com failed. No new CPU experiment was executed; existing CI evidence remains the only verified execution for the prior experiments. No GPU or Kaggle compute was used.
+- **CHANGE SCOPE:** Ledger-only operational update; no benchmark data, code, or manuscript altered. Next priority is authenticated final Submit and timestamped confirmation before 2026-11-12 23:59 UTC.
