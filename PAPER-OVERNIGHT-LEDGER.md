@@ -133,3 +133,12 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **AUTHENTICATION BLOCKER:** Connected browser list-tabs failed with `Browser access requires the originating browser context`. Consequently **no Kaggle Writeup submission or receipt was observed or claimed**.
 - **LOCAL COMPUTE BLOCKER:** Attempted shallow repository clone in the local container; DNS resolution of github.com failed. No new CPU experiment was executed; existing CI evidence remains the only verified execution for the prior experiments. No GPU or Kaggle compute was used.
 - **CHANGE SCOPE:** Ledger-only operational update; no benchmark data, code, or manuscript altered. Next priority is authenticated final Submit and timestamped confirmation before 2026-11-12 23:59 UTC.
+
+
+## Submission gate recheck — 2026-11-12 15:59 PKT
+
+- **EXECUTED:** Fetched canonical manuscript from GitHub default branch (blob `62dba99c6b7388b58464a51619fa2cf4cf534861`); independently recomputed **2,483 whitespace-separated words**, 11 Markdown headings and nine external references/CI links. Required Abstract, Introduction, Methods, Results, Related work and References remain present. Explicit caveats continue to say no learned-model session, no real-world repair evaluation and no demonstrated noise-tolerant repair.
+- **OFFICIAL PAGE:** Reopened https://www.kaggle.com/competitions/gemma-4-developer-agent-paper on 2026-11-12; public page returned no machine-readable lines. Previously documented competition requirements remain the working submission checklist, not newly verified live account-side requirements.
+- **BLOCKED:** Authenticated browser tab listing again returned `Browser access requires the originating browser context`. Therefore no final Kaggle Writeup Submit action, submission URL, rendered word count or receipt could be verified. **Submission status remains UNCONFIRMED.**
+- **NOT RUN:** No new CPU/GPU/Kaggle experiment, no real Gemma-agent test, and no new numerical research claim. Baselines and manuscript unchanged. The 85% benchmark results are controlled simulated API-contract findings, **not** real Gemma-agent accuracy.
+- **NEXT (deadline-critical):** Finish authenticated Kaggle Writeup Submit before 2026-11-12 23:59 UTC (2026-11-13 04:59 PKT), and record submitted URL and timestamp. Do not delay for optional research work.
