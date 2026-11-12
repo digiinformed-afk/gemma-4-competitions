@@ -1,5 +1,5 @@
 from pathlib import Path
-import base64,gzip,json
+import base64,gzip,json,hashlib
 repo=Path(__file__).resolve().parents[1];d=repo/'paper-gpu';project=repo/'Google - The Gemma 4 Developer Agent Paper Track/PatchQuestions_Local/public/project'
 files={name:base64.b64encode((project/name).read_bytes()).decode() for name in ('pilot.py','frozen_cases.jsonl.gz')}
 for name in ('gpu_worker.py','offline_install.py'):
@@ -26,6 +26,10 @@ cell('# PatchQuestions — Gemma GPU pilot\n\n64 sessions, including 16 named/ma
 cell("import subprocess, sys\nsubprocess.run([sys.executable, str(root/'offline_install.py')], check=True)\n"),
 cell("with (root/'worker.log').open('w') as log:\n    process = subprocess.Popen([sys.executable, '-u', str(root/'gpu_worker.py')], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)\n    for line in process.stdout:\n        log.write(line); log.flush(); print(line, end='', flush=True)\n    returncode = process.wait()\nif returncode:\n    raise subprocess.CalledProcessError(returncode, process.args)\n")]}
 (d/'PatchQuestions_GPU_Pilot.ipynb').write_text(json.dumps(nb,indent=1)+'\n')
+manifest={name:{'sha256':hashlib.sha256(base64.b64decode(value)).hexdigest(),
+                'bytes':len(base64.b64decode(value))} for name,value in files.items()}
+(d/'PACKAGE_MANIFEST.json').write_text(json.dumps({'sources':manifest,
+    'notebook_sha256':hashlib.sha256((d/'PatchQuestions_GPU_Pilot.ipynb').read_bytes()).hexdigest()},indent=2)+'\n')
 # Refresh embedded evaluator in the canonical CPU notebook without claiming old outputs apply to new source.
 p=project/'PatchQuestions.ipynb';cpu=json.loads(p.read_text());
 for c in cpu['cells']:

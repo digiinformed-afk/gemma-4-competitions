@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "pilot.py": {
+      "sha256": "6d65345a835f7bf75193055753e5fa1f3f2c8231d453c714e76c429a3ac4e308",
+      "bytes": 24768
+    },
+    "frozen_cases.jsonl.gz": {
+      "sha256": "a60edcc4b000353aaa40b86e8b2380ccd6555d99af8b149f995c22c7d289f70f",
+      "bytes": 50070
+    },
+    "gpu_worker.py": {
+      "sha256": "29921c1901e689c69b94a7391c27b537ca723dd5fb7f208379151d452ee158e1",
+      "bytes": 8008
+    },
+    "offline_install.py": {
+      "sha256": "aeea39c88b5329f35883f68edff61510ba7037bbdefd280107de6c06cfb6a71c",
+      "bytes": 2823
+    }
+  },
+  "notebook_sha256": "8bd1fe3d76df7e9ac86f5692083ee734bef103010411614dda9f802a7dad79c2"
+}
