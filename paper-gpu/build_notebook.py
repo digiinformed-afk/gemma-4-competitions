@@ -24,7 +24,7 @@ def cell(source,kind='code'):
 nb={'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'}},'cells':[
 cell('# PatchQuestions — Gemma GPU pilot\n\n64 sessions, including 16 named/masked pairs and two controls. Attach the organizer wheelhouse and Gemma 4 31B QAT model version 2. Select an eligible GPU. Internet must be disabled on L4. Save version with outputs.\n','markdown'),cell(extract),
 cell("import subprocess, sys\nsubprocess.run([sys.executable, str(root/'offline_install.py')], check=True)\n"),
-cell("with (root/'worker.log').open('w') as log:\n    result = subprocess.run([sys.executable, '-u', str(root/'gpu_worker.py')], stdout=log, stderr=subprocess.STDOUT)\nprint((root/'worker.log').read_text()[-20000:])\nresult.check_returncode()\n")]}
+cell("with (root/'worker.log').open('w') as log:\n    process = subprocess.Popen([sys.executable, '-u', str(root/'gpu_worker.py')], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)\n    for line in process.stdout:\n        log.write(line); log.flush(); print(line, end='', flush=True)\n    returncode = process.wait()\nif returncode:\n    raise subprocess.CalledProcessError(returncode, process.args)\n")]}
 (d/'PatchQuestions_GPU_Pilot.ipynb').write_text(json.dumps(nb,indent=1)+'\n')
 # Refresh embedded evaluator in the canonical CPU notebook without claiming old outputs apply to new source.
 p=project/'PatchQuestions.ipynb';cpu=json.loads(p.read_text());

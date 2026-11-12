@@ -10,6 +10,11 @@ import time
 from urllib.request import Request, build_opener, ProxyHandler
 
 os.environ.update(TRANSFORMERS_OFFLINE='1', HF_HUB_OFFLINE='1', VLLM_NO_USAGE_STATS='1', VLLM_WORKER_MULTIPROC_METHOD='spawn')
+# The installer is a subprocess, so its runtime environment does not propagate.
+os.environ.update(TRANSFORMERS_NO_TF='1', TRANSFORMERS_NO_FLAX='1',
+    VLLM_ENGINE_READY_TIMEOUT_S='1200', VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS='1',
+    NCCL_DEBUG='WARN', PYTORCH_CUDA_ALLOC_CONF='expandable_segments:True',
+    OTEL_SDK_DISABLED='true', OTEL_PYTHON_DISABLED='true')
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 import pilot
@@ -41,7 +46,13 @@ def main():
         gpu_memory_utilization=0.90, scheduler_reserve_full_isl=False,
         enable_auto_tool_choice=False, enable_lora=False, startup_timeout=1200))
     try:
+        print('Starting offline Gemma server', flush=True)
+        startup_started = time.monotonic()
         server.start()
+        print('Server ready after', round(time.monotonic()-startup_started, 1), 'seconds', flush=True)
+        pilot.save_json(evidence/'GPU_AFTER_START.json', {
+            'nvidia_smi': subprocess.check_output(['nvidia-smi'], text=True),
+            'startup_seconds': time.monotonic()-startup_started})
         endpoint = server.base_url.rstrip('/').removesuffix('/v1')
         opener = build_opener(ProxyHandler({}))
         with opener.open(endpoint+'/v1/models', timeout=30) as response:
@@ -53,19 +64,49 @@ def main():
             hardware=[torch.cuda.get_device_name(i) for i in range(gpu_count)], context_tokens=32768,
             max_tokens=128, temperature=0, top_p=1, seed=2026, timeout_seconds=180,
             chat_template_kwargs={'enable_thinking': False})
-        # Disjoint synthetic calibration; no benchmark target is used here.
-        messages = [{'role':'system','content':'Reply with exactly {"pick":0}.'},
-                    {'role':'user','content':'Synthetic transport check. Output the required JSON.'}]
-        request = pilot.model_request(messages, info)
-        with opener.open(Request(endpoint+'/v1/chat/completions', data=pilot.encode(request).encode(),
-                                 headers={'Content-Type':'application/json'}), timeout=180) as response:
-            raw = json.load(response)
-        local_count = pilot.count_tokens(tokenizer, messages, info)
-        pilot.save_json(evidence/'CALIBRATION.json', {'request':request, 'response':raw, 'local_prompt_tokens':local_count})
-        actual = raw.get('usage',{}).get('prompt_tokens')
-        if actual is None or actual != local_count:
-            raise RuntimeError(f'Calibration token count differs: local={local_count}, server={actual}; preserve calibration and fix template before scored run')
-        pilot.parse_action(raw['choices'][0]['message']['content'])
+        # Disjoint synthetic fixtures: healthy transport is separate from model correctness.
+        fixture = {'configs': ['a', 'b'], 'query_inputs': ['synthetic'],
+                   'query_outputs': [['A'], ['B']], 'heldout_outputs': [['same'], ['same']]}
+        grades = []
+        for pick in (0, 1):
+            session = pilot.Session(fixture, 0, [0, 1], 'named')
+            session.step({'ask': 0})
+            _, grade = session.step({'pick': pick})
+            grades.append(grade)
+        assert grades[0]['success'] and not grades[1]['success'] and grades[1]['heldout_exact']
+        pilot.save_json(evidence/'CALIBRATION_GRADES.json', grades)
+        system = {'role': 'system', 'content': 'Reply with exactly {"pick":0}.'}
+        first = [system, {'role':'user','content':'Synthetic transport check. Output the required JSON.'}]
+        multi = first + [{'role':'assistant','content':'{"ask":0}'},
+                         {'role':'user','content':'{"answer":"A"}'}]
+        synthetic = {'inputs': ['synthetic-input-'+str(j) for j in range(16)],
+                     'outputs': [['synthetic-outcome-'+str((i+j)%8)+'-padding' for j in range(16)] for i in range(64)],
+                     'instruction': 'Synthetic fixture. Reply with the required pick object.'}
+        long = [system, {'role':'user','content':pilot.encode(synthetic)}]
+        calibration = []
+        for name, messages in [('opening',first), ('multi_turn',multi), ('long_matrix',long)]:
+            request = pilot.model_request(messages, info)
+            local_count = pilot.count_tokens(tokenizer, messages, info)
+            if local_count + info['max_tokens'] > info['context_tokens']:
+                raise RuntimeError('Synthetic calibration exceeds context: '+name)
+            started = time.monotonic()
+            with opener.open(Request(endpoint+'/v1/chat/completions', data=pilot.encode(request).encode(),
+                                     headers={'Content-Type':'application/json'}), timeout=180) as response:
+                raw = json.load(response)
+            record = {'fixture':name, 'request':request, 'response':raw,
+                      'local_prompt_tokens':local_count, 'elapsed_seconds':time.monotonic()-started}
+            try:
+                record['parsed_action'] = pilot.parse_action(raw['choices'][0]['message']['content'])
+            except pilot.ProtocolError as exc:
+                record['model_protocol_error'] = str(exc)
+            calibration.append(record)
+            pilot.save_json(evidence/'CALIBRATION.json', calibration)
+            actual = raw.get('usage',{}).get('prompt_tokens')
+            if actual is None or actual != local_count:
+                raise RuntimeError(f'Calibration token count differs on {name}: local={local_count}, server={actual}')
+            print('Calibration:', name, local_count, 'tokens', round(record['elapsed_seconds'],1), 'seconds', flush=True)
+        pilot.save_json(evidence/'GPU_AFTER_CALIBRATION.json', {
+            'nvidia_smi': subprocess.check_output(['nvidia-smi'], text=True)})
         data = ROOT/'frozen_cases.jsonl.gz'
         cases = pilot.load_cases(data)
         plan = pilot.make_plan(cases, pilot.sha(data.read_bytes()), info, controls=True)
@@ -77,6 +118,7 @@ def main():
             session = pilot.new_session(cases,entry)
             baselines.append({'session_id':entry['session_id'], **{p:pilot.baseline(session,p) for p in ('entropy','random_split')}})
         pilot.save_json(evidence/'BASELINES.json',baselines)
+        print('Frozen 64-session schedule and matched baselines saved', flush=True)
         pilot.run(evidence/'plan.json',data,endpoint,model,evidence/'sessions')
         pilot.save_json(evidence/'REPLAY.json',pilot.replay(evidence/'sessions',data))
         print((evidence/'REPLAY.json').read_text(),flush=True)
