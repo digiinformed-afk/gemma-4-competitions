@@ -9,13 +9,13 @@
       "bytes": 50070
     },
     "gpu_worker.py": {
-      "sha256": "29921c1901e689c69b94a7391c27b537ca723dd5fb7f208379151d452ee158e1",
-      "bytes": 8008
+      "sha256": "24e627550a54bbf59193898679bf64a8084e4a3ae85ae82b80ecc7729f2b17cb",
+      "bytes": 8491
     },
     "offline_install.py": {
       "sha256": "aeea39c88b5329f35883f68edff61510ba7037bbdefd280107de6c06cfb6a71c",
       "bytes": 2823
     }
   },
-  "notebook_sha256": "8bd1fe3d76df7e9ac86f5692083ee734bef103010411614dda9f802a7dad79c2"
+  "notebook_sha256": "8efe85c4332760071cd8b1e15b4071ac4369d3460b1038e0d74638add37cf5a4"
 }

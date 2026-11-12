@@ -39,11 +39,17 @@ def main():
         'model_mount': str(model), 'model_config_sha256': pilot.sha((model/'config.json').read_bytes()),
         'pilot_sha256': pilot.sha((ROOT/'pilot.py').read_bytes())})
     gpu_count = torch.cuda.device_count()
-    server = VllmServer(VllmConfig(model=str(model), port=8000, host='127.0.0.1',
+    class SequentialServer(VllmServer):
+        def build_cmd(self, *args, **kwargs):
+            command = list(super().build_cmd(*args, **kwargs))
+            command.extend(['--max-num-seqs', '1', '--max-num-batched-tokens', '8192'])
+            (evidence/'SERVER_COMMAND.json').write_text(json.dumps(command, indent=2)+'\n')
+            return command
+    server = SequentialServer(VllmConfig(model=str(model), port=8000, host='127.0.0.1',
         tensor_parallel_size=4 if gpu_count>=4 else (2 if gpu_count>=2 else 1),
         reasoning_parser='gemma4', max_model_len=32768,
         dtype='bfloat16' if torch.cuda.is_bf16_supported() else 'auto',
-        gpu_memory_utilization=0.90, scheduler_reserve_full_isl=False,
+        gpu_memory_utilization=0.80, scheduler_reserve_full_isl=False,
         enable_auto_tool_choice=False, enable_lora=False, startup_timeout=1200))
     try:
         print('Starting offline Gemma server', flush=True)
@@ -124,6 +130,8 @@ def main():
         print((evidence/'REPLAY.json').read_text(),flush=True)
     finally:
         server.stop()
+        for log in Path('/tmp').glob('inference_server_8000_*.log'):
+            shutil.copyfile(log, evidence/log.name)
         archive = shutil.make_archive(str(evidence), 'zip', evidence)
         Path(archive+'.sha256').write_text(pilot.sha(Path(archive).read_bytes())+'\n')
         print('Evidence archive:',archive,flush=True)
