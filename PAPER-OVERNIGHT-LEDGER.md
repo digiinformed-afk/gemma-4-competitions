@@ -78,3 +78,10 @@ python scripts/paper_open_set.py --output paper-results/open-set.json
 - **Evidence:** [successful Python audit CI](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43116822447); [original frozen-matrix/open-set CI](https://github.com/digiinformed-afk/gemma-4-competitions/actions/runs/43091180332). Neither is a Kaggle submission.
 - **Submission blocker:** authenticated Kaggle Writeup creation, eligibility declarations, rendered preview and explicit final Submit remain unverified. No new model experiments should displace submission priority.
 - **Next:** confirm actual Kaggle submission status through an authenticated session; if absent, submit the updated 2,483-word manuscript before 2026-11-12 23:59 UTC. Do not claim submitted without a platform receipt.
+
+## Study 1f: submission handoff and source integrity recheck (2026-11-12 05:55 PKT)
+
+- **Executed:** independently fetched the current canonical manuscript, source submission checklist, claim-evidence record and prior ledger from GitHub `main`. Counted **2,483 whitespace-delimited words**, verified required abstract/introduction/methods/results/related-work sections and seven numbered references; manuscript retains explicit no-Gemma-session and no-real-repair caveats. This is a source-text audit, not Kaggle's rendered count.
+- **Committed handoff:** [PAPER-SUBMISSION-HANDOFF-2026-11-12.md](PAPER-SUBMISSION-HANDOFF-2026-11-12.md), commit `b2afedfd9e7048231bc8d24e5de072dbd0b12493`. It supplies exact title/subtitle, current manuscript location, required author-side submission steps, evidence boundaries and verified CI links. Existing benchmarks and manuscript are unchanged.
+- **Blocked:** Browser/account access was unavailable in this execution; no authenticated Kaggle Writeup status or submission receipt was obtained. **Do not claim submitted.** Deadline is 2026-11-12 23:59 UTC / 2026-11-13 04:59 PKT.
+- **Next:** Prioritize actual Kaggle Writeup creation and final Submit under the author's authenticated account; preserve receipt/URL. No additional CPU experiment should delay the submission.
