@@ -211,6 +211,31 @@ class GPUPlanTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 pilot.replay(d, data)
 
+    def test_all_64_sessions_run_and_replay_with_scripted_transport(self):
+        data = PAPER / 'frozen_cases.jsonl.gz'
+        plan = pilot.make_plan(self.cases, pilot.sha(data.read_bytes()), self.info, seed=33, controls=True)
+        picks = iter(pilot.new_session(self.cases, e).key for e in plan['schedule'])
+        class Tokenizer:
+            def apply_chat_template(self, *args, **kwargs):
+                return {'input_ids': [1, 2, 3]}
+        class Opener:
+            def open(self, request, timeout):
+                body = json.loads(request.data)
+                assert 'target' not in body and 'tools' not in body
+                reply = {'choices': [{'finish_reason': 'stop', 'message': {'content': pilot.encode({'pick': next(picks)})}}]}
+                return io.BytesIO(json.dumps(reply).encode())
+        fake = types.SimpleNamespace(AutoTokenizer=types.SimpleNamespace(from_pretrained=lambda *a, **k: Tokenizer()))
+        with tempfile.TemporaryDirectory() as folder:
+            d = Path(folder)
+            pilot.save_json(d/'plan.json', plan)
+            with patch.dict(sys.modules, {'transformers': fake}), patch.object(pilot, 'build_opener', return_value=Opener()):
+                pilot.run(d/'plan.json', data, 'http://127.0.0.1:8000', d, d/'run')
+            replay = pilot.replay(d/'run', data)
+            self.assertEqual(replay['recorded'], 64)
+            self.assertEqual(replay['paired_complete']['pairs'], 16)
+            for arm, count in [('free', 32), ('zero', 16), ('entropy_pick', 16)]:
+                self.assertEqual(replay['arms'][arm]['successes'], count)
+
 
 if __name__ == '__main__':
     unittest.main()
