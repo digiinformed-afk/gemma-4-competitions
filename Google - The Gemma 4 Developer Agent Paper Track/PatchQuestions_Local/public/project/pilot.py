@@ -283,18 +283,34 @@ def replay(directory, data_path):
         record = json.loads(path.read_text())
         session = new_session(cases, spec)
         grade = None
+        questions = []
+        usage = Counter()
         for event in map(json.loads, (directory / record['transcript']).read_text().splitlines()):
+            if event.get('usage'):
+                usage.update({k: v for k, v in event['usage'].items() if isinstance(v, (int, float))})
             if 'action' in event:
                 before = len(session.survivors)
+                def query_entropy(j):
+                    sizes = Counter(session.grid[i][j] for i in session.survivors).values()
+                    return -sum((n / before) * math.log2(n / before) for n in sizes)
+                question = event['action'].get('ask')
+                entropy = query_entropy(question) if question is not None else None
+                best = max((query_entropy(j) for j in range(len(session.grid[0])) if j not in session.asked), default=0)
                 _, grade = session.step(event['action'])
+                if 'ask' in event['action']:
+                    questions.append({'column': event['action']['ask'], 'survivors_before': before, 'survivors_after': len(session.survivors), 'uninformative': before == len(session.survivors), 'fraction_eliminated': 1 - len(session.survivors) / before, 'entropy_bits': entropy, 'best_available_entropy_bits': best, 'relative_entropy': entropy / best if best else None})
         hidden = session.case['heldout_outputs']
         record['uniform_survivor_score'] = sum(hidden[session.order[i]] == hidden[session.target] for i in session.survivors) / len(session.survivors)
         record['survivors_after_questions'] = len(session.survivors)
+        record['question_diagnostics'] = questions
+        record['token_usage'] = dict(usage)
         if record['status'] == 'completed':
             if grade is None or any(record.get(k) != v for k, v in grade.items()):
                 raise ValueError('transcript grade mismatch: ' + spec['session_id'])
         records.append(record)
-    return summarize(plan, records)
+    result = summarize(plan, records)
+    result['transcript_diagnostics'] = [{k: r[k] for k in ('session_id', 'uniform_survivor_score', 'survivors_after_questions', 'question_diagnostics', 'token_usage')} for r in records]
+    return result
 
 
 def run(plan_path, data_path, endpoint, tokenizer_path, output):

@@ -6,7 +6,7 @@ Attach the organizer wheelhouse, Google Gemma 4 31B QAT w4a16 version 2, and the
 
 Outputs include environment and model metadata, a disjoint calibration exchange, frozen private plan, matched baselines, preflight token counts, per-turn transcripts, failure-inclusive summaries, complete-pair comparisons, and independently replayed grades. All data stays outside the text-only model's tools/context except the displayed matrix and acquired answers. A timestamped zip and SHA-256 file are written under /kaggle/working even if calibration or scoring fails. Save the notebook version with outputs and retain the archive.
 
-CPU verification uses the canonical project's paper-revision/tests/test_pilot.py. The implementation adds token-mapping, control-arm, incomplete-pair, entropy-selection, and tampered-transcript checks to the original twelve tests. No GPU result is bundled.
+CPU verification uses the canonical project's paper-revision/tests/test_pilot.py. All 18 CPU tests pass, including token-mapping, control-arm, incomplete-pair, entropy-selection, tampered-transcript and full 64-session scripted-transport checks. Run python paper-gpu/build_notebook.py to rebuild the embedded sources. Replay also reports per-trace uniform-survivor scores, survivor counts and token usage. No GPU result is bundled.
 
 For external local serving, use the canonical pilot.py freeze, baselines, run, summarize and replay commands. Pass --controls to freeze to include all 64 sessions. An existing run directory is never overwritten. Failed runs are preserved and corrected configurations receive a new run ID.
 
